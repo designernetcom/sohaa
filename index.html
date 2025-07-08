@@ -1,686 +1,1645 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-   
-
-
-<!-- Mirrored from www.yantrikengineers.com/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Mar 2023 07:27:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 
-        <meta charset="utf-8">
+	<title>EVRobotics Skill Coach (India) Pvt. Ltd </title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="EVRobotics Skill Coach (India) Pvt. Ltd">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+			var el = document.querySelector('.theme-icon-active');
+			if (el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+					const activeThemeIcon = document.querySelector('.theme-icon-active use')
+					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+						element.classList.remove('active')
+					})
+
+					btnToActive.classList.add('active')
+					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+				}
+
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+					if (storedTheme !== 'light' || storedTheme !== 'dark') {
+						setTheme(getPreferredTheme())
+					}
+				})
+
+				showActiveTheme(getPreferredTheme())
+
+				document.querySelectorAll('[data-bs-theme-value]')
+					.forEach(toggle => {
+						toggle.addEventListener('click', () => {
+							const theme = toggle.getAttribute('data-bs-theme-value')
+							localStorage.setItem('theme', theme)
+							setTheme(theme)
+							showActiveTheme(theme)
+						})
+					})
+
+			}
+		})
+
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Header START -->
+	<header class="header-sticky header-absolute" style="background-color:#fff;">
+		<!-- Nav START -->
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<!-- Logo START -->
+				<a class="navbar-brand me-0" href="index.html">
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				</a>
+				<!-- Logo END -->
+
+				<!-- Main navbar START -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  active" href="index.html">Home</a>
+
+						</li>
+
+						<li class="nav-item ">
+							<a class="nav-link " href="about.html">About Us</a>
+
+						</li>
+
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="course.html">Courses</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Training</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Workshop</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="faq.html">FAQ</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="gallery.html">Gallery</a>
+
+						</li>
 
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      <!-- mobile metas -->
 
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+						<!-- Nav item -->
+						<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+					</ul>
+				</div>
+				<!-- Main navbar END -->
+				<!-- Buttons -->
+				<ul class="nav align-items-center dropdown-hover ms-sm-2">
 
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-      <!-- site metas -->
+					<!-- Dark mode option END -->
+					<li class="nav-item">
+						<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-animation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</li>
+				</ul>
 
-      <title>yantrikengineers.com</title>
 
-      <meta name="keywords" content="">
+			</div>
+		</nav>
+		<!-- Nav END -->
+	</header>
+	<!-- Header END -->
 
-      <meta name="description" content="">
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
 
-      <meta name="author" content="">
+		<!-- --------------------- main Banner Start ----------------- -->
 
-      <!-- site icons -->
+		<div class="banner-container">
+			<div class="banner active">
+				<h1 class="banner-text">Welcome to the Future</h1>
+			</div>
+			<div class="banner">
+				<h1 class="banner-text">Shaping the Future of E-Mobility</h1>
+			</div>
+			<div class="banner">
+				<h1 class="banner-text">Welcome to the Future</h1>
+			</div>
+			<div class="indicators">
+				<div class="indicator active" data-slide="0"></div>
+				<div class="indicator" data-slide="1"></div>
+				<div class="indicator" data-slide="2"></div>
+			</div>
+		</div>
 
-      <link rel="icon" href="../assets/frontend/images/fevicon/fevicon.png" type="image/gif" />
+		<script>
+			const banners = document.querySelectorAll('.banner');
+			const indicators = document.querySelectorAll('.indicator');
+			let currentSlide = 0;
+			const slideInterval = 5000;
 
-      <!-- bootstrap css -->
+			function goToSlide(index) {
+				banners[currentSlide].classList.remove('active');
+				indicators[currentSlide].classList.remove('active');
+				currentSlide = index;
+				banners[currentSlide].classList.add('active');
+				indicators[currentSlide].classList.add('active');
+			}
 
-      <link rel="stylesheet" href="../assets/frontend/css/bootstrap.min.css" />
+			function nextSlide() {
+				const next = (currentSlide + 1) % banners.length;
+				goToSlide(next);
+			}
 
-      <!-- Site css -->
+			let autoSlide = setInterval(nextSlide, slideInterval);
 
-      <link rel="stylesheet" href="../assets/frontend/css/style.css" />
+			indicators.forEach((indicator, index) => {
+				indicator.addEventListener('click', () => {
+					clearInterval(autoSlide);
+					goToSlide(index);
+					autoSlide = setInterval(nextSlide, slideInterval);
+				});
+			});
 
-      <!-- responsive css -->
-
-      <link rel="stylesheet" href="../assets/frontend/css/responsive.css" />
-
-      <!-- colors css -->
-
-      <link rel="stylesheet" href="../assets/frontend/css/colors1.css" />
-
-      <!-- custom css -->
-
-      <link rel="stylesheet" href="../assets/frontend/css/custom.css" />
-
-      <!-- wow Animation css -->
-
-      <link rel="stylesheet" href="../assets/frontend/css/animate.css" />
-<link rel="stylesheet" href="../assets/frontend/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/frontend/css/owl.theme.default.min.css">
-
-
-      <!-- revolution slider css -->
-
-      <link rel="stylesheet" type="text/css" href="../assets/frontend/revolution/css/settings.css" />
-
-      <link rel="stylesheet" type="text/css" href="../assets/frontend/revolution/css/layers.css" />
-
-      <link rel="stylesheet" type="text/css" href="../assets/frontend/revolution/css/navigation.css" />
-
-      
-   </head>
-
-   <body id="default_theme" class="home_1">
-
-      <!-- loader -->
-
-<!--      <div class="bg_load"> <img class="loader_animation" src="images/loaders/loader_1.png" alt="#" /> </div>-->
-
-      <!-- end loader -->
-
-      <!-- header -->
-
-      <header id="default_header" class="header_style_1">
-         <!-- header top -->
-         <div class="header_top">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-9 col-lg-9">	
-                     <div class="full">
-                        <div class="topbar-left">
-                          <ul class="list-inline">
-                              <li>
-                                 <span class="topbar-label"> <i class="fa  fa-phone"></i></span>
-                                                                        <span class="topbar-hightlight"> +91 7709170121 |+91 9823645135</span>
-
-
-                              </li>
-                              <li>
-                                 <span class="topbar-label"> <i class="fa fa-envelope-o"></i></span>
-                                 <span class="topbar-hightlight">
-                                    <a href="mailto:project@yantrikengineers.com"> project@yantrikengineers.com </a>
-                                 </span>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3 col-lg-3 right_section_header_top">
-                     <div class="float-right">
-                        <div class="social_icon">
-                           <ul class="list-inline">
-                              <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
-                              <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
-                              <li><a class="fa fa-twitter" href="https://twitter.com/" title="Twitter" target="_blank"></a></li>
-                              <li><a class="fa fa-linkedin" href="https://www.linkedin.com/" title="LinkedIn" target="_blank"></a></li>
-                              <li><a class="fa fa-instagram" href="https://www.instagram.com/" title="Instagram" target="_blank"></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- end header top -->
-         <!-- header bottom -->
-         <div class="header_bottom">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                     <!-- logo start -->
-                     <div class="logo"><a href="../index.html"><img src="../assets/frontend/images/logos/logo.png" alt="logo" /></a></div>
-                     <!-- logo end -->
-                  </div>
-                  <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                     <!-- menu start -->
-                     <div class="menu_side">
-                        <div id="navbar_menu">
-                           <ul class="first-ul">
-                              <li><a class="active" href="../index.html">Home</a></li>
-                              <li>
-                                 <a href="javascript:void(0)">Who We Are</a>
-                                 <ul>
-                                    <li><a href="../aboutus.html">About Us</a></li>
-                              	<li><a href="../qualitypolicy.html">Quality Policy</a></li>
-									 <li><a href="../safetypolicy.html">Health &amp; Safety Policy </a></li>
-                              		<li><a href="../designfacility.html">Our Certification</a></li>
-                                 </ul>
-                              </li>
-							   <li>
-                                 <a href="javascript:void(0)">Industries We Serve</a>
-                                 <ul>
-                                    									 <li><a href="../product/myproduct/1.html">OIL  & GAS INDUSTRIES</a></li>
-                              											 <li><a href="../product/myproduct/2.html">Sugar Mills</a></li>
-                              											 <li><a href="../product/myproduct/3.html">Cement Industries</a></li>
-                              											 <li><a href="../product/myproduct/4.html">Steel Industries</a></li>
-                              											 <li><a href="../product/myproduct/5.html">Pharma Industries</a></li>
-                              		                                 </ul>
-                              </li>
-							   <li><a href="../clients.html">Our Clients</a></li>
-                              <li><a href="../career.html">Career</a></li>
-                              <li><a href="../gallery.html">Gallery</a></li>
-                              <li><a href="../contact.html">Contact Us</a></li>
-                           </ul>
-                        </div>
-                        
-                     </div>
-                     <!-- menu end -->
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- header bottom end -->
-      </header>
-      <!-- end header -->
-
-<div class="section padding_layout_1">
-
-         <div class="container">
-
-            <div class="row"> 
-
-			    <div class="col-md-12">
-
-                  <div class="full">
-
-                     <div class="main_heading text_align_center">
-
-                        <h2><span>GET IN TOUCH</span></h2>
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-				<div class="col-md-2"></div>
-
-               <div class="col-md-6 col-sm-12 col-xs-12">
-
-                  <div class="row">
-
-                     <div class="full">
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contant_form">
-
-                           <div class="form_section">
-
-                              <form class="form_contant" action="https://html.design/demo/nurvis/contact.php">
-
-                                 <fieldset>
-
-                                    <div class="row">
-
-                                       <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                          <input class="field_custom" placeholder="Your Name" type="text" required />
-
-                                       </div>
-
-									   <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                          <input class="field_custom" placeholder="Email adress" type="email" required />
-
-                                       </div>
-
-                                       <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                          <input class="field_custom" placeholder="Subject" type="text" required />
-
-                                       </div>
-
-                                       <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                          <input class="field_custom" placeholder="Phone number" type="text" required />
-
-                                       </div>
-
-                                       <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-                                          <textarea class="field_custom" placeholder="Messager"></textarea>
-
-                                       </div>
-
-                                       <div class="center"><input type="submit" value="SUBMIT NOW" class="btn main_bt" href="#"></div>
-
-                                    </div>
-
-                                 </fieldset>
-
-                              </form>
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-				<div class="col-md-4">
-
-                
-
-					<p>
-
-						</p><h4>Address</h4>
-
-						<strong> Registered Address:</strong><br>
-
-Gat No. 144/2B/2A/1,<br>
-
-Naina Industrial Compound,<br>
-
-Phursungi, Pune-412308.<br>
-
-Phone No. 020-26985020 <br>
-
-Located On PUNE - SASWAD Road
-
-<br>
-
+			banners.forEach(banner => {
+				banner.addEventListener('mouseenter', () => clearInterval(autoSlide));
+				banner.addEventListener('mouseleave', () => {
+					autoSlide = setInterval(nextSlide, slideInterval);
+				});
+			});
+		</script>
+
+
+
+
+		<!-- --------------------- main Banner End---------------- -->
+
+
+
+
+
+
+
+
+
+
+
+		<section class=" pb-0">
+			<div class="container pt-2 pt-sm-5">
+				<!-- Hero START -->
+				<div class="row g-4 g-xxl-5">
+					<!-- Hero content START -->
+					<div class="col-xl-6">
+						<!-- Title -->
+						<h3 class="mb-0 lh-base">EVRobotics Skill Coach (India) Pvt. Ltd
+							<span class="position-relative">
+
+							</span>
+
+						</h3>
+
+						<p class="mb-0 mt-4 mt-xl-5" style="text-align: justify;">At EVRobotics Skill Coach (India) Pvt.
+							Ltd., we’re proud to be recognized as India’s most trusted and fastest-growing institute for
+							cutting-edge tech education. We specialize in Electric Vehicle (EV) training, Robotics,
+							Industrial Automation, and AI & Machine Learning courses, all delivered through 100%
+							practical, lab-based learning.
+
+						</p>
+						<p class="mb-0 mt-4 " style="text-align: justify;">
+							We don’t believe in boring theory-only classes. Instead, our Electrical Vehicle Courses and
+							EV Technician Training Programs are built for those who want real skills. Whether you're a
+							budding engineer, an automobile enthusiast, or a working technician.
+						</p>
+
+						<!-- Buttons -->
+						<div class="d-flex gap-1 gap-sm-3 flex-wrap mt-4 mt-xl-5">
+							<button class="btn btn-dark" type="button">Get started</button>
+							<button class="btn btn-outline-dark" type="button">Read More</button>
+						</div>
+
+						<!-- Features -->
+						<!-- <ul class="list-inline d-flex flex-wrap gap-2 gap-sm-4 mb-0 mt-4 mt-xl-5">
+					<li class="list-inline-item heading-color"> <i class="bi bi-stopwatch me-1"></i>24/7 Supports</li>
+					<li class="list-inline-item heading-color"> <i class="bi bi-fire me-1"></i>Free updates</li>
+					<li class="list-inline-item heading-color"> <i class="bi bi-life-preserver me-1"></i>Access premium doc</li>
+				</ul> -->
+					</div>
+					<!-- Hero content END -->
+
+					<!-- Hero image START -->
+					<div class="col-xl-6 text-center">
+						<img src="assets/images/homeAbout.jpg" alt="hero-img">
+					</div>
+					<!-- Hero image END -->
+				</div>
+				<!-- Hero END -->
+
+				<hr class="border-primary opacity-2 mt-sm-7 my-5"> <!-- Divider -->
+
+
+			</div>
+		</section>
+		<!-- =======================
+Main Banner END -->
+
+		<!-- =======================
+About START -->
+		<section class="pb-0">
+			<div class="container">
+
+
+				<!-- About detail START -->
+				<div class="row align-items-center">
+					<!-- Content -->
+					<div class="col-lg-7 pe-lg-5">
+						<!-- <p class="mb-5">We deliver 100% lab-based EV technician and engineering courses, where students train on real Two-Wheeler and Four-Wheeler Electric Vehicles. Inside our in-house EV lab, learners work directly with hub motors, BLDC controllers, battery cells, BMS modules, charging ports, and EV diagnostics tools.</p> -->
+
+
+						<!-- Goal and Mission tab START -->
+						<div class="card card-body bg-light p-sm-5 h-100">
+							<!-- SVG decoration -->
+							<!-- <figure class="position-absolute bottom-0 end-0 mb-0 me-3 d-none d-sm-block">
+						<svg width="116" height="177" viewBox="0 0 116 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="fill-mode" d="M54.2742 58.113H50.0625V177H54.2742V58.113Z"/>
+							<path class="fill-mode" d="M62.0829 55.1344L57.9297 55.8303L78.1605 175.597L82.3137 174.901L62.0829 55.1344Z"/>
+							<path class="fill-mode" d="M75.4696 136.02H28.2031V140.641H75.4696V136.02Z"/>
+							<path class="fill-mode" d="M21.2999 174.91L25.4531 175.606L45.684 55.8399L41.5308 55.144L21.2999 174.91Z"/>
+							<path class="fill-primary" d="M91.1643 90.7959C111.953 70.0913 111.953 36.5225 91.1643 15.8179C70.3759 -4.88673 36.6713 -4.88673 15.8829 15.8179C-4.90549 36.5225 -4.90549 70.0913 15.8829 90.7959C36.6713 111.5 70.3759 111.501 91.1643 90.7959Z"/>
+							<path d="M103.519 35.0652L103.418 34.9452L103.338 34.8651L103.144 34.9385C103.164 34.9785 103.177 35.0119 103.184 35.0385C103.224 35.1319 103.258 35.2186 103.284 35.312L103.566 35.2119C103.559 35.1519 103.539 35.1052 103.519 35.0652ZM102.012 75.2055C102.066 75.1121 102.106 75.0121 102.146 74.9121C102.066 74.8387 101.985 74.7587 101.912 74.6786C101.872 74.7787 101.831 74.8787 101.778 74.9787C99.4276 80.1605 96.2404 84.8954 92.4036 89.0302C92.3433 89.1102 92.2697 89.1836 92.2027 89.2503C92.1425 89.3303 92.0688 89.4036 92.0019 89.4703L92.2764 89.6437C92.35 89.5704 92.417 89.5037 92.4773 89.4303L92.7317 89.5904C92.8054 89.517 92.8723 89.4503 92.9326 89.377C96.7827 85.2222 99.903 80.5273 102.247 75.3989C102.16 75.3455 102.079 75.2788 102.012 75.2055ZM103.519 35.0652L103.418 34.9452L103.338 34.8651L103.144 34.9385C103.164 34.9785 103.177 35.0119 103.184 35.0385C103.224 35.1319 103.258 35.2186 103.284 35.312L103.566 35.2119C103.559 35.1519 103.539 35.1052 103.519 35.0652ZM102.139 74.9121C102.059 74.8387 101.979 74.7587 101.905 74.6786C101.865 74.7787 101.825 74.8787 101.771 74.9787C99.4209 80.1605 96.2337 84.8954 92.3969 89.0302C92.3366 89.1102 92.263 89.1836 92.196 89.2503C92.1358 89.3303 92.0621 89.4036 91.9952 89.4703L92.2697 89.6437C92.3433 89.5704 92.4103 89.5037 92.4706 89.4303L92.725 89.5904C92.7987 89.517 92.8656 89.4503 92.9259 89.377C96.776 85.2222 99.8963 80.5273 102.24 75.3989C102.16 75.3389 102.079 75.2655 102.006 75.1988C102.059 75.1188 102.099 75.0188 102.139 74.9121ZM107.048 52.5845C106.994 48.0296 106.358 43.5614 105.166 39.2466C105.146 39.1466 105.112 39.0532 105.086 38.9665C105.066 38.8665 105.032 38.7665 105.005 38.6731C104.845 38.1129 104.684 37.5594 104.503 37.0059C104.349 36.5324 104.202 36.0722 104.028 35.6187C103.974 35.4453 103.914 35.2786 103.847 35.1186C103.813 35.0185 103.773 34.9185 103.746 34.8251C103.733 34.7918 103.726 34.7518 103.706 34.7251C103.686 34.6651 103.666 34.6117 103.633 34.5517C103.633 34.5117 103.613 34.4784 103.592 34.4383C103.559 34.345 103.532 34.2583 103.492 34.1649C103.459 34.0849 103.432 33.9915 103.398 33.9115C103.218 33.458 103.037 33.0045 102.843 32.551C102.588 31.9508 102.32 31.3573 102.032 30.7638C101.992 30.6704 101.952 30.5904 101.898 30.5037C101.865 30.4103 101.825 30.3236 101.778 30.2436C99.1732 24.8151 95.6779 19.9067 91.3657 15.6053C86.4442 10.7036 80.7326 6.86233 74.3514 4.18142C67.7626 1.40714 60.7587 0 53.5271 0C46.3022 0 39.2983 1.40714 32.6894 4.18142C26.3149 6.86899 20.5899 10.7103 15.6818 15.6053C15.2399 16.0454 14.8047 16.4989 14.3761 16.9524C14.3159 17.0258 14.2422 17.0925 14.1752 17.1658C14.115 17.2392 14.0413 17.3059 13.9744 17.3859C13.519 17.8794 13.0771 18.3796 12.6486 18.8931C12.287 19.3065 11.9388 19.7267 11.6107 20.1535C11.5973 20.1668 11.5772 20.1735 11.5772 20.1935C11.5036 20.2669 11.4433 20.3469 11.3831 20.4269C11.3496 20.4603 11.3228 20.5003 11.3027 20.5403C11.2625 20.5803 11.229 20.6203 11.2023 20.6603C11.1688 20.7003 11.142 20.7337 11.1219 20.7737C11.0483 20.8537 10.988 20.9271 10.9411 21.0071C10.8809 21.0805 10.8273 21.1405 10.7871 21.2072C10.0974 22.1008 9.45463 23.0145 8.82521 23.9548C8.77165 24.0348 8.71138 24.1148 8.66451 24.2082C8.60425 24.2882 8.55068 24.3683 8.50381 24.4616C6.84992 27.0292 5.4036 29.7301 4.19834 32.571C1.41284 39.1266 0 46.109 0 53.3114C0 60.5005 1.41284 67.4829 4.21173 74.0651C6.91018 80.4139 10.767 86.1158 15.6818 91.0108C20.5899 95.8992 26.3149 99.7538 32.6894 102.428C32.9506 102.541 33.2117 102.648 33.4796 102.748C34.8054 103.288 36.1445 103.775 37.5105 104.189C41.5816 105.469 45.78 106.243 50.0653 106.503C51.2037 106.583 52.3687 106.623 53.5271 106.623C53.7816 106.623 54.0293 106.623 54.2838 106.609C58.3549 106.556 62.3657 106.056 66.2494 105.102C67.622 104.782 68.988 104.389 70.3272 103.949C71.6931 103.495 73.0323 102.995 74.3581 102.428C78.5498 100.667 82.4401 98.4134 86.0157 95.6658C86.1094 95.6124 86.1764 95.5524 86.2568 95.4857C86.3371 95.4323 86.4175 95.3723 86.4978 95.3056C88.2053 93.9785 89.8324 92.5514 91.3724 91.0108C91.7675 90.6174 92.1492 90.2239 92.5241 89.8238C92.5978 89.7504 92.6647 89.6837 92.725 89.6037C92.7987 89.5303 92.8656 89.4637 92.9259 89.3903C96.776 85.2356 99.8963 80.5406 102.24 75.4122C102.293 75.3189 102.334 75.2322 102.374 75.1321C102.427 75.0388 102.468 74.9387 102.508 74.8387C102.628 74.5853 102.742 74.3252 102.849 74.0651C104.363 70.4839 105.487 66.7826 106.184 62.988C106.217 62.7946 106.257 62.6079 106.284 62.4145C106.505 61.1474 106.679 59.8603 106.807 58.5732C106.84 58.2131 106.867 57.8463 106.9 57.4795C106.914 57.3794 106.92 57.2794 106.92 57.1794C106.934 57.086 106.94 56.986 106.94 56.8859C107.021 55.7122 107.061 54.5118 107.061 53.3181C107.061 53.0713 107.061 52.8246 107.048 52.5845ZM106.465 53.3114C106.465 54.5051 106.425 55.7055 106.344 56.8793C106.331 56.9793 106.331 57.0727 106.324 57.1727C106.311 57.2727 106.311 57.3728 106.304 57.4728C106.271 57.8863 106.231 58.2864 106.19 58.6999C106.057 59.927 105.896 61.1474 105.688 62.3545C105.655 62.5479 105.615 62.7279 105.574 62.928C104.838 66.9293 103.633 70.7707 102.039 74.3919C101.999 74.4919 101.959 74.5853 101.905 74.6853C101.865 74.7853 101.825 74.8854 101.771 74.9854C99.4209 80.1672 96.2337 84.9021 92.3969 89.0368C92.3366 89.1169 92.263 89.1902 92.196 89.2569C92.1358 89.3369 92.0621 89.4103 91.9952 89.477C90.1471 91.431 88.145 93.2383 86.0291 94.8855L85.788 95.0656C85.7077 95.1389 85.6273 95.1989 85.547 95.2456C80.9603 98.7268 75.8044 101.481 70.2267 103.335C68.8943 103.775 67.5283 104.169 66.1489 104.509C62.339 105.436 58.3616 105.956 54.2838 106.009C54.0293 106.023 53.7816 106.023 53.5271 106.023C52.3687 106.023 51.2037 105.983 50.0653 105.909C45.7532 105.629 41.5816 104.836 37.6109 103.588C36.245 103.155 34.9058 102.675 33.5934 102.128C14.2489 94.2853 0.595936 75.3589 0.595936 53.3114C0.595936 42.8279 3.68945 33.0512 8.99931 24.8351C9.03279 24.7817 9.05957 24.735 9.09305 24.695C9.12653 24.6417 9.14662 24.615 9.16671 24.5817C9.20688 24.5216 9.24706 24.4616 9.28054 24.4083C9.31402 24.3683 9.32071 24.3549 9.3341 24.3349C9.96352 23.3879 10.6063 22.4743 11.296 21.5806C11.3362 21.5206 11.3897 21.4473 11.45 21.3806C11.5036 21.3072 11.5638 21.2272 11.6241 21.1472C11.6576 21.1138 11.6844 21.0738 11.7178 21.0338C11.7312 21.0271 11.7379 21.0138 11.7513 20.9938C11.7714 20.9604 11.7915 20.9338 11.8116 20.9004C11.8451 20.8671 11.8719 20.8404 11.8919 20.8004C11.9522 20.727 12.0125 20.647 12.0727 20.567C12.1129 20.5336 12.1263 20.5136 12.1464 20.4869C12.903 19.5533 13.6798 18.633 14.49 17.7594C14.5502 17.686 14.6239 17.606 14.6908 17.5393C14.7511 17.4659 14.8248 17.3992 14.8917 17.3259C24.5204 7.02905 38.2872 0.580197 53.5271 0.580197C74.5121 0.580197 92.6714 12.8043 101.222 30.4503C101.276 30.5437 101.316 30.6237 101.356 30.7104C101.396 30.8038 101.436 30.8838 101.477 30.9705C101.959 31.9975 102.414 33.0512 102.843 34.1182C102.876 34.1983 102.903 34.2783 102.936 34.3717C102.976 34.465 103.017 34.5517 103.05 34.6451C103.063 34.6784 103.084 34.7184 103.084 34.7451C103.124 34.8185 103.144 34.8785 103.157 34.9252C103.177 34.9652 103.191 34.9985 103.197 35.0252C103.238 35.1186 103.271 35.2053 103.298 35.2986C103.378 35.512 103.452 35.7121 103.512 35.8988C103.867 36.8725 104.182 37.8728 104.47 38.8732C104.49 38.9665 104.523 39.0666 104.543 39.1533C104.577 39.2533 104.604 39.3467 104.624 39.4467C105.782 43.6681 106.418 48.1096 106.472 52.6712C106.465 52.8979 106.465 53.098 106.465 53.3114ZM102.012 75.2055C102.066 75.1121 102.106 75.0121 102.146 74.9121C102.066 74.8387 101.985 74.7587 101.912 74.6786C101.872 74.7787 101.831 74.8787 101.778 74.9787C99.4276 80.1605 96.2404 84.8954 92.4036 89.0302C92.3433 89.1102 92.2697 89.1836 92.2027 89.2503C92.1425 89.3303 92.0688 89.4036 92.0019 89.4703L92.2764 89.6437C92.35 89.5704 92.417 89.5037 92.4773 89.4303L92.7317 89.5904C92.8054 89.517 92.8723 89.4503 92.9326 89.377C96.7827 85.2222 99.903 80.5273 102.247 75.3989C102.16 75.3455 102.079 75.2788 102.012 75.2055ZM103.519 35.0652L103.418 34.9452L103.338 34.8651L103.144 34.9385C103.164 34.9785 103.177 35.0119 103.184 35.0385C103.224 35.1319 103.258 35.2186 103.284 35.312L103.566 35.2119C103.559 35.1519 103.539 35.1052 103.519 35.0652ZM102.012 75.2055C102.066 75.1121 102.106 75.0121 102.146 74.9121C102.066 74.8387 101.985 74.7587 101.912 74.6786C101.872 74.7787 101.831 74.8787 101.778 74.9787C99.4276 80.1605 96.2404 84.8954 92.4036 89.0302C92.3433 89.1102 92.2697 89.1836 92.2027 89.2503C92.1425 89.3303 92.0688 89.4036 92.0019 89.4703L92.2764 89.6437C92.35 89.5704 92.417 89.5037 92.4773 89.4303L92.7317 89.5904C92.8054 89.517 92.8723 89.4503 92.9326 89.377C96.7827 85.2222 99.903 80.5273 102.247 75.3989C102.16 75.3455 102.079 75.2788 102.012 75.2055ZM103.519 35.0652L103.418 34.9452L103.338 34.8651L103.144 34.9385C103.164 34.9785 103.177 35.0119 103.184 35.0385C103.224 35.1319 103.258 35.2186 103.284 35.312L103.566 35.2119C103.559 35.1519 103.539 35.1052 103.519 35.0652Z" fill="#202124"/>
+							<path d="M83.5774 83.2415C100.177 66.7091 100.177 39.9047 83.5774 23.3723C66.9781 6.83984 40.0652 6.83984 23.4659 23.3723C6.86657 39.9047 6.86657 66.7091 23.4659 83.2415C40.0652 99.7739 66.9781 99.7739 83.5774 83.2415Z" fill="white"/>
+							<path d="M79.8329 86.1626C79.5784 86.3626 79.3173 86.5627 79.0561 86.7628L79.19 86.8762L79.3039 86.9762C79.4646 86.8561 79.6253 86.7361 79.7793 86.6161L79.9601 86.4627L81.4131 84.8421C80.8908 85.2956 80.3685 85.7358 79.8329 86.1626ZM79.8329 86.1626C79.5784 86.3626 79.3173 86.5627 79.0561 86.7628L79.19 86.8762L79.3039 86.9762C79.4646 86.8561 79.6253 86.7361 79.7793 86.6161L79.9601 86.4627L81.4131 84.8421C80.8908 85.2956 80.3685 85.7358 79.8329 86.1626ZM93.8005 38.8132C93.6465 38.4131 93.4992 38.0196 93.3452 37.6261C93.2247 37.3127 93.1042 37.0126 92.9702 36.7125C90.8075 31.6308 87.7206 27.0759 83.7901 23.1612C79.8596 19.2466 75.2863 16.1722 70.184 14.0248C64.9144 11.8041 59.3099 10.677 53.5179 10.677C50.9132 10.677 48.3353 10.9104 45.8109 11.3706C45.7172 11.3839 45.6167 11.4039 45.5163 11.4239C45.4159 11.4439 45.3221 11.4639 45.2217 11.4839C44.0298 11.704 42.858 11.9841 41.6996 12.3309C41.5791 12.3642 41.4854 12.3842 41.3983 12.4243C41.3581 12.4243 41.3247 12.4376 41.2845 12.4576C41.2242 12.4709 41.1706 12.4909 41.1104 12.511C41.0702 12.511 41.0367 12.5243 40.9966 12.5443C40.9028 12.5643 40.8158 12.5977 40.7153 12.6377C40.635 12.6577 40.5412 12.6777 40.4609 12.7177C40.327 12.751 40.1863 12.7977 40.0591 12.8377C39.1485 13.1378 38.2445 13.4713 37.354 13.8447C37.2602 13.8781 37.1598 13.9181 37.0728 13.9581C36.9991 13.9915 36.9321 14.0181 36.8585 14.0515C36.8384 14.0648 36.8183 14.0715 36.7982 14.0715C31.716 16.2122 27.1628 19.2933 23.2524 23.1812C22.0739 24.355 20.9691 25.5821 19.9513 26.8625C19.6902 27.1959 19.429 27.536 19.1746 27.8762C17.1256 30.6038 15.4182 33.5714 14.0723 36.7258C11.8425 41.9876 10.7109 47.5695 10.7109 53.3248C10.7109 59.0801 11.8425 64.662 14.0723 69.9237C16.2351 74.9921 19.3152 79.547 23.2524 83.475C26.7744 86.9828 30.8255 89.8238 35.2983 91.9112C35.8139 92.1513 36.3295 92.3847 36.8518 92.6048C37.662 92.9449 38.4789 93.2583 39.2958 93.5518C42.7576 94.7655 46.3667 95.5257 50.0427 95.8125C51.1944 95.9059 52.3461 95.9526 53.5045 95.9526C53.759 95.9526 54.0067 95.9526 54.2612 95.9392C57.7363 95.8792 61.1379 95.4191 64.4389 94.5521C65.8116 94.192 67.1642 93.7652 68.4967 93.265C69.0524 93.0516 69.6082 92.8315 70.164 92.5981C73.0499 91.3843 75.7818 89.8705 78.3129 88.0699C78.3932 88.0099 78.487 87.9498 78.5673 87.8765C78.6678 87.8031 78.7682 87.7364 78.8686 87.6564C78.9222 87.6231 78.9825 87.5831 79.0293 87.543C79.1097 87.483 79.19 87.423 79.2704 87.363C79.3507 87.303 79.4244 87.2429 79.5048 87.1829C80.5962 86.3493 81.6474 85.4623 82.6585 84.5287C82.7322 84.4553 82.7991 84.3953 82.8728 84.3286C82.9464 84.2686 83.0134 84.1952 83.0871 84.1286C83.1875 84.0352 83.2879 83.9352 83.3884 83.8351C83.462 83.7751 83.529 83.7017 83.5893 83.6351C83.6495 83.5817 83.7098 83.5217 83.7701 83.4617C87.7206 79.5203 90.8008 74.9721 92.9501 69.9104C94.4232 66.4426 95.4142 62.8413 95.9164 59.1268C96.0169 58.3798 96.0972 57.6396 96.1575 56.8927C96.2579 55.7056 96.3115 54.5119 96.3115 53.3115C96.3316 48.3098 95.4812 43.4548 93.8005 38.8132ZM95.5013 57.6729C95.4879 57.8463 95.4678 58.0264 95.441 58.1931C94.3228 67.8364 89.9035 76.4793 83.3616 83.0082C83.2879 83.0682 83.2277 83.1415 83.1473 83.2082C83.0871 83.2816 83.0134 83.3483 82.9465 83.4083C82.846 83.5083 82.7456 83.6017 82.6451 83.7017C82.5715 83.7751 82.5045 83.8351 82.4309 83.9018C82.3572 83.9752 82.2903 84.0352 82.2166 84.1019C81.9555 84.3553 81.6742 84.5954 81.3997 84.8355C80.8841 85.2889 80.3618 85.7291 79.8262 86.1559C79.5717 86.356 79.3106 86.556 79.0494 86.7561C78.9758 86.8161 78.8954 86.8695 78.8151 86.9295C78.7347 86.9895 78.6544 87.0495 78.574 87.1096C75.4805 89.3903 72.0723 91.251 68.4163 92.6314C67.0905 93.1316 65.738 93.5651 64.3586 93.9319C61.1379 94.7855 57.7564 95.2723 54.2812 95.3324C54.0268 95.3457 53.7791 95.3457 53.5246 95.3457C52.3662 95.3457 51.2011 95.2923 50.0628 95.2056C46.3533 94.9055 42.7911 94.1319 39.4163 92.9249C38.0437 92.4514 36.7112 91.8979 35.4189 91.2776C21.1767 84.5154 11.3203 70.0438 11.3203 53.3181C11.3203 43.9349 14.4339 35.252 19.6634 28.2496C19.9178 27.9095 20.179 27.5627 20.4401 27.2359C24.7924 21.7741 30.4773 17.4059 36.9924 14.6317C37.0259 14.6183 37.046 14.6117 37.0728 14.5917C37.1464 14.5717 37.2067 14.5383 37.2669 14.5183C37.3607 14.4783 37.4477 14.4383 37.5415 14.4049C37.7825 14.2916 38.037 14.2049 38.2914 14.1115C39.1016 13.7981 39.8582 13.518 40.6551 13.2645C40.7354 13.2312 40.8158 13.2112 40.9095 13.1845C41.0033 13.1512 41.0903 13.1245 41.1907 13.0912C41.2242 13.0778 41.251 13.0711 41.2912 13.0578C41.3514 13.0445 41.4117 13.0245 41.472 13.0045C41.5054 12.9911 41.5456 12.9844 41.5724 12.9711C41.6661 12.9378 41.7666 12.9111 41.8536 12.8911C43.0321 12.551 44.2039 12.2642 45.3958 12.0375C45.4962 12.0175 45.59 11.9974 45.6904 11.9774C45.7908 11.9574 45.8846 11.9441 45.985 11.9241C48.4424 11.4839 50.9534 11.2505 53.5313 11.2505C71.329 11.2505 86.5823 22.2743 92.7761 37.8262C92.9368 38.2197 93.0908 38.6131 93.2381 39.0133C94.8518 43.4814 95.7423 48.2897 95.7423 53.2981C95.7423 54.7653 95.662 56.2124 95.508 57.6529C95.5013 57.6663 95.4946 57.6663 95.5013 57.6729ZM79.8329 86.1626C79.5784 86.3626 79.3173 86.5627 79.0561 86.7628L79.19 86.8762L79.3039 86.9762C79.4646 86.8561 79.6253 86.7361 79.7793 86.6161L79.9601 86.4627L81.4131 84.8421C80.8908 85.2956 80.3685 85.7358 79.8329 86.1626ZM79.8329 86.1626C79.5784 86.3626 79.3173 86.5627 79.0561 86.7628L79.19 86.8762L79.3039 86.9762C79.4646 86.8561 79.6253 86.7361 79.7793 86.6161L79.9601 86.4627L81.4131 84.8421C80.8908 85.2956 80.3685 85.7358 79.8329 86.1626Z" fill="#202124"/>
+							<path class="fill-primary" d="M53.5277 85.3824C71.3153 85.3824 85.735 71.0208 85.735 53.3048C85.735 35.5889 71.3153 21.2273 53.5277 21.2273C35.74 21.2273 21.3203 35.5889 21.3203 53.3048C21.3203 71.0208 35.74 85.3824 53.5277 85.3824Z"/>
+							<path d="M75.8429 76.4326L75.6889 76.1592C75.6152 76.2326 75.5349 76.2993 75.4679 76.3726C75.2536 76.566 75.0461 76.7528 74.8318 76.9462C74.7514 77.0262 74.6711 77.0995 74.5907 77.1596L74.9121 77.2996C74.9925 77.2262 75.0728 77.1462 75.1532 77.0862L75.4478 77.2062C75.5416 77.1262 75.6286 77.0462 75.7224 76.9528V76.8128L75.6219 76.6394C75.7023 76.586 75.7692 76.5127 75.8429 76.4326ZM70.8812 79.9738C70.8611 79.9938 70.8276 80.0072 70.8075 80.0139L71.0821 80.1939C71.0955 80.1939 70.8812 79.9738 70.8812 79.9738ZM69.9973 80.7608L69.8366 80.6207C69.7429 80.6808 69.6559 80.7341 69.5621 80.7941C68.6314 81.3343 67.6605 81.8278 66.6762 82.2813C65.3705 82.8615 64.0313 83.3683 62.6452 83.7818C59.987 84.5687 57.1814 85.0222 54.282 85.0889V85.3823H54.3557C54.7507 85.369 55.1257 85.349 55.5074 85.329C55.8221 85.309 56.1435 85.289 56.4582 85.2556C56.8131 85.2156 57.1747 85.1823 57.5296 85.1356C57.563 85.1356 57.6032 85.1223 57.63 85.1223C58.0317 85.0689 58.4469 85.0089 58.842 84.9422C59.2035 84.8888 59.5718 84.8222 59.92 84.7488C59.9535 84.7355 59.9937 84.7355 60.0204 84.7288C60.2213 84.6888 60.4222 84.6488 60.6231 84.5954C60.8976 84.5354 61.1587 84.4754 61.4333 84.402C61.7346 84.3287 62.0426 84.2486 62.3439 84.1619C62.4644 84.1286 62.5783 84.0886 62.6988 84.0619C62.7189 84.0486 62.7323 84.0486 62.7524 84.0419C62.9332 83.9819 63.1273 83.9285 63.3081 83.8818C63.3483 83.8618 63.3885 83.8485 63.4287 83.8418C63.4487 83.8285 63.4621 83.8285 63.4822 83.8218C63.6161 83.7818 63.7367 83.7418 63.8639 83.6884C64.0849 83.6151 64.2991 83.5484 64.5201 83.455C64.5937 83.435 64.6741 83.4017 64.7411 83.375C65.0223 83.275 65.2968 83.1749 65.5713 83.0616C65.9664 82.9015 66.3481 82.7414 66.7297 82.5681C66.79 82.5347 66.8436 82.5147 66.9038 82.488C67.1851 82.368 67.4663 82.2279 67.7542 82.0879C68.1359 81.9078 68.5109 81.7078 68.8858 81.5077C69.1068 81.3877 69.3278 81.2676 69.5554 81.1342C69.6492 81.0809 69.7295 81.0342 69.8166 80.9809C69.9103 80.9275 69.9973 80.8675 70.0911 80.8208L69.9973 80.7608ZM75.8429 76.4326L75.6889 76.1592C75.6152 76.2326 75.5349 76.2993 75.4679 76.3726C75.2536 76.566 75.0461 76.7528 74.8318 76.9462C74.7514 77.0262 74.6711 77.0995 74.5907 77.1596L74.9121 77.2996C74.9925 77.2262 75.0728 77.1462 75.1532 77.0862L75.4478 77.2062C75.5416 77.1262 75.6286 77.0462 75.7224 76.9528V76.8128L75.6219 76.6394C75.7023 76.586 75.7692 76.5127 75.8429 76.4326ZM70.8142 80.0139L71.0888 80.1939C71.1022 80.1939 70.8879 79.9738 70.8879 79.9738C70.8611 79.9938 70.8343 80.0072 70.8142 80.0139ZM69.8366 80.6207C69.7429 80.6808 69.6559 80.7341 69.5621 80.7941C68.6314 81.3343 67.6605 81.8278 66.6762 82.2813C65.3705 82.8615 64.0313 83.3683 62.6452 83.7818C59.987 84.5687 57.1814 85.0222 54.282 85.0889V85.3823H54.3557C54.7507 85.369 55.1257 85.349 55.5074 85.329C55.8221 85.309 56.1435 85.289 56.4582 85.2556C56.8131 85.2156 57.1747 85.1823 57.5296 85.1356C57.563 85.1356 57.6032 85.1223 57.63 85.1223C58.0317 85.0689 58.4469 85.0089 58.842 84.9422C59.2035 84.8888 59.5718 84.8222 59.92 84.7488C59.9535 84.7355 59.9937 84.7355 60.0204 84.7288C60.2213 84.6888 60.4222 84.6488 60.6231 84.5954C60.8976 84.5354 61.1587 84.4754 61.4333 84.402C61.7346 84.3287 62.0426 84.2486 62.3439 84.1619C62.4644 84.1286 62.5783 84.0886 62.6988 84.0619C62.7189 84.0486 62.7323 84.0486 62.7524 84.0419C62.9332 83.9819 63.1273 83.9285 63.3081 83.8818C63.3483 83.8618 63.3885 83.8485 63.4287 83.8418C63.4487 83.8285 63.4621 83.8285 63.4822 83.8218C63.6161 83.7818 63.7367 83.7418 63.8639 83.6884C64.0849 83.6151 64.2991 83.5484 64.5201 83.455C64.5937 83.435 64.6741 83.4017 64.7411 83.375C65.0223 83.275 65.2968 83.1749 65.5713 83.0616C65.9664 82.9015 66.3481 82.7414 66.7297 82.5681C66.79 82.5347 66.8436 82.5147 66.9038 82.488C67.1851 82.368 67.4663 82.2279 67.7542 82.0879C68.1359 81.9078 68.5109 81.7078 68.8858 81.5077C69.1068 81.3877 69.3278 81.2676 69.5554 81.1342C69.6492 81.0809 69.7295 81.0342 69.8166 80.9809C69.9103 80.9275 69.9973 80.8675 70.0911 80.8208L70.0107 80.7474L69.8366 80.6207ZM84.1458 42.3744C83.9918 41.9743 83.8445 41.5675 83.6838 41.1807C82.0701 37.1994 79.6528 33.5448 76.5125 30.4171C70.3723 24.3016 62.21 20.9338 53.5254 20.9338C50.4721 20.9338 47.4857 21.3473 44.6399 22.1609C44.2248 22.2743 43.823 22.3943 43.4213 22.5344C38.6136 24.0816 34.2211 26.7558 30.545 30.4171C29.6478 31.3107 28.7974 32.2577 28.0274 33.2447C27.7461 33.5781 27.4917 33.9182 27.2372 34.2584C23.1929 39.7602 21.0234 46.3691 21.0234 53.3115C21.0234 61.9611 24.3982 70.0905 30.5383 76.2059C32.527 78.1866 34.7367 79.8871 37.1137 81.2676C38.3792 82.0212 39.6983 82.6748 41.0509 83.2416C43.9101 84.4153 46.9366 85.1823 50.0569 85.5024C51.1952 85.6358 52.3603 85.6958 53.5187 85.6958C53.7731 85.6958 54.0209 85.6958 54.2753 85.6758C57.1814 85.6224 60.0204 85.1756 62.739 84.3753C64.1116 83.9752 65.4642 83.4817 66.7699 82.8882C67.8881 82.408 68.993 81.8411 70.0509 81.2009C70.1446 81.1609 70.2451 81.1009 70.3321 81.0409C70.4125 80.9875 70.5062 80.9408 70.5866 80.8808C70.7674 80.7808 70.9482 80.6674 71.1223 80.5474C71.2227 80.4874 71.3231 80.414 71.4236 80.354C72.6556 79.5404 73.8341 78.6334 74.959 77.6464C75.0394 77.573 75.1331 77.5063 75.2135 77.4263C75.2938 77.3663 75.3675 77.2929 75.4478 77.2129C75.5416 77.1329 75.6286 77.0529 75.7224 76.9595C75.8161 76.8795 75.9031 76.7994 75.9835 76.6994C76.0638 76.6394 76.1442 76.566 76.2178 76.486C76.3183 76.3926 76.412 76.3059 76.5125 76.2059C76.566 76.1525 76.6129 76.1059 76.6665 76.0458C76.7401 75.9725 76.8071 75.9058 76.8807 75.8324C76.9544 75.7591 77.0214 75.6924 77.095 75.6124C82.8736 69.577 86.0407 61.6943 86.0407 53.3115C86.0341 49.5169 85.3845 45.8356 84.1458 42.3744ZM74.5907 77.1596C74.5104 77.2396 74.43 77.3129 74.3363 77.3796C73.6801 77.9532 72.9904 78.4933 72.2873 79.0068C72.1467 79.1069 72.0128 79.2069 71.8722 79.3003C71.6311 79.4737 71.3901 79.6404 71.1357 79.8005C71.0553 79.8605 70.9616 79.9138 70.8812 79.9738C70.8611 79.9938 70.8276 80.0072 70.8075 80.0139C70.7138 80.0739 70.6335 80.1339 70.5464 80.1873C70.3924 80.2873 70.2451 80.3806 70.0911 80.4673C69.9973 80.5207 69.917 80.5674 69.8299 80.6207C69.7362 80.6808 69.6492 80.7341 69.5554 80.7941C68.6247 81.3343 67.6538 81.8278 66.6695 82.2813C65.3638 82.8615 64.0246 83.3683 62.6385 83.7818C59.9803 84.5687 57.1747 85.0222 54.2753 85.0889C54.0209 85.0956 53.7731 85.0956 53.5187 85.0956C52.3469 85.0956 51.1952 85.0356 50.0569 84.9155C46.9366 84.5754 43.9502 83.7885 41.1514 82.6147C39.7854 82.0412 38.473 81.3743 37.2209 80.6207C27.8801 75.0655 21.606 64.9087 21.606 53.3115C21.606 46.3291 23.8692 39.8736 27.7127 34.6318C27.9537 34.2917 28.2148 33.9449 28.4827 33.6181C32.3328 28.7832 37.5623 25.0819 43.582 23.1079C43.9837 22.9745 44.3922 22.8478 44.8006 22.7344C47.566 21.9475 50.4988 21.5274 53.5187 21.5274C66.8904 21.5274 78.3605 29.7568 83.1079 41.3941C83.2686 41.7876 83.4226 42.1877 83.5633 42.5878C84.7752 45.9356 85.4314 49.5502 85.4314 53.3115C85.4314 61.741 82.1169 69.4236 76.7133 75.1189C76.6397 75.1922 76.5727 75.2722 76.4991 75.3389C76.4254 75.4123 76.3652 75.479 76.2848 75.5523C76.1643 75.6857 76.0304 75.8124 75.9031 75.9458C75.8295 76.0192 75.7491 76.0859 75.6822 76.1659C75.6085 76.2392 75.5282 76.3059 75.4612 76.3793C75.2469 76.5727 75.0394 76.7594 74.8251 76.9528C74.7514 77.0262 74.6711 77.0995 74.5907 77.1596ZM69.9973 80.7608L69.8366 80.6207C69.7429 80.6808 69.6559 80.7341 69.5621 80.7941C68.6314 81.3343 67.6605 81.8278 66.6762 82.2813C65.3705 82.8615 64.0313 83.3683 62.6452 83.7818C59.987 84.5687 57.1814 85.0222 54.282 85.0889V85.3823H54.3557C54.7507 85.369 55.1257 85.349 55.5074 85.329C55.8221 85.309 56.1435 85.289 56.4582 85.2556C56.8131 85.2156 57.1747 85.1823 57.5296 85.1356C57.563 85.1356 57.6032 85.1223 57.63 85.1223C58.0317 85.0689 58.4469 85.0089 58.842 84.9422C59.2035 84.8888 59.5718 84.8222 59.92 84.7488C59.9535 84.7355 59.9937 84.7355 60.0204 84.7288C60.2213 84.6888 60.4222 84.6488 60.6231 84.5954C60.8976 84.5354 61.1587 84.4754 61.4333 84.402C61.7346 84.3287 62.0426 84.2486 62.3439 84.1619C62.4644 84.1286 62.5783 84.0886 62.6988 84.0619C62.7189 84.0486 62.7323 84.0486 62.7524 84.0419C62.9332 83.9819 63.1273 83.9285 63.3081 83.8818C63.3483 83.8618 63.3885 83.8485 63.4287 83.8418C63.4487 83.8285 63.4621 83.8285 63.4822 83.8218C63.6161 83.7818 63.7367 83.7418 63.8639 83.6884C64.0849 83.6151 64.2991 83.5484 64.5201 83.455C64.5937 83.435 64.6741 83.4017 64.7411 83.375C65.0223 83.275 65.2968 83.1749 65.5713 83.0616C65.9664 82.9015 66.3481 82.7414 66.7297 82.5681C66.79 82.5347 66.8436 82.5147 66.9038 82.488C67.1851 82.368 67.4663 82.2279 67.7542 82.0879C68.1359 81.9078 68.5109 81.7078 68.8858 81.5077C69.1068 81.3877 69.3278 81.2676 69.5554 81.1342C69.6492 81.0809 69.7295 81.0342 69.8166 80.9809C69.9103 80.9275 69.9973 80.8675 70.0911 80.8208L69.9973 80.7608ZM70.8812 79.9738C70.8611 79.9938 70.8276 80.0072 70.8075 80.0139L71.0821 80.1939C71.0955 80.1939 70.8812 79.9738 70.8812 79.9738ZM75.8429 76.4326L75.6889 76.1592C75.6152 76.2326 75.5349 76.2993 75.4679 76.3726C75.2536 76.566 75.0461 76.7528 74.8318 76.9462C74.7514 77.0262 74.6711 77.0995 74.5907 77.1596L74.9121 77.2996C74.9925 77.2262 75.0728 77.1462 75.1532 77.0862L75.4478 77.2062C75.5416 77.1262 75.6286 77.0462 75.7224 76.9528V76.8128L75.6219 76.6394C75.7023 76.586 75.7692 76.5127 75.8429 76.4326ZM69.9973 80.7608L69.8366 80.6207C69.7429 80.6808 69.6559 80.7341 69.5621 80.7941C68.6314 81.3343 67.6605 81.8278 66.6762 82.2813C65.3705 82.8615 64.0313 83.3683 62.6452 83.7818C59.987 84.5687 57.1814 85.0222 54.282 85.0889V85.3823H54.3557C54.7507 85.369 55.1257 85.349 55.5074 85.329C55.8221 85.309 56.1435 85.289 56.4582 85.2556C56.8131 85.2156 57.1747 85.1823 57.5296 85.1356C57.563 85.1356 57.6032 85.1223 57.63 85.1223C58.0317 85.0689 58.4469 85.0089 58.842 84.9422C59.2035 84.8888 59.5718 84.8222 59.92 84.7488C59.9535 84.7355 59.9937 84.7355 60.0204 84.7288C60.2213 84.6888 60.4222 84.6488 60.6231 84.5954C60.8976 84.5354 61.1587 84.4754 61.4333 84.402C61.7346 84.3287 62.0426 84.2486 62.3439 84.1619C62.4644 84.1286 62.5783 84.0886 62.6988 84.0619C62.7189 84.0486 62.7323 84.0486 62.7524 84.0419C62.9332 83.9819 63.1273 83.9285 63.3081 83.8818C63.3483 83.8618 63.3885 83.8485 63.4287 83.8418C63.4487 83.8285 63.4621 83.8285 63.4822 83.8218C63.6161 83.7818 63.7367 83.7418 63.8639 83.6884C64.0849 83.6151 64.2991 83.5484 64.5201 83.455C64.5937 83.435 64.6741 83.4017 64.7411 83.375C65.0223 83.275 65.2968 83.1749 65.5713 83.0616C65.9664 82.9015 66.3481 82.7414 66.7297 82.5681C66.79 82.5347 66.8436 82.5147 66.9038 82.488C67.1851 82.368 67.4663 82.2279 67.7542 82.0879C68.1359 81.9078 68.5109 81.7078 68.8858 81.5077C69.1068 81.3877 69.3278 81.2676 69.5554 81.1342C69.6492 81.0809 69.7295 81.0342 69.8166 80.9809C69.9103 80.9275 69.9973 80.8675 70.0911 80.8208L69.9973 80.7608ZM70.8812 79.9738C70.8611 79.9938 70.8276 80.0072 70.8075 80.0139L71.0821 80.1939C71.0955 80.1939 70.8812 79.9738 70.8812 79.9738ZM75.8429 76.4326L75.6889 76.1592C75.6152 76.2326 75.5349 76.2993 75.4679 76.3726C75.2536 76.566 75.0461 76.7528 74.8318 76.9462C74.7514 77.0262 74.6711 77.0995 74.5907 77.1596L74.9121 77.2996C74.9925 77.2262 75.0728 77.1462 75.1532 77.0862L75.4478 77.2062C75.5416 77.1262 75.6286 77.0462 75.7224 76.9528V76.8128L75.6219 76.6394C75.7023 76.586 75.7692 76.5127 75.8429 76.4326Z" fill="#202124"/>
+							<path d="M53.5274 74.4186C65.2354 74.4186 74.7266 64.9656 74.7266 53.3047C74.7266 41.6439 65.2354 32.1909 53.5274 32.1909C41.8194 32.1909 32.3281 41.6439 32.3281 53.3047C32.3281 64.9656 41.8194 74.4186 53.5274 74.4186Z" fill="white"/>
+							<path d="M73.7992 46.1757C73.6586 45.7756 73.5046 45.3821 73.3439 44.9886C72.2726 42.4745 70.7191 40.1603 68.717 38.1663C64.6593 34.125 59.2624 31.8909 53.5173 31.8909C51.5487 31.8909 49.6203 32.151 47.7722 32.6645C47.3571 32.7778 46.9419 32.8979 46.5402 33.0446C43.4801 34.0783 40.6746 35.8189 38.3176 38.1663C37.715 38.7732 37.1458 39.4067 36.6235 40.067C36.3624 40.4004 36.1012 40.7405 35.8535 41.094C33.3693 44.6419 32.0234 48.87 32.0234 53.3048C32.0234 59.0201 34.2532 64.4019 38.3176 68.4433C38.5787 68.7034 38.8533 68.9634 39.1345 69.2169C40.3063 70.2705 41.5919 71.1909 42.9445 71.9511C45.1474 73.1915 47.5379 74.0318 50.0555 74.4253C51.1871 74.6187 52.3455 74.7054 53.5173 74.7054C53.7718 74.7054 54.0195 74.7054 54.274 74.6854C56.564 74.612 58.787 74.1852 60.8895 73.4049C62.2756 72.9114 63.5947 72.2779 64.8468 71.491C66.2329 70.6373 67.5319 69.6103 68.717 68.4299C72.7748 64.3885 75.0179 59.0067 75.0179 53.2915C75.0246 50.844 74.6094 48.4298 73.7992 46.1757ZM54.2807 74.1119C54.0262 74.1319 53.7785 74.1319 53.524 74.1319C52.3455 74.1319 51.1938 74.0318 50.0622 73.8384C47.5446 73.4249 45.1876 72.558 43.065 71.3242C41.6923 70.5306 40.4067 69.5836 39.2684 68.51C35.1906 64.7087 32.6328 59.2935 32.6328 53.3115C32.6328 48.9233 34.0054 44.8419 36.349 41.4808C36.5901 41.1273 36.8445 40.7872 37.1056 40.4538C39.563 37.346 42.8909 34.9386 46.721 33.6248C47.1227 33.4847 47.5379 33.3514 47.953 33.2447C49.7274 32.7512 51.5956 32.4911 53.5307 32.4911C62.1751 32.4911 69.6076 37.7395 72.7815 45.202C72.9556 45.5955 73.1029 45.989 73.2435 46.3891C74.0202 48.5632 74.4353 50.884 74.4353 53.3115C74.4353 60.674 70.5785 67.1695 64.7531 70.8641C63.521 71.6577 62.1952 72.3246 60.8025 72.8247C58.7535 73.585 56.564 74.0385 54.2807 74.1119Z" fill="#202124"/>
+							<path class="fill-primary" d="M61.5638 61.314C66.0039 56.8918 66.0039 49.722 61.5638 45.2998C57.1237 40.8776 49.9249 40.8776 45.4848 45.2998C41.0447 49.722 41.0447 56.8918 45.4848 61.314C49.9249 65.7362 57.1237 65.7362 61.5638 61.314Z"/>
+							<path d="M44.9272 60.2404L44.867 60.6338C45.0076 60.7939 45.1482 60.954 45.3022 61.114C45.5365 61.3674 45.7843 61.5942 46.0521 61.8276C46.0655 61.8476 46.0856 61.8609 46.1057 61.8676C46.3066 62.0477 46.5208 62.221 46.7284 62.3811C46.7887 62.4345 46.8423 62.4745 46.9025 62.5145C47.0364 62.6078 47.1637 62.6945 47.3043 62.7879C47.7462 63.0813 48.2015 63.3281 48.6903 63.5615C48.7104 63.5748 48.7238 63.5748 48.7439 63.5815C49.1657 63.7749 49.6144 63.955 50.0697 64.095V63.7816C48.0207 63.108 46.253 61.8676 44.9272 60.2404ZM44.9272 60.2404L44.867 60.6338C45.0076 60.7939 45.1482 60.954 45.3022 61.114C45.5365 61.3674 45.7843 61.5942 46.0521 61.8276C46.0655 61.8476 46.0856 61.8609 46.1057 61.8676C46.3066 62.0477 46.5208 62.221 46.7284 62.3811C46.7887 62.4345 46.8423 62.4745 46.9025 62.5145C47.0364 62.6078 47.1637 62.6945 47.3043 62.7879C47.7462 63.0813 48.2015 63.3281 48.6903 63.5615C48.7104 63.5748 48.7238 63.5748 48.7439 63.5815C49.1657 63.7749 49.6144 63.955 50.0697 64.095V63.7816C48.0207 63.108 46.253 61.8676 44.9272 60.2404ZM64.573 49.5901C64.4391 49.1766 64.2784 48.7832 64.0909 48.403C62.2295 44.4417 58.2052 41.6941 53.5248 41.6941C52.507 41.6941 51.516 41.8275 50.5786 42.0676C50.1634 42.1809 49.7483 42.3076 49.3599 42.4677C47.3578 43.2346 45.6236 44.5284 44.3313 46.1889C44.0701 46.5224 43.8291 46.8758 43.6014 47.236C42.5033 49.0032 41.8672 51.0906 41.8672 53.3114C41.8672 53.9649 41.9208 54.5985 42.0279 55.2253C42.3895 57.4194 43.3805 59.4068 44.8134 61.0073C46.1994 62.5745 48.014 63.7749 50.063 64.4085C51.1611 64.7486 52.3262 64.9286 53.5248 64.9286C53.7792 64.9286 54.027 64.9153 54.2814 64.9086C56.0558 64.7886 57.7365 64.2751 59.2096 63.4481C60.676 62.6345 61.9482 61.5075 62.9392 60.1603C64.3521 58.2397 65.1891 55.8656 65.1891 53.3114C65.1891 52.0109 64.9748 50.7572 64.573 49.5901ZM54.2814 64.3018C54.027 64.3218 53.7792 64.3351 53.5248 64.3351C52.3128 64.3351 51.1544 64.1417 50.063 63.7816C48.0207 63.108 46.253 61.8676 44.9339 60.2404C43.7956 58.8532 42.9921 57.1727 42.6506 55.332C42.5167 54.6785 42.4564 54.0049 42.4564 53.3114C42.4564 51.2307 43.039 49.27 44.0634 47.6094C44.2844 47.236 44.5255 46.8825 44.7933 46.5557C46.0187 44.9885 47.6391 43.7615 49.5273 43.0345C49.9224 42.8745 50.3241 42.7411 50.7527 42.6411C51.6432 42.401 52.5673 42.281 53.5315 42.281C57.9575 42.281 61.7741 44.8685 63.5486 48.6098C63.7293 48.9899 63.89 49.3967 64.024 49.7968C64.4056 50.9039 64.6065 52.0909 64.6065 53.318C64.6065 55.5321 63.9369 57.6062 62.7986 59.3334C61.8679 60.7739 60.5957 61.9676 59.1092 62.8346C57.6762 63.6615 56.029 64.1951 54.2814 64.3018ZM44.9272 60.2404L44.867 60.6338C45.0076 60.7939 45.1482 60.954 45.3022 61.114C45.5365 61.3674 45.7843 61.5942 46.0521 61.8276C46.0655 61.8476 46.0856 61.8609 46.1057 61.8676C46.3066 62.0477 46.5208 62.221 46.7284 62.3811C46.7887 62.4345 46.8423 62.4745 46.9025 62.5145C47.0364 62.6078 47.1637 62.6945 47.3043 62.7879C47.7462 63.0813 48.2015 63.3281 48.6903 63.5615C48.7104 63.5748 48.7238 63.5748 48.7439 63.5815C49.1657 63.7749 49.6144 63.955 50.0697 64.095V63.7816C48.0207 63.108 46.253 61.8676 44.9272 60.2404ZM44.9272 60.2404L44.867 60.6338C45.0076 60.7939 45.1482 60.954 45.3022 61.114C45.5365 61.3674 45.7843 61.5942 46.0521 61.8276C46.0655 61.8476 46.0856 61.8609 46.1057 61.8676C46.3066 62.0477 46.5208 62.221 46.7284 62.3811C46.7887 62.4345 46.8423 62.4745 46.9025 62.5145C47.0364 62.6078 47.1637 62.6945 47.3043 62.7879C47.7462 63.0813 48.2015 63.3281 48.6903 63.5615C48.7104 63.5748 48.7238 63.5748 48.7439 63.5815C49.1657 63.7749 49.6144 63.955 50.0697 64.095V63.7816C48.0207 63.108 46.253 61.8676 44.9272 60.2404Z" fill="#202124"/>
+							<path d="M53.527 57.6461C55.9344 57.6461 57.886 55.7023 57.886 53.3046C57.886 50.9069 55.9344 48.9631 53.527 48.9631C51.1196 48.9631 49.168 50.9069 49.168 53.3046C49.168 55.7023 51.1196 57.6461 53.527 57.6461Z" fill="#202124"/>
+							<path d="M58.0323 51.951C57.7711 51.951 57.5234 51.791 57.4296 51.5309C57.3091 51.1974 57.4765 50.8306 57.8113 50.7106L113.87 30.0569C114.204 29.9369 114.573 30.1036 114.693 30.4371C114.814 30.7705 114.646 31.1373 114.311 31.2573L58.2532 51.911C58.1796 51.9377 58.1059 51.951 58.0323 51.951Z" fill="#1C1C1C"/>
+							<path d="M53.5273 53.3048L58.6028 48.6099L60.1764 52.878L53.5273 53.3048Z" fill="white"/>
+							<path d="M60.4497 52.7781L59.9074 51.2976L59.4721 50.1038L58.8896 48.5033C58.8494 48.4099 58.7691 48.3432 58.6753 48.3232C58.5749 48.3032 58.4744 48.3232 58.4008 48.3966L56.5125 50.1438L53.3186 53.0915C53.2784 53.1315 53.2449 53.1849 53.2382 53.2316C53.2182 53.2916 53.2249 53.3649 53.2516 53.425C53.2851 53.4983 53.3454 53.5583 53.4123 53.5783C53.4458 53.5983 53.486 53.6117 53.5262 53.6117C53.5463 53.6117 57.8919 53.3383 57.8919 53.3383L60.202 53.1849C60.2957 53.1715 60.3761 53.1249 60.423 53.0448C60.4698 52.9648 60.4832 52.8648 60.4497 52.7781ZM54.3431 52.9581L56.921 50.5773L58.4878 49.1302L58.9231 50.3039L59.365 51.4976L59.7668 52.6113L57.845 52.7314L54.3431 52.9581Z" fill="#1C1C1C"/>
+							<path d="M99.7578 35.8722L100.293 31.1106L112.246 26.6558L111.924 31.3373L99.7578 35.8722Z" fill="white"/>
+							<path d="M112.428 26.4224C112.348 26.3624 112.234 26.3424 112.147 26.3824L109.013 27.5495L103.429 29.6302C103.409 29.6302 103.389 29.6435 103.369 29.6502L101.782 30.2437L101.507 30.3437L101.213 30.4571L100.181 30.8372C100.081 30.8706 100.001 30.9706 99.9872 31.0773L99.5051 35.3454C99.5051 35.3588 99.4515 35.8389 99.4515 35.8389C99.4381 35.939 99.485 36.039 99.5653 36.1124C99.5854 36.1324 99.6189 36.1457 99.639 36.1457C99.6791 36.1657 99.7126 36.179 99.7528 36.179C99.793 36.179 99.8265 36.1657 99.8666 36.159L102.806 35.0653L103.141 34.9453L103.335 34.8719L103.429 34.8319L103.71 34.7319L105.893 33.9183C105.906 33.9183 106.328 33.7582 106.328 33.7582L108.578 32.9113L109.04 32.7379L110.727 32.1043L111.189 31.9309L112.026 31.6175C112.1 31.5842 112.147 31.5375 112.18 31.4774C112.214 31.4441 112.221 31.4041 112.221 31.3641L112.274 30.6505L112.549 26.6758C112.549 26.5758 112.509 26.4824 112.428 26.4224ZM111.665 30.8772L111.645 31.1307L103.496 34.165L103.215 34.2651L102.933 34.3784L100.114 35.4255L100.148 35.1254C100.148 35.1187 100.57 31.3241 100.57 31.3241L101.48 30.9839L101.762 30.8839C101.775 30.8839 102.043 30.7705 102.043 30.7705L103.134 30.3704L103.77 30.137L105.813 29.3701L106.442 29.13C106.455 29.13 108.772 28.263 108.772 28.263L109.408 28.0296L111.933 27.0826L111.665 30.8772Z" fill="#1C1C1C"/>
+							<path d="M103.215 32.1976C103.014 32.1709 102.9 32.0242 102.92 31.8641L103.195 29.8768C103.215 29.7167 103.369 29.6034 103.53 29.6234C103.69 29.6434 103.804 29.7968 103.784 29.9568L103.509 31.9442C103.489 32.0909 103.362 32.1976 103.215 32.1976Z" fill="#1C1C1C"/>
+							<path d="M105.672 32.8645C105.471 32.8379 105.357 32.6911 105.377 32.5311L105.866 28.9432C105.886 28.7832 106.04 28.6698 106.201 28.6898C106.362 28.7098 106.475 28.8632 106.455 29.0232L105.967 32.6111C105.94 32.7578 105.819 32.8645 105.672 32.8645Z" fill="#1C1C1C"/>
+							<path d="M108.738 30.9772C108.537 30.9505 108.424 30.8038 108.444 30.6438L108.839 27.7828C108.859 27.6228 109.013 27.5094 109.174 27.5294C109.334 27.5494 109.448 27.7028 109.428 27.8628L109.033 30.7238C109.006 30.8705 108.879 30.9772 108.738 30.9772Z" fill="#1C1C1C"/>
+							<path d="M115.704 35.0787L112.122 31.7576L99.9219 36.2191L103.297 39.6202L115.704 35.0787Z" fill="white"/>
+							<path d="M110.815 32.3778C110.774 32.3444 110.754 32.2977 110.741 32.2577L109.154 32.8379L108.578 33.0513L106.429 33.8383L105.886 34.0383L103.744 34.8253L103.462 34.9253L103.409 34.9453L103.509 35.0653C103.529 35.1053 103.55 35.1587 103.563 35.2054L103.623 35.1854L103.844 35.1054L106.054 34.2917L106.663 34.0717L108.786 33.2981L109.388 33.078C109.402 33.078 110.942 32.5045 110.942 32.5045L110.815 32.3778ZM110.815 32.3778C110.774 32.3444 110.754 32.2977 110.741 32.2577L109.154 32.8379L108.578 33.0513L106.429 33.8383L105.886 34.0383L103.744 34.8253L103.462 34.9253L103.409 34.9453L103.509 35.0653C103.529 35.1053 103.55 35.1587 103.563 35.2054L103.623 35.1854L103.844 35.1054L106.054 34.2917L106.663 34.0717L108.786 33.2981L109.388 33.078C109.402 33.078 110.942 32.5045 110.942 32.5045L110.815 32.3778ZM115.904 34.8653L112.669 31.8709L112.314 31.5508C112.274 31.5108 112.234 31.4908 112.174 31.4775C112.12 31.4574 112.06 31.4641 112.013 31.4908L110.895 31.9043L108.746 32.6912L103.637 34.5652L103.362 34.6652L103.067 34.7652L103.007 34.7986L99.8266 35.9523C99.7262 35.9923 99.6659 36.0657 99.6458 36.1524C99.6123 36.2657 99.6458 36.3658 99.7195 36.4325L99.8735 36.5925L103.088 39.8403C103.148 39.8936 103.228 39.9203 103.302 39.9203C103.342 39.9203 103.375 39.9203 103.402 39.907L104.614 39.4668L104.895 39.3668L105.177 39.2534L115.81 35.3588C115.91 35.3254 115.984 35.2454 116.004 35.1454C116.017 35.0453 115.977 34.932 115.904 34.8653ZM103.369 39.2801L100.469 36.3658C100.449 36.3458 103.014 35.3988 103.014 35.3988L103.275 35.3054L103.556 35.2054L103.616 35.1854L103.837 35.1054L106.047 34.2917L106.656 34.0717L108.779 33.2981L109.382 33.078C109.395 33.078 110.935 32.5045 110.935 32.5045L111.565 32.2711L112.04 32.0977L115.14 34.972L105.003 38.6732L104.728 38.7866L104.447 38.8866L103.369 39.2801ZM110.815 32.3778C110.774 32.3444 110.754 32.2977 110.741 32.2577L109.154 32.8379L108.578 33.0513L106.429 33.8383L105.886 34.0383L103.744 34.8253L103.462 34.9253L103.409 34.9453L103.509 35.0653C103.529 35.1053 103.55 35.1587 103.563 35.2054L103.623 35.1854L103.844 35.1054L106.054 34.2917L106.663 34.0717L108.786 33.2981L109.388 33.078C109.402 33.078 110.942 32.5045 110.942 32.5045L110.815 32.3778ZM110.815 32.3778C110.774 32.3444 110.754 32.2977 110.741 32.2577L109.154 32.8379L108.578 33.0513L106.429 33.8383L105.886 34.0383L103.744 34.8253L103.462 34.9253L103.409 34.9453L103.509 35.0653C103.529 35.1053 103.55 35.1587 103.563 35.2054L103.623 35.1854L103.844 35.1054L106.054 34.2917L106.663 34.0717L108.786 33.2981L109.388 33.078C109.402 33.078 110.942 32.5045 110.942 32.5045L110.815 32.3778Z" fill="#1C1C1C"/>
+							<path d="M113.347 34.5518C113.273 34.5518 113.206 34.5251 113.146 34.4784L110.822 32.3777C110.702 32.271 110.695 32.0843 110.802 31.9642C110.909 31.8442 111.097 31.8375 111.217 31.9442L113.541 34.0449C113.661 34.1516 113.668 34.3384 113.561 34.4584C113.507 34.5184 113.427 34.5518 113.347 34.5518Z" fill="#1C1C1C"/>
+							<path d="M110.291 34.6452C110.217 34.6452 110.143 34.6185 110.083 34.5585L108.643 33.158C108.53 33.0446 108.523 32.8579 108.637 32.7379C108.751 32.6245 108.938 32.6178 109.059 32.7312L110.498 34.1317C110.612 34.245 110.619 34.4318 110.505 34.5451C110.445 34.6185 110.371 34.6452 110.291 34.6452Z" fill="#1C1C1C"/>
+							<path d="M108.934 37.0127C108.861 37.0127 108.78 36.986 108.727 36.926L105.968 34.205C105.854 34.0917 105.854 33.9049 105.968 33.7916C106.082 33.6782 106.27 33.6782 106.39 33.7916L109.149 36.5125C109.263 36.6259 109.263 36.8126 109.149 36.926C109.082 36.9793 109.008 37.0127 108.934 37.0127Z" fill="#1C1C1C"/>
+							<path d="M105.143 37.5529C105.063 37.5529 104.983 37.5195 104.922 37.4595L102.887 35.2588C102.773 35.1387 102.786 34.952 102.907 34.8453C103.027 34.7319 103.215 34.7453 103.322 34.8653L105.358 37.0661C105.472 37.1861 105.458 37.3728 105.338 37.4795C105.284 37.5262 105.217 37.5529 105.143 37.5529Z" fill="#1C1C1C"/>
+							<path d="M51.7799 48.97C51.5054 48.97 51.2509 48.7899 51.1639 48.5098L38.589 6.36219C38.4885 6.02208 38.6827 5.66862 39.0242 5.56859C39.3657 5.46856 39.7206 5.66196 39.821 6.00207L52.3959 48.1497C52.4964 48.4898 52.3022 48.8433 51.9607 48.9433C51.9004 48.9633 51.8402 48.97 51.7799 48.97Z" fill="#1C1C1C"/>
+							<path d="M53.103 51.7109L49.8555 48.0963L53.5114 46.6292L53.103 51.7109Z" fill="white"/>
+							<path d="M53.6863 46.4024C53.606 46.3424 53.5055 46.3224 53.4051 46.3624L52.019 46.9159L50.8272 47.3894L49.7491 47.8162C49.6554 47.8562 49.5884 47.9362 49.5683 48.0296C49.5483 48.123 49.5817 48.223 49.642 48.2897L49.7759 48.4297L50.9879 49.7769L51.0682 49.8769L52.8962 51.8976C52.9498 51.9709 53.0301 51.9976 53.1105 51.9976C53.144 51.9976 53.1841 51.9976 53.2109 51.9843C53.3247 51.9443 53.4051 51.8442 53.4118 51.7242L53.6328 48.9566L53.8135 46.6425C53.8135 46.5491 53.7734 46.4624 53.6863 46.4024ZM53.0301 48.9966L52.8694 50.9973L51.4968 49.4701L50.3652 48.2097L51.0013 47.9562L52.1931 47.4761L53.1841 47.0826L53.0301 48.9966Z" fill="#1C1C1C"/>
+							<path d="M42.3516 16.9525L37.9323 16.7258L35.207 7.73608L39.5728 7.80944L42.3516 16.9525Z" fill="white"/>
+							<path d="M42.6388 16.8658L41.9826 14.7118L41.8219 14.1782L41.467 13.0112L41.3867 12.7311L41.293 12.451L41.2729 12.391L41.139 11.9308L40.6635 10.3836L40.5095 9.89012L40.168 8.76307C40.168 8.74974 40.014 8.26957 40.014 8.26957L39.8533 7.72939C39.8199 7.64936 39.773 7.58934 39.6993 7.556C39.6592 7.52265 39.619 7.51599 39.5654 7.51599L38.9159 7.50265L35.1863 7.44263C35.0925 7.44263 35.0055 7.48264 34.9519 7.56267C34.8917 7.63603 34.8716 7.73606 34.8984 7.82276L35.6148 10.1836L36.7866 14.0449L36.8803 14.3383L36.9138 14.4317L36.9741 14.6251L37.6303 16.8058C37.6705 16.9258 37.7709 17.0192 37.9048 17.0192L41.8152 17.2193L42.3174 17.2526C42.4313 17.2526 42.5116 17.2126 42.5719 17.1392C42.5853 17.1259 42.592 17.1059 42.592 17.0992C42.6455 17.0259 42.6656 16.9458 42.6388 16.8658ZM38.1526 16.4457L37.6102 14.6451L37.5365 14.405L37.4428 14.1116L37.4227 14.0382L37.3625 13.8248L37.0009 12.6311L36.8201 12.0242L36.3246 10.4036L36.1438 9.79009L35.6081 8.02949L39.1034 8.08951H39.3578L40.7305 12.6177L40.8242 12.8911L40.9046 13.1846L41.9558 16.6324L41.6545 16.6124L38.1526 16.4457Z" fill="#1C1C1C"/>
+							<path d="M39.0365 14.7517C39.0164 14.7517 37.1817 14.6183 37.1817 14.6183C37.021 14.605 36.8938 14.465 36.9072 14.3049C36.9206 14.1449 37.0612 14.0181 37.2219 14.0315L39.0566 14.1649C39.2173 14.1782 39.3445 14.3182 39.3311 14.4783C39.3244 14.6317 39.1905 14.7517 39.0365 14.7517Z" fill="#1C1C1C"/>
+							<path d="M39.9655 12.8445C39.9454 12.8445 36.631 12.6044 36.631 12.6044C36.4703 12.5911 36.343 12.451 36.3564 12.291C36.3698 12.1309 36.5104 12.0042 36.6711 12.0176L39.9856 12.2576C40.1463 12.271 40.2735 12.411 40.2602 12.5711C40.2468 12.7311 40.1195 12.8445 39.9655 12.8445Z" fill="#1C1C1C"/>
+							<path d="M38.5605 10.5703C38.5404 10.5703 35.8888 10.3769 35.8888 10.3769C35.7281 10.3636 35.6009 10.2235 35.6142 10.0635C35.6276 9.9034 35.7683 9.77669 35.929 9.79003L38.5738 9.98343C38.7345 9.99676 38.8618 10.1368 38.8484 10.2969C38.8484 10.4503 38.7145 10.5703 38.5605 10.5703Z" fill="#1C1C1C"/>
+							<path d="M43.5572 4.7749L39.9883 7.64254L42.7001 16.819L46.3159 14.1047L43.5572 4.7749Z" fill="white"/>
+							<path d="M41.7677 12.6243L41.6873 12.3442L41.6539 12.2641L41.4798 11.6506L41.0579 10.2101L40.8771 9.60991L40.5758 8.5829L40.4218 8.70294C40.3816 8.72294 40.3482 8.74295 40.308 8.75629L40.6227 9.80331L40.7968 10.3835L41.232 11.844L41.3927 12.4042C41.4061 12.4242 41.4865 12.7043 41.4865 12.7043L41.5668 12.9844C41.6606 12.951 41.761 12.9244 41.848 12.9044L41.7677 12.6243ZM41.7677 12.6243L41.6873 12.3442L41.6539 12.2641L41.4798 11.6506L41.0579 10.2101L40.8771 9.60991L40.5758 8.5829L40.4218 8.70294C40.3816 8.72294 40.3482 8.74295 40.308 8.75629L40.6227 9.80331L40.7968 10.3835L41.232 11.844L41.3927 12.4042C41.4061 12.4242 41.4865 12.7043 41.4865 12.7043L41.5668 12.9844C41.6606 12.951 41.761 12.9244 41.848 12.9044L41.7677 12.6243ZM45.9794 11.9374L45.8991 11.6573L45.8187 11.3772L43.8367 4.68824C43.8033 4.59488 43.7363 4.52819 43.6425 4.49484C43.5421 4.4615 43.4417 4.48151 43.368 4.5482L40.1473 7.1224L39.7924 7.41583C39.7388 7.45585 39.7121 7.5092 39.6987 7.55588C39.6786 7.6159 39.6786 7.66925 39.6987 7.72927L39.933 8.48286C39.933 8.52288 39.9464 8.56289 39.9531 8.6029L40.4151 10.1701C40.4285 10.2101 40.4486 10.2501 40.4687 10.2835L41.1182 12.5042L41.1985 12.7843L41.2789 13.0644L41.694 14.4649C41.694 14.4982 41.7074 14.5182 41.7141 14.5382L42.4105 16.899C42.444 16.9924 42.5109 17.0724 42.6047 17.0991C42.6382 17.1125 42.6649 17.1125 42.6984 17.1125C42.7587 17.1125 42.819 17.0924 42.8792 17.0524L43.0734 16.9124L46.4883 14.3448C46.5888 14.2715 46.6289 14.1448 46.6021 14.0247L45.9794 11.9374ZM42.8591 16.3255L42.3368 14.5449L42.1628 13.9447L41.848 12.911L41.7677 12.6309L41.6873 12.3508L41.6539 12.2708L41.4798 11.6573L41.0579 10.2168L40.8771 9.61658L40.5758 8.58957L40.395 7.96269L40.3348 7.76262C40.3415 7.74928 43.3948 5.28845 43.3948 5.28845L45.2295 11.4972L45.3098 11.7773L45.3902 12.0574L45.966 13.9981L42.8859 16.2988L42.8591 16.3255ZM41.7677 12.6243L41.6873 12.3442L41.6539 12.2641L41.4798 11.6506L41.0579 10.2101L40.8771 9.60991L40.5758 8.5829L40.4218 8.70294C40.3816 8.72294 40.3482 8.74295 40.308 8.75629L40.6227 9.80331L40.7968 10.3835L41.232 11.844L41.3927 12.4042C41.4061 12.4242 41.4865 12.7043 41.4865 12.7043L41.5668 12.9844C41.6606 12.951 41.761 12.9244 41.848 12.9044L41.7677 12.6243ZM41.7677 12.6243L41.6873 12.3442L41.6539 12.2641L41.4798 11.6506L41.0579 10.2101L40.8771 9.60991L40.5758 8.5829L40.4218 8.70294C40.3816 8.72294 40.3482 8.74295 40.308 8.75629L40.6227 9.80331L40.7968 10.3835L41.232 11.844L41.3927 12.4042C41.4061 12.4242 41.4865 12.7043 41.4865 12.7043L41.5668 12.9844C41.6606 12.951 41.761 12.9244 41.848 12.9044L41.7677 12.6243Z" fill="#1C1C1C"/>
+							<path d="M40.2344 8.7696C40.1474 8.7696 40.067 8.73625 40.0067 8.66289C39.8996 8.53618 39.9197 8.34945 40.0469 8.24942L42.3101 6.38879C42.4374 6.28209 42.6248 6.30209 42.7253 6.4288C42.8324 6.55551 42.8123 6.74224 42.6851 6.84228L40.4219 8.70291C40.3683 8.74292 40.3014 8.7696 40.2344 8.7696Z" fill="#1C1C1C"/>
+							<path d="M40.7175 10.3902C40.6304 10.3902 40.5434 10.3502 40.4831 10.2769C40.3827 10.1502 40.4095 9.96342 40.5367 9.86339L42.0299 8.70966C42.1571 8.60963 42.3446 8.63631 42.445 8.76302C42.5454 8.88973 42.5187 9.07646 42.3914 9.17649L40.8983 10.3302C40.8447 10.3702 40.7777 10.3902 40.7175 10.3902Z" fill="#1C1C1C"/>
+							<path d="M41.3659 12.4108C41.2789 12.4108 41.1918 12.3708 41.1315 12.2974C41.0311 12.1707 41.0579 11.984 41.1851 11.884L44.0844 9.66987C44.2117 9.56984 44.3991 9.59651 44.4996 9.72322C44.6 9.84993 44.5732 10.0367 44.446 10.1367L41.5467 12.3508C41.4931 12.3908 41.4262 12.4108 41.3659 12.4108Z" fill="#1C1C1C"/>
+							<path d="M41.99 14.7183C41.8962 14.7183 41.8092 14.6783 41.7489 14.5916C41.6552 14.4583 41.6887 14.2782 41.8159 14.1782L44.1394 12.5309C44.2733 12.4376 44.4608 12.4709 44.5545 12.5976C44.6483 12.731 44.6148 12.9111 44.4876 13.0111L42.1641 14.6583C42.1105 14.6983 42.0502 14.7183 41.99 14.7183Z" fill="#1C1C1C"/>
+							<path d="M49.4551 51.7108C49.3144 51.7108 49.1738 51.6642 49.0533 51.5708L7.1034 18.2662C6.82887 18.0461 6.782 17.646 7.00296 17.3659C7.22393 17.0924 7.62568 17.0458 7.90691 17.2658L49.8635 50.5704C50.138 50.7905 50.1849 51.1907 49.9639 51.4708C49.83 51.6308 49.6425 51.7108 49.4551 51.7108Z" fill="#1C1C1C"/>
+							<path d="M53.1184 53.5848L47.4336 51.7575L49.9245 48.6631L53.1184 53.5848Z" fill="white"/>
+							<path d="M53.3728 53.4313L53.2388 53.2313L51.056 49.8835L50.9957 49.7701L50.1654 48.503C50.1119 48.4296 50.0248 48.383 49.9311 48.3696C49.8708 48.3696 49.8105 48.3896 49.757 48.4297C49.7235 48.443 49.7034 48.463 49.6833 48.483L48.7124 49.6767L47.9156 50.6704L47.2058 51.5774C47.1456 51.6507 47.1255 51.7508 47.1523 51.8375C47.1857 51.9375 47.2527 52.0109 47.3464 52.0375L49.2347 52.6444L53.0313 53.8715C53.0648 53.8848 53.0915 53.8848 53.125 53.8848C53.2188 53.8848 53.3058 53.8448 53.3594 53.7715C53.4129 53.7114 53.433 53.6381 53.4196 53.5714C53.4129 53.518 53.4062 53.4714 53.3728 53.4313ZM49.3552 52.0709L47.929 51.6107L48.3843 51.0505L49.1945 50.0435L49.9043 49.1699L50.5404 50.1569L52.4286 53.0646L49.3552 52.0709Z" fill="#1C1C1C"/>
+							<path d="M18.1658 26.3155L13.7465 28.1894L4.75391 21.1137L9.01251 19.113L18.1658 26.3155Z" fill="white"/>
+							<path d="M18.3472 26.0821L16.1844 24.3749C16.171 24.3749 15.7492 24.0414 15.7492 24.0414L13.8676 22.5543C13.8542 22.5543 13.4859 22.2608 13.4859 22.2608L11.8521 20.9737L11.7785 20.9137L11.524 20.7203L11.4437 20.6469L11.3031 20.5336L10.225 19.6866L9.82998 19.3665L9.19387 18.873C9.13361 18.833 9.07334 18.813 8.99969 18.813C8.95951 18.813 8.91934 18.813 8.87916 18.833L8.20957 19.1464L4.61386 20.8337C4.52012 20.887 4.45986 20.9671 4.43977 21.0671C4.42638 21.1805 4.47325 21.2805 4.5536 21.3405L6.90387 23.1945C6.91726 23.2078 8.49749 24.4549 8.49749 24.4549L8.73185 24.635L8.98629 24.835L11.1491 26.5356C11.1826 26.5556 11.2093 26.5756 11.2428 26.589L13.5529 28.4296C13.6065 28.4696 13.6667 28.4896 13.7337 28.4896C13.7739 28.4896 13.814 28.4763 13.8475 28.4696L17.8182 26.7824L18.2735 26.589C18.374 26.5489 18.4342 26.4556 18.4543 26.3555V26.3022C18.4543 26.2155 18.4141 26.1288 18.3472 26.0821ZM17.2892 26.3622L13.7873 27.8494L11.9258 26.3822L11.3834 25.9621L9.91033 24.795L9.37466 24.3749L9.32109 24.3415L9.06665 24.1415L8.83229 23.9481L7.68059 23.0411L7.14492 22.6209L5.30354 21.1738L8.72515 19.5666L8.96621 19.4532L10.9348 21.0004L11.1692 21.1805L11.4236 21.3805L17.5838 26.2288L17.2892 26.3622Z" fill="#1C1C1C"/>
+							<path d="M11.3385 26.589C11.218 26.589 11.1108 26.5156 11.064 26.4023C11.0037 26.2489 11.0774 26.0822 11.2314 26.0221L13.0928 25.2819C13.2468 25.2219 13.4142 25.2952 13.4745 25.4486C13.5348 25.602 13.4611 25.7687 13.3071 25.8287L11.4523 26.569C11.4122 26.5823 11.3787 26.589 11.3385 26.589Z" fill="#1C1C1C"/>
+							<path d="M9.38146 24.9818C9.26094 24.9818 9.1538 24.9151 9.10693 24.795C9.04667 24.6417 9.12032 24.4749 9.27433 24.4149L12.6424 23.0678C12.7964 23.0078 12.9638 23.0811 13.024 23.2345C13.0843 23.3879 13.0106 23.5546 12.8566 23.6146L9.4886 24.9618C9.45512 24.9751 9.42164 24.9818 9.38146 24.9818Z" fill="#1C1C1C"/>
+							<path d="M7.09631 23.2545C6.97578 23.2545 6.86865 23.1811 6.82178 23.0678C6.76151 22.9144 6.83517 22.7476 6.98917 22.6876L9.68093 21.6139C9.83494 21.5539 10.0023 21.6273 10.0626 21.7807C10.1229 21.934 10.0492 22.1008 9.8952 22.1608L7.20344 23.2345C7.16996 23.2478 7.12979 23.2545 7.09631 23.2545Z" fill="#1C1C1C"/>
+							<path d="M10.7069 14.3982L9.30078 18.7597L18.4005 26.0221L19.9674 21.7874L10.7069 14.3982Z" fill="white"/>
+							<path d="M11.8057 20.3802L11.5914 20.2201C11.5713 20.2001 10.4598 19.3131 10.4598 19.3131L10.3995 19.5065C10.3862 19.5465 10.3661 19.5799 10.346 19.6066L11.3838 20.4335L11.4843 20.5135L11.6182 20.6136L11.8593 20.8136C11.9195 20.7403 11.9798 20.6603 12.04 20.5802L11.8057 20.3802ZM11.8057 20.3802L11.5914 20.2201C11.5713 20.2001 10.4598 19.3131 10.4598 19.3131L10.3995 19.5065C10.3862 19.5465 10.3661 19.5799 10.346 19.6066L11.3838 20.4335L11.4843 20.5135L11.6182 20.6136L11.8593 20.8136C11.9195 20.7403 11.9798 20.6603 12.04 20.5802L11.8057 20.3802ZM20.1488 21.5539L14.8657 17.3391L14.6113 17.1391L14.3769 16.959L10.895 14.1714C10.8147 14.1114 10.7143 14.0914 10.6205 14.118C10.5268 14.138 10.4464 14.2181 10.4196 14.3114L9.14741 18.2661L9.01349 18.6662C8.9934 18.7196 8.9934 18.7663 9.0001 18.8196C9.01349 18.893 9.06036 18.9397 9.11393 18.993L9.93083 19.6466C9.96431 19.6666 11.2031 20.6603 11.2031 20.6603L11.4374 20.8403L11.5111 20.9003C11.5445 20.9337 11.5646 20.9404 11.5847 20.9537C11.5981 20.9737 11.6182 20.9737 11.6383 20.987L11.6986 21.0471L15.85 24.3548C15.8701 24.3748 15.8902 24.3949 15.9237 24.4082L18.2271 26.2622C18.2806 26.3022 18.3409 26.3222 18.4079 26.3222C18.4279 26.3222 18.448 26.3222 18.4681 26.3088C18.5819 26.2888 18.6489 26.2155 18.6824 26.1288L18.7761 25.8954L20.2626 21.894C20.2894 21.7673 20.2492 21.6339 20.1488 21.5539ZM18.2605 25.5352L16.379 24.0347L15.9036 23.6546L14.1158 22.2275L13.6337 21.834L12.0869 20.6069L12.0467 20.5736L11.8057 20.3735L11.5914 20.2134C11.5713 20.1934 10.4598 19.3065 10.4598 19.3065L10.1451 19.053L9.96431 18.8997L9.64291 18.6462L10.8549 14.885L13.9752 17.3791L14.2095 17.5592L14.464 17.7593L19.6131 21.874L18.2672 25.4952L18.2605 25.5352ZM11.8057 20.3802L11.5914 20.2201C11.5713 20.2001 10.4598 19.3131 10.4598 19.3131L10.3995 19.5065C10.3862 19.5465 10.3661 19.5799 10.346 19.6066L11.3838 20.4335L11.4843 20.5135L11.6182 20.6136L11.8593 20.8136C11.9195 20.7403 11.9798 20.6603 12.04 20.5802L11.8057 20.3802ZM11.8057 20.3802L11.5914 20.2201C11.5713 20.2001 10.4598 19.3131 10.4598 19.3131L10.3995 19.5065C10.3862 19.5465 10.3661 19.5799 10.346 19.6066L11.3838 20.4335L11.4843 20.5135L11.6182 20.6136L11.8593 20.8136C11.9195 20.7403 11.9798 20.6603 12.04 20.5802L11.8057 20.3802Z" fill="#1C1C1C"/>
+							<path d="M10.1259 19.7133C10.0992 19.7133 10.0657 19.7066 10.0389 19.6999C9.88489 19.6533 9.79785 19.4865 9.84472 19.3332L10.7085 16.5322C10.7554 16.3788 10.9228 16.2921 11.0768 16.3388C11.2308 16.3855 11.3178 16.5522 11.2709 16.7056L10.4072 19.5065C10.367 19.6266 10.2532 19.7133 10.1259 19.7133Z" fill="#1C1C1C"/>
+							<path d="M11.7392 21.0005C11.7057 21.0005 11.6723 20.9938 11.6388 20.9871C11.4848 20.9338 11.4044 20.767 11.458 20.6137L12.0807 18.8331C12.1343 18.6797 12.3017 18.5996 12.4557 18.653C12.6097 18.7063 12.69 18.8731 12.6365 19.0265L12.0138 20.8071C11.9736 20.9204 11.8597 21.0005 11.7392 21.0005Z" fill="#1C1C1C"/>
+							<path d="M13.7861 22.5675C13.7526 22.5675 13.7191 22.5608 13.6857 22.5475C13.5317 22.4942 13.4513 22.3274 13.5049 22.174L14.7369 18.7396C14.7905 18.5862 14.9579 18.5061 15.1119 18.5595C15.2659 18.6128 15.3462 18.7796 15.2927 18.933L14.0606 22.3674C14.0205 22.4875 13.9066 22.5675 13.7861 22.5675Z" fill="#1C1C1C"/>
+							<path d="M16.0231 24.4216C15.9829 24.4216 15.9494 24.415 15.9092 24.4016C15.7552 24.3416 15.6883 24.1682 15.7485 24.0148L16.8266 21.3873C16.8868 21.2339 17.0609 21.1672 17.2149 21.2272C17.3689 21.2872 17.4359 21.4606 17.3756 21.614L16.2976 24.2416C16.2507 24.3549 16.1436 24.4216 16.0231 24.4216Z" fill="#1C1C1C"/>
+						</svg>
+					</figure> -->
+
+							<!-- Tabs -->
+							<div class="nav nav-pills nav-pills-dark" id="nav-tab" role="tablist">
+								<button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab"
+									data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
+									aria-selected="true">Our Mission</button>
+								<button class="nav-link" id="nav-goal-tab" data-bs-toggle="tab"
+									data-bs-target="#nav-goal" type="button" role="tab" aria-controls="nav-goal"
+									aria-selected="false">Our Goal</button>
+							</div>
+
+							<!-- Tab content -->
+							<div class="tab-content mt-4" id="nav-tabContent">
+								<!-- Mission content -->
+								<div class="tab-pane fade show active" id="nav-mission" role="tabpanel"
+									aria-labelledby="nav-mission-tab" tabindex="0">
+
+									<!-- List -->
+									<ul class="list-group list-group-borderless mb-3">
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Skill youth in EVs, AI, and
+											Automation to prepare them for future technologies.
+										</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Focus on hands-on learning to
+											encourage building, experimenting, and innovating.</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Develop local talent to
+											strengthen the Make in India movement.</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Empower engineers to drive
+											self-reliance and contribute to Atmanirbhar Bharat.</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Train students with real-world
+											skills to make them industry-ready.</li>
+									</ul>
+									<!-- Button -->
+									<a class="icon-link icon-link-hover" href="">Know about more<i
+											class="bi bi-arrow-right"></i> </a>
+								</div>
+
+								<!-- Goal content -->
+								<div class="tab-pane fade" id="nav-goal" role="tabpanel" aria-labelledby="nav-goal-tab"
+									tabindex="0">
+
+									<!-- List -->
+									<ul class="list-group list-group-borderless mb-3">
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Deliver job-oriented EV & AI
+											certification programs based on real-time projects</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Provide EV Technician Course
+											with real vehicle kits and diagnosis</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Train students in MATLAB,
+											Python, IoT, and Machine Learning with industrial applications</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Partner with engineering
+											colleges for on-campus workshops & final-year project guidance</li>
+										<li class="list-group-item heading-color d-flex pb-0"><i
+												class="bi bi-patch-check-fill me-2"></i>Support EV startups and
+											innovations through mentorship and manufacturing support</li>
+									</ul>
+									<!-- Button -->
+									<a class="icon-link icon-link-hover" href="">Know about more<i
+											class="bi bi-arrow-right"></i> </a>
+								</div>
+							</div>
+						</div>
+						<!-- Goal and Mission tab END -->
+					</div>
+
+					<!-- Image -->
+					<div class="col-lg-5 mt-7 mt-lg-0">
+						<div class="position-relative d-flex justify-content-center">
+							<!-- Hero image -->
+							<img src="assets/images/about/bigstock-New-Generation-Robotic-Arm-Rea-472432201-1.jpg"
+								class="rounded" alt="">
+
+
+						</div>
+					</div>
+				</div>
+				<!-- About detail END -->
+			</div>
+		</section>
+		<!-- =======================
+About END -->
+
+		<!-- =======================
+
+
+
+
+
+
+
+Blog START -->
+		<!-- Include SwiperJS CSS & JS in <head> and before </body> -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<style>
+			.swiper-slide .card-img {
+				height: 280px;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+
+			.card-title {
+				font-size: 1.3rem;
+				font-weight: 600;
+				margin-top: 12px;
+				text-align: center;
+				color: #2c2c2c;
+				min-height: 60px;
+			}
+
+			.swiper .card-body {
+				padding-top: 10px;
+			}
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				z-index: 10;
+				background-color: #000;
+				color: #fff;
+			}
+		</style>
+
+		<section class="pb-0">
+			<div class="container">
+				<br><br>
+				<!-- Title -->
+				<div class="inner-container text-center mb-4 mb-sm-6">
+					<h4 class="mb-0">Training Programs & Course Overview</h4>
+					<br><br>
+				</div>
+
+				<!-- Swiper START -->
+				<div class="swiper" data-swiper-options='{
+            "spaceBetween": 30, 
+            "loop": false,
+            "breakpoints": {
+                "576": {"slidesPerView": 1}, 
+                "768": {"slidesPerView": 2}, 
+                "992": {"slidesPerView": 3}
+            },
+            "navigation":{
+                "nextEl":".swiper-button-next",
+                "prevEl":".swiper-button-prev"
+            }}'>
+
+					<div class="swiper-wrapper">
+
+						<!-- Slide 1 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img style="object-fit: contain !important ;"
+									src="./assets/Electric vehicle design and development.jpeg" class="card-img"
+									alt="Electric Vehicle Design">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">Electric Vehicle Design & Development</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="./assets/Battery Pack Design and Battery Management System (BMS).jpeg"
+									style="object-fit: contain  !important;" class="card-img" alt="Battery Pack Design">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">EV Battery Pack Design & Battery Management System</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 3 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/bg/EV charging infrastructure.jpg" class="card-img"
+									alt="EV Charging">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">EV Charging Infrastructure</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 4 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/bg/EVPowerElectronics.jpg" class="card-img" alt="Powertrain">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">EV Power Electronics and Control System Tranning</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 5 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/services/ElectricalVehicleDesignsimulation.jpg" class="card-img"
+									alt="Simulation">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">EV Simulation using MATLAB & Simulink</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 6 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/bg/Electric Vehicle Technician course.jpg" class="card-img"
+									alt="Diagnostics">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">EV Diagnostics & Maintenance (Technician Course)</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 7 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/bg/Industrial automation and plc scada tranning.jpg"
+									class="card-img" alt="Automation">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">Industrial Automation and PLC SCADA Training</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 8 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/bg/Roboticss and iot tranning.jpg" class="card-img"
+									alt="Robotics">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">Robotics & IoT Tranning</h6>
+								</div>
+							</article>
+						</div>
+
+						<!-- Slide 9 -->
+						<div class="swiper-slide">
+							<article class="card bg-transparent">
+								<img src="assets/images/services/AI-and-Machine-Learning-in-EV-Software-Driving-Smart-Decisions.jpg"
+									class="card-img" alt="AI in EV">
+								<div class="card-body px-0 pb-0">
+									<h6 class="card-title">AI & Machine Learning in EV Systems</h6>
+								</div>
+							</article>
+						</div>
+					</div>
+
+					<!-- Navigation Buttons -->
+					<div class="d-flex justify-content-between position-absolute top-50 start-0 w-100">
+						<a href="#" class="btn btn-dark btn-icon btn-lg rounded-circle mb-0 swiper-button-prev">
+							<i class="bi bi-arrow-left"></i>
+						</a>
+						<a href="#" class="btn btn-dark btn-icon btn-lg rounded-circle mb-0 swiper-button-next">
+							<i class="bi bi-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+				<!-- Swiper END -->
+				<br><br><br>
+			</div>
+		</section>
+
+
+
+		<!-- =======================
+Blog END -->
+
+		<!-- -----------tranning and course ----------------- -->
+
+		<div class="ctd-container">
+			<div class="ctd-section-header">
+				<h2 class="ctd-section-title">Core Training Domains</h2>
+				<p class="ctd-section-subtitle">Explore our comprehensive training programs through interactive
+					navigation. Click on any domain to discover detailed course offerings and specializations.</p>
+			</div>
+
+			<div class="ctd-domains-container">
+				<div class="ctd-navigation-panel">
+					<h3 class="ctd-nav-title">Select Domain</h3>
+					<div class="ctd-nav-item ctd-active" data-target="ev">
+						<div class="ctd-nav-icon ctd-ev-icon"><i class="fas fa-car-battery"></i></div>
+						<div class="ctd-nav-text">Electric Vehicles</div>
+					</div>
+					<div class="ctd-nav-item" data-target="automation">
+						<div class="ctd-nav-icon ctd-automation-icon"><i class="fas fa-industry"></i></div>
+						<div class="ctd-nav-text">Industrial Automation</div>
+					</div>
+					<div class="ctd-nav-item" data-target="robotics">
+						<div class="ctd-nav-icon ctd-robotics-icon"><i class="fas fa-robot"></i></div>
+						<div class="ctd-nav-text">Robotics</div>
+					</div>
+					<div class="ctd-nav-item" data-target="design">
+						<div class="ctd-nav-icon ctd-design-icon"><i class="fas fa-drafting-compass"></i></div>
+						<div class="ctd-nav-text">Design & Manufacturing</div>
+					</div>
+					<div class="ctd-nav-item" data-target="ai">
+						<div class="ctd-nav-icon ctd-ai-icon"><i class="fas fa-brain"></i></div>
+						<div class="ctd-nav-text">AI & Machine Learning</div>
+					</div>
+
+				</div>
+
+				<div class="ctd-content-panel">
+					<!-- Electric Vehicles Content -->
+					<div class="ctd-content-item ctd-active" id="ev">
+						<!-- <img src="./assets/images/services/Electric vehicle.jpg" alt="Electric Vehicle Training Lab" class="ctd-content-image"> -->
+						<div class="ctd-content-header">
+							<div class="ctd-content-icon ctd-ev-icon"><i class="fas fa-car-battery"></i></div>
+							<div>
+								<h3 class="ctd-content-title">Electric Vehicles (EV)</h3>
+								<p class="ctd-content-description">Master the future of transportation with
+									comprehensive EV technology training covering architecture, battery systems, and
+									practical assembly.</p>
+							</div>
+						</div>
+						<div class="ctd-features-grid">
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">EV Architecture & Powertrain</div>
+								<div class="ctd-feature-desc">Deep dive into electric vehicle architecture, powertrain
+									systems, and charging infrastructure design.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">BMS & Charging Systems</div>
+								<div class="ctd-feature-desc">Learn Battery Management Systems, safety protocols, and
+									advanced charging technologies.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Vehicle Assembly Training</div>
+								<div class="ctd-feature-desc">Hands-on experience with both two-wheeler and four-wheeler
+									EV assembly processes.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">MATLAB Simulation</div>
+								<div class="ctd-feature-desc">Master EV Training Program with advanced MATLAB simulation
+									and modeling techniques.</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Industrial Automation Content -->
+					<div class="ctd-content-item" id="automation">
+						<!-- <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Industrial Automation Training Lab" class="ctd-content-image"> -->
+						<div class="ctd-content-header">
+							<div class="ctd-content-icon ctd-automation-icon"><i class="fas fa-industry"></i></div>
+							<div>
+								<h3 class="ctd-content-title">Industrial Automation</h3>
+								<p class="ctd-content-description">Transform manufacturing processes with cutting-edge
+									automation technologies, from PLC programming to IoT integration.</p>
+							</div>
+						</div>
+						<div class="ctd-features-grid">
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">PLC & SCADA Systems</div>
+								<div class="ctd-feature-desc">Master Programmable Logic Controllers, SCADA systems, and
+									Human Machine Interface design.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Pneumatics & Hydraulics</div>
+								<div class="ctd-feature-desc">Comprehensive training in pneumatic and hydraulic system
+									design and implementation.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Arduino & Raspberry Pi</div>
+								<div class="ctd-feature-desc">Build automation projects using microcontrollers and
+									single-board computers.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Circuit Design & Troubleshooting</div>
+								<div class="ctd-feature-desc">Learn sensor integration, relay circuits, and systematic
+									troubleshooting methodologies.</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Robotics Content -->
+					<div class="ctd-content-item" id="robotics">
+						<!-- <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Robotics Training Laboratory" class="ctd-content-image"> -->
+						<div class="ctd-content-header">
+							<div class="ctd-content-icon ctd-robotics-icon"><i class="fas fa-robot"></i></div>
+							<div>
+								<h3 class="ctd-content-title">Robotics</h3>
+								<p class="ctd-content-description">Build intelligent robotic systems with AI
+									integration, from basic line followers to advanced gesture-controlled robots.</p>
+							</div>
+						</div>
+						<div class="ctd-features-grid">
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Basic Robotics Projects</div>
+								<div class="ctd-feature-desc">Start with line follower robots and IoT-enabled bots for
+									practical learning.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Gesture-Controlled Robots</div>
+								<div class="ctd-feature-desc">Advanced robotics with gesture recognition and human-robot
+									interaction systems.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">AI-Integrated Systems</div>
+								<div class="ctd-feature-desc">Specialized training programs designed for schools and
+									colleges with AI integration.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Real-time Control</div>
+								<div class="ctd-feature-desc">Python programming, machine learning models, and sensor
+									integration for real-time control.</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Design & Manufacturing Content -->
+					<div class="ctd-content-item" id="design">
+						<!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="CAD Design and Manufacturing Training" class="ctd-content-image"> -->
+						<div class="ctd-content-header">
+							<div class="ctd-content-icon ctd-design-icon"><i class="fas fa-drafting-compass"></i></div>
+							<div>
+								<h3 class="ctd-content-title">Design & Manufacturing Tools</h3>
+								<p class="ctd-content-description">Master industry-standard design software and
+									simulation tools for mechanical engineering and product development.</p>
+							</div>
+						</div>
+						<div class="ctd-features-grid">
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">SolidWorks Mastery</div>
+								<div class="ctd-feature-desc">Complete 3D modeling, assembly design, and drawing
+									creation with SolidWorks.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">AutoCAD Professional</div>
+								<div class="ctd-feature-desc">2D drafting, technical drawing, and precision design with
+									AutoCAD.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Fusion 360 & ANSYS</div>
+								<div class="ctd-feature-desc">Cloud-based design with Fusion 360 and advanced simulation
+									with ANSYS.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">MATLAB Engineering</div>
+								<div class="ctd-feature-desc">Advanced mathematical modeling and simulation for
+									engineering applications.</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- AI & Machine Learning Content -->
+					<div class="ctd-content-item" id="ai">
+						<!-- <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="AI and Machine Learning Training Lab" class="ctd-content-image"> -->
+						<div class="ctd-content-header">
+							<div class="ctd-content-icon ctd-ai-icon"><i class="fas fa-brain"></i></div>
+							<div>
+								<h3 class="ctd-content-title">Artificial Intelligence & Machine Learning</h3>
+								<div class="ctd-content-description">Dive into the world of AI and ML with hands-on
+									programming, model development, and real-world applications in automotive and IoT.
+								</div>
+							</div>
+						</div>
+						<div class="ctd-features-grid">
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Python & Data Science</div>
+								<div class="ctd-feature-desc">Master Python programming with NumPy, Pandas, Matplotlib,
+									and Scikit-learn libraries.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">Machine Learning Models</div>
+								<div class="ctd-feature-desc">Build and deploy regression, clustering, and
+									classification models for real applications.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">AI in EV Systems</div>
+								<div class="ctd-feature-desc">Specialized applications including predictive maintenance
+									and smart Battery Management Systems.</div>
+							</div>
+							<div class="ctd-feature-item">
+								<div class="ctd-feature-title">IoT Integration</div>
+								<div class="ctd-feature-desc">Integrate AI/ML models with IoT devices and real vehicle
+									systems for practical implementations.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			// Get all navigation items and content items
+			const navItems = document.querySelectorAll('.ctd-nav-item');
+			const contentItems = document.querySelectorAll('.ctd-content-item');
+
+			// Add click event listeners to navigation items
+			navItems.forEach(item => {
+				item.addEventListener('click', () => {
+					// Remove active class from all nav items
+					navItems.forEach(nav => nav.classList.remove('ctd-active'));
+
+					// Add active class to clicked item
+					item.classList.add('ctd-active');
+
+					// Hide all content items
+					contentItems.forEach(content => {
+						content.classList.remove('ctd-active');
+					});
+
+					// Show target content
+					const target = item.getAttribute('data-target');
+					const targetContent = document.getElementById(target);
+					if (targetContent) {
+						targetContent.classList.add('ctd-active');
+					}
+				});
+			});
+
+			// Add smooth scrolling for mobile horizontal navigation
+			const navigationPanel = document.querySelector('.ctd-navigation-panel');
+			let isScrolling = false;
+
+			navigationPanel.addEventListener('scroll', () => {
+				if (!isScrolling) {
+					window.requestAnimationFrame(() => {
+						// Add any scroll-based animations here if needed
+						isScrolling = false;
+					});
+					isScrolling = true;
+				}
+			});
+
+			// Add keyboard navigation support
+			document.addEventListener('keydown', (e) => {
+				const activeItem = document.querySelector('.ctd-nav-item.ctd-active');
+				const activeIndex = Array.from(navItems).indexOf(activeItem);
+
+				if (e.key === 'ArrowLeft' && activeIndex > 0) {
+					navItems[activeIndex - 1].click();
+					e.preventDefault();
+				} else if (e.key === 'ArrowRight' && activeIndex < navItems.length - 1) {
+					navItems[activeIndex + 1].click();
+					e.preventDefault();
+				}
+			});
+
+			// Add touch swipe support for mobile
+			let touchStartX = 0;
+			let touchEndX = 0;
+
+			document.addEventListener('touchstart', (e) => {
+				touchStartX = e.changedTouches[0].screenX;
+			});
+
+			document.addEventListener('touchend', (e) => {
+				touchEndX = e.changedTouches[0].screenX;
+				handleSwipe();
+			});
+
+			function handleSwipe() {
+				const swipeThreshold = 50;
+				const activeItem = document.querySelector('.ctd-nav-item.ctd-active');
+				const activeIndex = Array.from(navItems).indexOf(activeItem);
+
+				if (touchEndX < touchStartX - swipeThreshold && activeIndex < navItems.length - 1) {
+					// Swipe left - next item
+					navItems[activeIndex + 1].click();
+				} else if (touchEndX > touchStartX + swipeThreshold && activeIndex > 0) {
+					// Swipe right - previous item
+					navItems[activeIndex - 1].click();
+				}
+			}
+
+			// Add intersection observer for animations
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.animationPlayState = 'running';
+					}
+				});
+			}, observerOptions);
+
+			// Observe all feature items
+			document.querySelectorAll('.ctd-feature-item').forEach(item => {
+				observer.observe(item);
+			});
+		</script>
+
+		<!-- -----------tranning and course end----------------- -->
+
+
+
+
+		<!-- ----------- founder note ----------------- -->
+
+		<div class="vimal-founder-wrapper vimal-bg-pattern">
+			<div class="vimal-founder-container">
+				<!-- Compact Hero Section -->
+				<!-- <div class="vimal-hero-section">
+					<div class="vimal-hero-badge">Founder's Note</div>
+					
+				</div> -->
+
+				<div class="vimal-content-wrapper">
+
+					<div class="vimal-profile-section">
+						<!-- <div class="vimal-profile-header">
+							
+							<div class="vimal-profile-info">
+								<h2>Founder - Vimal Ojha</h2>
+								<div class="vimal-role-tags">
+									<span class="vimal-role-tag">Engineer</span>
+									<span class="vimal-role-tag">Mentor</span>
+									<span class="vimal-role-tag">Entrepreneur</span>
+									<span class="vimal-role-tag">Life Coach</span>
+								</div>
+							</div>
+						</div>
+	
+						<div class="vimal-signature-quote">
+							<p class="vimal-quote-text">"I don't just teach machines — I train minds to build the future."</p>
+						</div> -->
+
+						<!-- <div class="vimal-achievement-grid">
+							<div class="vimal-stat-card">
+								<span class="vimal-stat-number">500K+</span>
+								<span class="vimal-stat-label">Students Trained</span>
+							</div>
+							<div class="vimal-stat-card">
+								<span class="vimal-stat-number">10+</span>
+								<span class="vimal-stat-label">Years Experience</span>
+							</div>
+							<div class="vimal-stat-card">
+								<span class="vimal-stat-number">25+</span>
+								<span class="vimal-stat-label">Startups Mentored</span>
+							</div>
+							<div class="vimal-stat-card">
+								<span class="vimal-stat-number">1st</span>
+								<span class="vimal-stat-label">EV Lab in India</span>
+							</div>
+						</div>
+					</div> -->
+
+
+
+
+
+
+						<section class="overflow-hidden pb-0">
+							<div class="container">
+								<div class="row align-items-center">
+									<!-- Image -->
+									<div class="col-lg-6 text-center position-relative mb-5 mb-lg-0">
+										<!-- Image -->
+										<div class=""><img
+												src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/MIT-WPU-1.tif/lossless-page1-1200px-MIT-WPU-1.tif.png"
+												style=" object-fit: contain;" class="rounded" alt=""></div>
+										<!-- Decoration -->
+										<!-- <figure class="position-absolute bottom-0 end-0 rotate-13 mb-n6">
+					<svg class="text-primary" width="297" height="294" viewBox="0 0 297 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M146.895 166.815C146.895 166.815 146.818 166.922 146.667 167.128C146.519 167.339 146.299 167.651 146.012 168.06C145.456 168.873 144.652 170.064 143.691 171.61C142.719 173.152 141.589 175.05 140.352 177.258C139.105 179.46 137.794 181.994 136.408 184.778C135.066 187.583 133.626 190.629 132.282 193.927C131.573 195.559 130.945 197.278 130.253 199.013C129.62 200.77 128.939 202.554 128.333 204.397C127.719 206.238 127.092 208.108 126.54 210.027C125.944 211.933 125.431 213.888 124.907 215.855C124.631 216.835 124.401 217.831 124.169 218.829C123.935 219.827 123.7 220.827 123.464 221.83C123.06 223.849 122.622 225.87 122.265 227.906L121.757 230.963L121.507 232.489L121.307 234.021C121.042 236.062 120.754 238.091 120.596 240.119C120.501 241.131 120.407 242.139 120.313 243.142C120.231 244.146 120.194 245.148 120.133 246.142C120.078 247.136 120.023 248.124 119.969 249.105C119.951 250.087 119.933 251.063 119.915 252.03C119.9 252.997 119.884 253.956 119.868 254.906C119.869 255.856 119.907 256.797 119.925 257.727C119.971 259.587 119.989 261.408 120.136 263.175C120.194 264.059 120.251 264.931 120.308 265.79C120.365 266.648 120.408 267.495 120.512 268.322C120.692 269.979 120.866 271.58 121.032 273.116C121.213 274.65 121.474 276.109 121.675 277.502C121.892 278.894 122.067 280.217 122.337 281.444C122.58 282.674 122.809 283.826 123.021 284.891C123.227 285.957 123.42 286.934 123.652 287.805C124.511 291.301 125.001 293.299 125.001 293.299C125.001 293.299 124.556 291.291 123.778 287.777C123.567 286.903 123.395 285.922 123.214 284.853C123.027 283.785 122.825 282.631 122.61 281.397C122.37 280.167 122.225 278.842 122.04 277.449C121.871 276.055 121.644 274.596 121.499 273.063C121.368 271.529 121.232 269.93 121.09 268.276C121.005 267.45 120.982 266.606 120.944 265.75C120.908 264.894 120.871 264.025 120.833 263.144C120.726 261.383 120.751 259.571 120.747 257.72C120.751 256.795 120.734 255.86 120.755 254.915C120.792 253.972 120.829 253.019 120.867 252.059C120.906 251.099 120.947 250.131 120.987 249.156C121.063 248.183 121.14 247.203 121.217 246.217C121.3 245.232 121.359 244.239 121.463 243.245C121.579 242.252 121.695 241.254 121.812 240.253C122.014 238.246 122.347 236.24 122.655 234.224L122.888 232.711L123.171 231.204L123.743 228.188C124.142 226.18 124.622 224.189 125.067 222.201C125.322 221.214 125.577 220.23 125.832 219.249C126.084 218.267 126.334 217.287 126.629 216.324C127.191 214.39 127.742 212.471 128.375 210.601C128.963 208.718 129.624 206.884 130.272 205.081C130.912 203.275 131.625 201.529 132.289 199.81C133.011 198.113 133.668 196.433 134.405 194.839C135.803 191.619 137.291 188.651 138.674 185.921C140.101 183.213 141.446 180.751 142.718 178.619C143.982 176.481 145.131 174.648 146.112 173.167C147.086 171.679 147.891 170.543 148.442 169.777C148.718 169.402 148.93 169.115 149.072 168.921C149.219 168.728 149.295 168.629 149.295 168.629L146.895 166.815Z" fill="#202124"/>
+						<path d="M140.483 162.473C140.483 162.473 140.366 162.714 140.145 163.166C139.928 163.622 139.609 164.289 139.204 165.14C138.402 166.837 137.284 169.27 135.994 172.211C134.7 175.149 133.243 178.599 131.748 182.32C130.992 184.177 130.263 186.118 129.495 188.077C128.77 190.054 128.008 192.051 127.298 194.068C126.608 196.092 125.862 198.094 125.233 200.103C124.588 202.107 123.922 204.066 123.371 205.993C122.803 207.915 122.223 209.761 121.769 211.541C121.308 213.319 120.81 214.98 120.462 216.545C120.097 218.104 119.761 219.533 119.465 220.799C119.181 222.068 118.988 223.186 118.802 224.101C118.444 225.932 118.239 226.978 118.239 226.978C118.239 226.978 118.49 225.942 118.928 224.128C119.154 223.224 119.396 222.118 119.734 220.864C120.085 219.615 120.483 218.205 120.915 216.668C121.33 215.126 121.9 213.489 122.438 211.741C122.967 209.99 123.626 208.176 124.275 206.289C124.908 204.398 125.657 202.476 126.385 200.513C127.098 198.545 127.929 196.583 128.703 194.603C129.497 192.63 130.342 190.678 131.147 188.747C131.997 186.833 132.805 184.94 133.638 183.128C135.285 179.498 136.882 176.139 138.293 173.282C139.7 170.424 140.914 168.063 141.779 166.424C142.213 165.608 142.554 164.967 142.786 164.531C143.024 164.094 143.15 163.862 143.15 163.862L140.483 162.473Z" fill="#202124"/>
+						<path d="M110.185 155.966C110.185 155.966 110.135 156.087 110.036 156.324C109.941 156.563 109.8 156.918 109.616 157.382C109.264 158.302 108.759 159.647 108.183 161.375C107.596 163.101 106.938 165.209 106.248 167.644C105.546 170.075 104.86 172.845 104.159 175.875C103.506 178.915 102.814 182.212 102.272 185.731C101.962 187.485 101.751 189.302 101.481 191.15C101.273 193.007 101.025 194.9 100.864 196.834C100.694 198.767 100.52 200.731 100.428 202.726C100.291 204.718 100.247 206.738 100.194 208.774C100.154 209.79 100.161 210.813 100.167 211.838C100.171 212.863 100.176 213.89 100.179 214.92C100.256 216.979 100.299 219.046 100.426 221.109L100.642 224.201L100.753 225.744L100.915 227.28C101.132 229.327 101.323 231.368 101.64 233.377C101.783 234.383 101.926 235.385 102.068 236.382C102.221 237.378 102.419 238.361 102.591 239.342C102.768 240.322 102.944 241.296 103.119 242.263C103.33 243.222 103.539 244.175 103.746 245.12C103.956 246.064 104.164 247.001 104.369 247.928C104.591 248.852 104.847 249.758 105.079 250.659C105.557 252.457 105.997 254.224 106.552 255.909C106.813 256.755 107.071 257.59 107.326 258.412C107.581 259.234 107.819 260.047 108.114 260.827C108.673 262.397 109.214 263.912 109.733 265.369C110.266 266.819 110.859 268.177 111.378 269.485C111.912 270.788 112.391 272.035 112.938 273.165C113.461 274.306 113.951 275.372 114.404 276.359C114.852 277.347 115.268 278.253 115.695 279.046C117.343 282.247 118.284 284.076 118.284 284.076C118.284 284.076 117.385 282.227 115.812 278.99C115.403 278.188 115.008 277.274 114.583 276.276C114.154 275.281 113.689 274.205 113.193 273.055C112.673 271.916 112.224 270.659 111.721 269.349C111.234 268.032 110.673 266.665 110.175 265.207C109.691 263.746 109.187 262.223 108.665 260.647C108.39 259.863 108.171 259.047 107.936 258.223C107.701 257.399 107.464 256.563 107.222 255.714C106.709 254.027 106.312 252.258 105.877 250.46C105.666 249.559 105.432 248.653 105.233 247.73C105.05 246.804 104.865 245.869 104.678 244.926C104.493 243.983 104.308 243.032 104.12 242.074C103.968 241.11 103.815 240.14 103.661 239.162C103.513 238.185 103.339 237.206 103.21 236.215C103.092 235.222 102.972 234.224 102.853 233.223C102.584 231.224 102.441 229.196 102.272 227.163L102.147 225.638L102.072 224.106L101.927 221.04C101.849 218.995 101.853 216.946 101.824 214.909C101.843 213.89 101.862 212.873 101.882 211.86C101.899 210.846 101.914 209.835 101.977 208.83C102.074 206.819 102.164 204.824 102.345 202.858C102.479 200.89 102.697 198.953 102.907 197.048C103.11 195.143 103.398 193.28 103.644 191.453C103.952 189.635 104.201 187.848 104.547 186.127C105.159 182.67 105.916 179.437 106.626 176.461C107.384 173.495 108.121 170.789 108.864 168.419C109.595 166.046 110.287 163.997 110.898 162.327C111.498 160.654 112.018 159.362 112.375 158.488C112.557 158.06 112.696 157.731 112.79 157.51C112.887 157.288 112.938 157.173 112.938 157.173L110.185 155.966Z" fill="#202124"/>
+						<path d="M88.2712 185.715C88.2712 185.715 87.8487 190.344 82.8754 188.082C77.9011 185.822 75.8344 160.469 78.6732 150.762C85.2516 128.215 103.057 119.184 128.652 121.19L119.769 151.631C110.583 157.603 92.8266 160.553 88.2712 185.715Z" fill="currentColor"/>
+						<path d="M81.2664 152.553C81.4076 151.802 81.5652 151.104 81.7502 150.479C87.9579 129.205 104.758 120.683 128.909 122.577L127.37 127.852C104.471 126.057 88.1895 133.632 81.2664 152.553Z" fill="#202124"/>
+						<path d="M82.8749 188.082L82.7758 188.02L82.7754 188.023C82.9456 187.976 83.1259 187.96 83.2888 187.887L83.5371 187.789L83.7692 187.657C83.922 187.567 84.0636 187.455 84.1942 187.335C84.3265 187.215 84.4441 187.08 84.5532 186.938C84.7665 186.652 84.9372 186.334 85.0676 186.001C85.1965 185.667 85.2947 185.323 85.3444 184.963L85.3434 184.968C85.5964 183.868 85.7992 182.757 86.1096 181.672C86.3783 180.577 86.7237 179.503 87.0615 178.429C87.4392 177.369 87.8059 176.304 88.2585 175.275C88.4682 174.753 88.6938 174.239 88.9434 173.735C89.1877 173.23 89.414 172.716 89.6911 172.228C90.2075 171.231 90.7805 170.268 91.3826 169.324C91.6994 168.862 91.9998 168.39 92.3279 167.937C92.666 167.492 92.9906 167.036 93.3395 166.6C94.0415 165.73 94.7753 164.888 95.5528 164.087C96.3345 163.291 97.1439 162.522 97.9973 161.804C98.4221 161.442 98.849 161.084 99.2952 160.749C99.7308 160.401 100.182 160.072 100.637 159.75C101.542 159.097 102.484 158.496 103.433 157.908C105.345 156.751 107.333 155.717 109.352 154.724C111.371 153.729 113.427 152.79 115.455 151.721C115.964 151.46 116.465 151.174 116.969 150.894L117.716 150.447L117.902 150.336L117.914 150.329C117.95 150.307 117.878 150.351 117.89 150.344L117.913 150.331L117.96 150.306L118.052 150.255L118.423 150.049L121.388 148.405L120.488 146.841L117.575 148.575L117.211 148.791L116.994 148.922L116.821 149.033L116.126 149.478C115.649 149.761 115.178 150.051 114.69 150.321C112.752 151.42 110.724 152.424 108.721 153.489C106.716 154.552 104.723 155.668 102.805 156.91C101.852 157.542 100.907 158.187 99.9996 158.885C99.5429 159.229 99.0915 159.581 98.6549 159.952C98.2082 160.31 97.7808 160.691 97.3568 161.076C96.5043 161.84 95.6975 162.654 94.9222 163.495C94.1508 164.339 93.4253 165.225 92.7358 166.136C92.3926 166.592 92.0756 167.068 91.7448 167.533C91.4239 168.005 91.132 168.496 90.8243 168.976C90.2413 169.955 89.6892 170.953 89.1967 171.979C88.9317 172.483 88.7178 173.011 88.4865 173.53C88.249 174.047 88.0374 174.574 87.8413 175.108C87.4163 176.162 87.0798 177.247 86.7325 178.326C86.4256 179.418 86.1123 180.507 85.8758 181.616C85.5982 182.714 85.4284 183.835 85.2095 184.945L85.2089 184.946L85.2084 184.95C85.1264 185.635 84.8944 186.323 84.4954 186.897C84.3931 187.039 84.2818 187.175 84.1562 187.297C84.0314 187.419 83.8959 187.533 83.7479 187.626L83.5225 187.763L83.2799 187.867C83.1208 187.945 82.942 187.966 82.7734 188.019L82.7689 188.02L82.773 188.022L82.8749 188.082Z" fill="#202124"/>
+						<path d="M149.602 203.619C149.602 203.619 147.47 207.747 152.878 208.517C158.287 209.29 173.668 189.026 176.501 179.318C183.082 156.772 172.932 139.578 150.276 127.501L141.387 157.942C145.918 167.92 159.296 179.957 149.602 203.619Z" fill="currentColor"/>
+						<path d="M173.344 179.431C173.631 178.724 173.873 178.049 174.057 177.424C180.267 156.152 170.689 139.928 149.312 128.533L147.771 133.807C168.038 144.613 177.691 159.759 173.344 179.431Z" fill="#202124"/>
+						<path d="M152.878 208.517L152.993 208.523L152.998 208.524L152.995 208.521C152.881 208.385 152.742 208.272 152.65 208.12L152.501 207.902L152.385 207.665C152.311 207.506 152.258 207.337 152.219 207.167C152.178 206.996 152.158 206.822 152.148 206.647C152.121 205.948 152.295 205.244 152.595 204.621L152.597 204.617L152.597 204.616C153.009 203.563 153.469 202.527 153.825 201.451C154.223 200.39 154.544 199.303 154.873 198.218C155.161 197.122 155.46 196.026 155.669 194.909C155.791 194.354 155.896 193.795 155.974 193.232C156.059 192.67 156.162 192.109 156.21 191.542C156.347 190.412 156.418 189.274 156.453 188.134C156.452 187.564 156.47 186.993 156.453 186.423C156.424 185.853 156.413 185.282 156.369 184.712C156.279 183.573 156.143 182.437 155.948 181.31C155.746 180.184 155.505 179.064 155.197 177.962C155.046 177.409 154.891 176.858 154.707 176.316C154.538 175.769 154.347 175.23 154.148 174.694C153.758 173.617 153.308 172.565 152.845 171.52C151.897 169.44 150.817 167.429 149.699 165.453C148.583 163.479 147.415 161.541 146.372 159.572C146.105 159.082 145.863 158.585 145.615 158.09L145.268 157.341L145.182 157.154L145.069 156.928L144.879 156.549L143.359 153.519L141.759 154.353L143.372 157.334L143.573 157.707L143.655 157.857L143.753 158.052L144.142 158.829C144.416 159.336 144.685 159.847 144.974 160.341C146.11 162.332 147.336 164.23 148.503 166.155C149.671 168.077 150.791 170.019 151.78 172.023C152.264 173.029 152.735 174.043 153.146 175.079C153.356 175.596 153.559 176.116 153.739 176.643C153.934 177.166 154.102 177.697 154.265 178.23C154.598 179.295 154.867 180.378 155.097 181.47C155.322 182.564 155.488 183.668 155.612 184.779C155.671 185.335 155.699 185.893 155.745 186.451C155.778 187.008 155.778 187.568 155.796 188.128C155.796 189.247 155.76 190.368 155.66 191.485C155.63 192.046 155.545 192.601 155.479 193.159C155.419 193.717 155.332 194.272 155.229 194.825C155.056 195.937 154.792 197.03 154.54 198.127C154.247 199.214 153.961 200.305 153.599 201.372C153.277 202.454 152.851 203.5 152.472 204.563L152.475 204.558C152.323 204.889 152.22 205.231 152.149 205.583C152.08 205.933 152.053 206.293 152.078 206.65C152.094 206.829 152.12 207.005 152.167 207.178C152.212 207.35 152.272 207.52 152.352 207.679L152.477 207.915L152.633 208.131C152.73 208.281 152.874 208.391 152.992 208.522L152.993 208.52L152.878 208.517Z" fill="#202124"/>
+						<path d="M108.925 159.993C104.719 143.438 108.268 111.042 115.987 84.6068C128.572 41.4869 155.858 1.80709 173.712 7.02119C191.563 12.2295 193.222 60.3566 180.634 103.477C172.916 129.917 158.48 159.131 146.033 170.828L108.925 159.993Z" fill="#202124"/>
+						<path d="M165.49 141.712C164.734 142.971 163.951 144.216 163.215 145.486C162.477 146.755 161.679 147.98 160.916 149.226C160.53 149.846 160.151 150.468 159.738 151.073L158.526 152.899C158.112 153.5 157.746 154.131 157.329 154.729L156.096 156.531C155.682 157.129 155.281 157.737 154.856 158.326L153.557 160.073C153.119 160.652 152.701 161.246 152.249 161.811L150.877 163.489C150.413 164.041 149.983 164.625 149.484 165.141L148.033 166.73C147.791 166.993 147.564 167.274 147.313 167.527L146.553 168.274L145.038 169.768L146.44 169.432L141.823 168.004C140.286 167.521 138.74 167.068 137.197 166.607L127.933 163.853L118.642 161.193C115.549 160.291 112.433 159.47 109.329 158.606L110.324 159.638L109.854 157.58L109.618 156.55C109.545 156.205 109.501 155.85 109.434 155.502L109.067 153.4C108.926 152.702 108.876 151.985 108.782 151.275L108.528 149.141C108.451 148.428 108.417 147.709 108.36 146.992L108.203 144.839C108.161 144.12 108.151 143.399 108.122 142.678L108.05 140.514C108.023 139.792 108.045 139.069 108.019 138.346L107.977 136.174C107.954 135.449 107.968 134.725 107.976 134C108.001 132.551 107.987 131.097 108.044 129.647C108.103 128.197 108.113 126.74 108.15 125.284L107.97 125.266L107.576 129.61C107.444 131.058 107.382 132.511 107.281 133.962C107.234 134.688 107.183 135.413 107.168 136.141L107.096 138.322C107.078 139.049 107.033 139.775 107.038 140.503L107.039 142.685C107.044 143.412 107.032 144.14 107.05 144.867L107.136 147.048C107.171 147.775 107.181 148.502 107.236 149.228L107.421 151.403C107.493 152.128 107.519 152.857 107.64 153.575L107.944 155.739C107.999 156.099 108.035 156.462 108.106 156.819L108.331 157.89L108.781 160.03L108.798 160.11L108.884 160.136L127.429 165.583L145.992 170.97L146.078 170.995L146.136 170.935L147.679 169.359L148.45 168.571C148.704 168.305 148.931 168.016 149.173 167.739L150.604 166.064C151.096 165.517 151.514 164.91 151.968 164.334L153.304 162.582C153.743 161.995 154.146 161.381 154.569 160.781L155.823 158.972C156.232 158.363 156.616 157.737 157.013 157.12L158.196 155.265C158.593 154.648 158.949 154.006 159.327 153.377L160.447 151.483C160.828 150.856 161.176 150.21 161.53 149.567C162.23 148.278 162.965 147.006 163.635 145.703L165.65 141.794L165.49 141.712Z" fill="currentColor"/>
+						<path d="M152.164 163.889C150.091 166.596 148.037 168.94 146.033 170.828L108.925 159.994C108.245 157.329 107.775 154.244 107.484 150.849L152.164 163.889Z" fill="#202124"/>
+						<path d="M188.095 43.245C187.255 23.0233 181.977 10.0597 173.543 7.59944C168.858 6.23093 163.351 8.0277 157.174 12.9399C152.255 16.8525 147.185 22.5267 142.095 29.8178C145.436 29.6496 154.998 29.5472 166.185 32.8119C177.366 36.0734 185.369 41.3044 188.095 43.245Z" fill="currentColor"/>
+						<path d="M157.549 13.4102C152.973 17.0498 148.075 22.4661 143.297 29.159C147.416 29.0375 156.123 29.248 166.353 32.2342C176.579 35.2169 184.031 39.7244 187.438 42.044C186.456 22.8001 181.378 10.5118 173.374 8.17634C168.888 6.86561 163.564 8.62674 157.549 13.4102ZM156.8 12.4686C162.829 7.67397 168.649 5.54348 173.712 7.02176C183.195 9.78926 188.107 24.6674 188.742 44.471C188.742 44.471 179.927 37.447 166.017 33.3889C152.099 29.3269 140.891 30.5023 140.891 30.5023C146.108 22.878 151.534 16.6571 156.8 12.4686Z" fill="#202124"/>
+						<path d="M155.25 13.7639C161.827 8.06993 168.214 5.41285 173.711 7.02079C179.204 8.62223 183.163 14.2983 185.649 22.6374C185.649 22.6374 179.861 18.9779 170.978 16.3838C162.094 13.7912 155.25 13.7639 155.25 13.7639Z" fill="#202124"/>
+						<path d="M136.366 118.881C133.578 118.811 130.906 119.837 129.727 123.876L113.277 207.305C113.277 207.305 112.25 210.607 115.57 211.578C118.889 212.546 119.8 209.212 119.8 209.212L150.814 130.034C151.85 126.491 150.668 124.284 148.752 122.823" fill="currentColor"/>
+						<path d="M136.366 118.881C135.988 118.868 135.61 118.866 135.231 118.897C135.043 118.918 134.852 118.924 134.665 118.96C134.478 118.992 134.289 119.018 134.105 119.069C133.734 119.153 133.37 119.276 133.022 119.435C132.842 119.504 132.68 119.607 132.51 119.698C132.338 119.785 132.189 119.909 132.028 120.014C131.718 120.243 131.434 120.506 131.173 120.79C130.919 121.08 130.685 121.388 130.484 121.718C130.373 121.877 130.297 122.055 130.202 122.223C130.106 122.391 130.031 122.567 129.955 122.744C129.79 123.093 129.679 123.461 129.55 123.824L129.549 123.827L129.547 123.84C128.076 130.773 126.548 137.694 125.124 144.636L120.804 165.453C119.351 172.389 117.978 179.34 116.561 186.284L112.401 207.131L112.424 207.039C112.331 207.367 112.295 207.598 112.264 207.88C112.233 208.15 112.228 208.425 112.241 208.702C112.257 208.98 112.293 209.261 112.363 209.542C112.436 209.82 112.524 210.104 112.667 210.368C112.79 210.639 112.975 210.884 113.16 211.118C113.364 211.338 113.573 211.552 113.815 211.714C114.045 211.904 114.301 212.016 114.55 212.152C114.802 212.27 115.059 212.348 115.315 212.443L115.707 212.532C115.829 212.554 115.902 212.585 116.066 212.601C116.369 212.628 116.687 212.673 116.972 212.636C117.263 212.63 117.554 212.563 117.844 212.487C118.126 212.389 118.413 212.283 118.664 212.121C118.926 211.976 119.153 211.784 119.364 211.589C119.574 211.39 119.757 211.173 119.92 210.948C120.08 210.721 120.224 210.487 120.343 210.242C120.469 209.989 120.563 209.773 120.661 209.448L120.631 209.538L128.337 189.724C130.878 183.11 133.46 176.511 135.963 169.88L143.518 150.008L145.399 145.037L147.256 140.056L150.97 130.095L150.974 130.084L150.975 130.081L151.185 129.081C151.223 128.915 151.258 128.748 151.26 128.576L151.293 128.065C151.299 127.895 151.324 127.725 151.315 127.555L151.266 127.045C151.248 126.876 151.238 126.705 151.212 126.537L151.079 126.043C151.029 125.881 151.001 125.711 150.933 125.555L150.716 125.094C150.641 124.942 150.583 124.78 150.476 124.647L150.187 124.229C150.008 123.941 149.739 123.726 149.52 123.471C149.409 123.344 149.265 123.252 149.14 123.141L148.751 122.822L149.126 123.158C149.246 123.274 149.385 123.371 149.49 123.503C149.696 123.765 149.952 123.988 150.116 124.281L150.381 124.703C150.48 124.837 150.529 124.999 150.596 125.15L150.787 125.607C150.847 125.761 150.866 125.928 150.908 126.087L151.017 126.569C151.034 126.733 151.036 126.899 151.046 127.063L151.071 127.555C151.073 127.719 151.041 127.884 151.028 128.048L150.976 128.539C150.969 128.704 150.929 128.864 150.887 129.024L150.652 129.986L150.657 129.972L146.617 139.805L144.598 144.722L142.602 149.649L134.65 169.365C131.984 175.931 129.397 182.528 126.769 189.109L118.968 208.885L118.959 208.907L118.938 208.975C118.904 209.084 118.823 209.291 118.742 209.442C118.662 209.606 118.565 209.759 118.464 209.904C118.36 210.045 118.249 210.177 118.128 210.29C118.007 210.4 117.883 210.507 117.745 210.578C117.615 210.667 117.468 210.711 117.324 210.766C117.173 210.8 117.023 210.842 116.857 210.841C116.688 210.868 116.554 210.828 116.403 210.831C116.255 210.818 115.914 210.724 115.821 210.711C115.653 210.642 115.471 210.593 115.312 210.518C115.166 210.432 114.995 210.369 114.878 210.261C114.736 210.173 114.634 210.057 114.524 209.947C114.433 209.823 114.332 209.707 114.271 209.562C114.193 209.428 114.148 209.271 114.105 209.113C114.063 208.953 114.04 208.782 114.029 208.606C114.02 208.43 114.022 208.249 114.042 208.068C114.056 207.897 114.099 207.68 114.129 207.57L114.148 207.5L114.153 207.477L118.217 186.61C119.542 179.648 120.911 172.696 122.199 165.728L126.104 144.829C127.421 137.867 128.635 130.883 129.906 123.911L129.903 123.927C130.017 123.573 130.112 123.212 130.26 122.872C130.327 122.699 130.394 122.525 130.481 122.362C130.568 122.198 130.635 122.023 130.737 121.869C130.92 121.547 131.129 121.241 131.361 120.952C131.6 120.669 131.86 120.404 132.149 120.171C132.3 120.065 132.438 119.937 132.601 119.846C132.761 119.751 132.915 119.644 133.086 119.569C133.418 119.4 133.768 119.263 134.131 119.165C134.31 119.107 134.494 119.073 134.678 119.034C134.861 118.989 135.05 118.975 135.236 118.945C135.609 118.9 135.988 118.884 136.366 118.881Z" fill="#202124"/>
+						<path d="M141.312 123.394C138.61 122.606 134.76 121.41 131.548 121.815C134.37 119.085 138.982 120.555 141.892 121.404C144.8 122.257 149.478 123.496 150.386 127.316C147.896 125.246 144.01 124.184 141.312 123.394Z" fill="#202124"/>
+						<path d="M138.367 58.5032C135.199 69.3847 141.13 80.6949 151.611 83.7628C162.092 86.837 173.156 80.5052 176.322 69.6196C179.49 58.741 173.56 47.4318 163.079 44.3583C152.598 41.2862 141.532 47.6243 138.367 58.5032Z" fill="white"/>
+						<path d="M144.242 60.2227C142.057 67.7342 146.15 75.5408 153.387 77.6604C160.618 79.7782 168.258 75.4124 170.443 67.9001C172.629 60.389 168.535 52.5802 161.302 50.4614C154.067 48.3428 146.43 52.7135 144.242 60.2227Z" fill="#202124"/>
+						<path d="M161.658 51.4717C162.74 51.7912 163.74 52.2561 164.657 52.8214C164.431 52.7421 164.209 52.6491 163.974 52.5804C157.23 50.606 149.999 55.0671 147.825 62.5461C146.706 66.383 147.145 70.2632 148.743 73.405C145.683 70.1452 144.382 65.2982 145.757 60.5698C147.796 53.5715 154.915 49.4975 161.658 51.4717Z" fill="currentColor"/>
+						<path d="M160.488 47.2784C160.218 48.1988 160.72 49.1571 161.608 49.4138C162.494 49.6728 163.427 49.1417 163.694 48.2193C163.963 47.3017 163.465 46.343 162.576 46.0845C161.692 45.8257 160.754 46.3575 160.488 47.2784Z" fill="currentColor"/>
+						<path d="M150.994 79.9036C150.724 80.8231 151.226 81.781 152.112 82.0399C153 82.2983 153.935 81.7636 154.201 80.8445C154.47 79.9256 153.968 78.9661 153.082 78.7058C152.195 78.4472 151.26 78.9844 150.994 79.9036Z" fill="currentColor"/>
+						<path d="M173.542 66.9971C172.654 66.7391 171.716 67.2735 171.451 68.1935C171.184 69.1135 171.684 70.069 172.572 70.3321C173.457 70.5901 174.391 70.0541 174.66 69.1326C174.929 68.2151 174.428 67.2603 173.542 66.9971Z" fill="currentColor"/>
+						<path d="M142.115 57.7932C141.233 57.5343 140.296 58.0687 140.027 58.9863C139.758 59.9089 140.262 60.865 141.146 61.1241C142.032 61.3852 142.966 60.8508 143.234 59.9294C143.504 59.006 143.004 58.0555 142.115 57.7932Z" fill="currentColor"/>
+						<path d="M171.018 54.2726C170.205 54.7394 169.897 55.7959 170.333 56.6289C170.769 57.4617 171.787 57.76 172.602 57.2939C173.418 56.8257 173.724 55.7685 173.288 54.938C172.851 54.1014 171.835 53.8041 171.018 54.2726Z" fill="currentColor"/>
+						<path d="M142.084 70.8319C141.27 71.2959 140.961 72.355 141.398 73.1882C141.835 74.0201 142.853 74.3194 143.668 73.8533C144.486 73.3848 144.791 72.3302 144.356 71.4955C143.918 70.6586 142.901 70.3608 142.084 70.8319Z" fill="currentColor"/>
+						<path d="M166.574 78.0063C166.14 77.1721 165.121 76.8732 164.303 77.3399C163.491 77.8055 163.183 78.8628 163.623 79.6955C164.055 80.5308 165.072 80.8273 165.889 80.3615C166.707 79.8952 167.011 78.8374 166.574 78.0063Z" fill="currentColor"/>
+						<path d="M151.07 48.4278C150.63 47.592 149.613 47.2968 148.797 47.7637C147.984 48.2308 147.678 49.2867 148.112 50.1192C148.551 50.9535 149.567 51.2512 150.383 50.7852C151.199 50.317 151.505 49.2611 151.07 48.4278Z" fill="currentColor"/>
+						<path d="M174.461 119.899C174.884 118.721 175.358 117.565 175.819 116.443C176.541 114.68 177.224 113.016 177.73 111.276C178.082 110.069 178.888 107.258 179.319 105.691C172.735 100.436 162.792 95.9139 148.943 91.8726C135.092 87.8276 124.277 86.2906 115.903 87.1792C115.429 88.7077 114.605 91.4768 114.236 92.7392C113.731 94.4726 113.409 96.2476 113.069 98.1271C112.851 99.3368 112.625 100.582 112.346 101.812C113.59 102.07 114.88 102.334 116.213 102.606C123.944 104.184 133.567 106.149 143.899 109.164C154.432 112.239 163.743 115.801 171.226 118.664C172.336 119.089 173.414 119.501 174.461 119.899Z" fill="currentColor"/>
+						<path d="M116.361 87.7377C115.879 89.3061 115.154 91.7465 114.815 92.9077C114.317 94.6109 113.999 96.3708 113.662 98.2344C113.478 99.2557 113.288 100.302 113.065 101.347C114.123 101.566 115.213 101.788 116.333 102.017C124.076 103.597 133.712 105.564 144.068 108.587C154.624 111.668 163.948 115.236 171.441 118.102C172.351 118.451 173.24 118.791 174.107 119.121C174.478 118.131 174.875 117.162 175.263 116.215C175.98 114.467 176.657 112.817 177.154 111.107C177.479 109.995 178.188 107.519 178.633 105.915C172.111 100.815 162.331 96.4058 148.776 92.4497C135.219 88.4913 124.602 86.9465 116.361 87.7377ZM115.447 86.6254C125.056 85.5103 136.701 87.6711 149.113 91.296C161.523 94.9172 172.504 99.3623 180.004 105.47C179.627 106.868 178.722 110.03 178.309 111.445C177.404 114.559 175.906 117.523 174.825 120.681C166.489 117.525 156.053 113.339 143.732 109.743C131.404 106.144 120.347 104.099 111.62 102.276C112.411 99.0327 112.75 95.6886 113.66 92.571C114.072 91.1604 115.01 88.0096 115.447 86.6254Z" fill="#202124"/>
+						<path d="M173.254 116.773C173.032 117.292 173.343 117.904 173.948 118.146C174.547 118.381 175.217 118.157 175.445 117.641C175.669 117.124 175.359 116.508 174.754 116.268C174.145 116.027 173.474 116.255 173.254 116.773Z" fill="#202124"/>
+						<path d="M169.326 115.264C169.115 115.789 169.436 116.396 170.039 116.627C170.644 116.858 171.312 116.625 171.525 116.104C171.746 115.583 171.427 114.974 170.815 114.741C170.203 114.504 169.54 114.745 169.326 115.264Z" fill="#202124"/>
+						<path d="M165.386 113.808C165.184 114.333 165.512 114.938 166.118 115.162C166.727 115.387 167.386 115.141 167.594 114.62C167.805 114.095 167.475 113.484 166.864 113.261C166.249 113.035 165.588 113.283 165.386 113.808Z" fill="#202124"/>
+						<path d="M161.425 112.397C161.231 112.924 161.57 113.529 162.182 113.744C162.791 113.958 163.446 113.71 163.647 113.182C163.846 112.653 163.509 112.047 162.892 111.831C162.275 111.614 161.619 111.868 161.425 112.397Z" fill="#202124"/>
+						<path d="M157.447 111.036C157.261 111.567 157.611 112.165 158.222 112.371C158.835 112.582 159.486 112.323 159.677 111.794C159.868 111.264 159.523 110.659 158.904 110.45C158.288 110.242 157.633 110.505 157.447 111.036Z" fill="#202124"/>
+						<path d="M153.452 109.725C153.277 110.258 153.63 110.85 154.248 111.05C154.863 111.253 155.506 110.984 155.69 110.452C155.874 109.922 155.52 109.321 154.899 109.121C154.274 108.916 153.629 109.189 153.452 109.725Z" fill="#202124"/>
+						<path d="M149.443 108.461C149.277 108.999 149.638 109.587 150.259 109.78C150.875 109.974 151.517 109.698 151.69 109.164C151.865 108.625 151.5 108.032 150.877 107.839C150.255 107.643 149.61 107.922 149.443 108.461Z" fill="#202124"/>
+						<path d="M145.417 107.246C145.256 107.787 145.631 108.369 146.253 108.555C146.875 108.741 147.507 108.459 147.674 107.921C147.837 107.383 147.464 106.79 146.84 106.607C146.215 106.421 145.575 106.706 145.417 107.246Z" fill="#202124"/>
+						<path d="M141.379 106.082C141.23 106.626 141.614 107.208 142.232 107.386C142.856 107.564 143.488 107.271 143.643 106.727C143.799 106.187 143.416 105.603 142.79 105.425C142.16 105.243 141.53 105.544 141.379 106.082Z" fill="#202124"/>
+						<path d="M137.325 104.969C137.184 105.512 137.571 106.09 138.2 106.26C138.824 106.432 139.45 106.13 139.596 105.587C139.745 105.045 139.355 104.463 138.725 104.289C138.093 104.12 137.466 104.423 137.325 104.969Z" fill="#202124"/>
+						<path d="M133.258 103.904C133.125 104.452 133.527 105.025 134.151 105.187C134.778 105.351 135.396 105.04 135.538 104.492C135.675 103.947 135.277 103.373 134.643 103.207C134.012 103.046 133.391 103.358 133.258 103.904Z" fill="#202124"/>
+						<path d="M129.178 102.891C129.052 103.439 129.462 104.009 130.093 104.16C130.719 104.314 131.335 104 131.465 103.451C131.592 102.904 131.186 102.331 130.552 102.176C129.918 102.02 129.303 102.34 129.178 102.891Z" fill="#202124"/>
+						<path d="M125.088 101.928C124.969 102.476 125.388 103.042 126.017 103.186C126.651 103.335 127.259 103.012 127.378 102.458C127.499 101.908 127.083 101.344 126.444 101.192C125.811 101.044 125.198 101.372 125.088 101.928Z" fill="#202124"/>
+						<path d="M120.98 101.012C120.876 101.566 121.301 102.125 121.938 102.264C122.567 102.402 123.171 102.072 123.281 101.517C123.393 100.967 122.97 100.403 122.328 100.262C121.691 100.119 121.087 100.459 120.98 101.012Z" fill="#202124"/>
+						<path d="M116.869 100.15C116.769 100.704 117.203 101.257 117.841 101.391C118.473 101.518 119.07 101.18 119.175 100.629C119.275 100.073 118.842 99.5174 118.2 99.3783C117.56 99.2496 116.964 99.5944 116.869 100.15Z" fill="#202124"/>
+						<path d="M112.743 99.3354C112.654 99.895 113.097 100.445 113.733 100.566C114.367 100.688 114.96 100.342 115.053 99.7841C115.147 99.2281 114.705 98.6793 114.063 98.551C113.421 98.4281 112.83 98.7781 112.743 99.3354Z" fill="#202124"/>
+						<path d="M184.216 23.5232C184.032 23.8498 184.196 24.2688 184.584 24.4658C184.968 24.6586 185.431 24.5569 185.625 24.2369C185.82 23.9145 185.658 23.4915 185.263 23.2898C184.871 23.0901 184.403 23.2016 184.216 23.5232Z" fill="#202124"/>
+						<path d="M181.665 22.322C181.496 22.655 181.681 23.0695 182.071 23.2505C182.459 23.4305 182.922 23.3137 183.1 22.9842C183.276 22.6555 183.101 22.2352 182.7 22.0525C182.296 21.8635 181.833 21.9858 181.665 22.322Z" fill="#202124"/>
+						<path d="M179.068 21.1998C178.914 21.5415 179.116 21.9464 179.513 22.1187C179.91 22.2877 180.363 22.1536 180.529 21.8189C180.692 21.4796 180.494 21.0688 180.087 20.8943C179.678 20.7167 179.219 20.8571 179.068 21.1998Z" fill="#202124"/>
+						<path d="M176.432 20.1652C176.291 20.5134 176.508 20.9132 176.912 21.0692C177.317 21.2237 177.764 21.0773 177.911 20.7315C178.059 20.3918 177.847 19.9849 177.431 19.8241C177.02 19.6637 176.569 19.8187 176.432 20.1652Z" fill="#202124"/>
+						<path d="M173.758 19.2167C173.635 19.5704 173.867 19.9625 174.276 20.1059C174.686 20.2485 175.126 20.0872 175.257 19.7353C175.394 19.3878 175.16 18.9844 174.744 18.8398C174.322 18.6919 173.878 18.864 173.758 19.2167Z" fill="#202124"/>
+						<path d="M171.053 18.3559C170.944 18.7121 171.197 19.1022 171.611 19.2312C172.027 19.3599 172.456 19.1811 172.573 18.8289C172.691 18.4746 172.441 18.0772 172.017 17.944C171.594 17.8144 171.163 17.9999 171.053 18.3559Z" fill="#202124"/>
+						<path d="M168.324 17.5875C168.23 17.9467 168.495 18.3296 168.913 18.4432C169.333 18.5578 169.756 18.3655 169.855 18.0048C169.958 17.6466 169.693 17.2582 169.263 17.138C168.836 17.0255 168.41 17.224 168.324 17.5875Z" fill="#202124"/>
+						<path d="M165.569 16.9067C165.492 17.2724 165.772 17.6447 166.195 17.7447C166.616 17.8471 167.028 17.6372 167.112 17.2774C167.197 16.9128 166.919 16.5323 166.488 16.4322C166.052 16.3265 165.642 16.5416 165.569 16.9067Z" fill="#202124"/>
+						<path d="M162.793 16.322C162.734 16.6873 163.031 17.0542 163.455 17.1386C163.882 17.2266 164.279 17.0027 164.349 16.6386C164.418 16.2728 164.123 15.9 163.688 15.8081C163.255 15.7232 162.853 15.9509 162.793 16.322Z" fill="#202124"/>
+						<path d="M160.007 15.8283C159.964 16.1963 160.276 16.5542 160.7 16.6257C161.126 16.6978 161.517 16.4619 161.569 16.0903C161.624 15.7233 161.312 15.3586 160.875 15.283C160.439 15.2115 160.048 15.4546 160.007 15.8283Z" fill="#202124"/>
+						<path d="M157.208 15.4292C157.181 15.8007 157.507 16.1473 157.936 16.207C158.362 16.2633 158.742 16.0129 158.778 15.639C158.813 15.2671 158.489 14.9139 158.049 14.8543C157.612 14.795 157.236 15.0553 157.208 15.4292Z" fill="#202124"/>
+						<path d="M154.406 15.1242C154.397 15.4999 154.737 15.8353 155.167 15.88C155.592 15.9217 155.955 15.6579 155.974 15.2816C155.996 14.9056 155.661 14.5674 155.22 14.5206C154.78 14.4764 154.415 14.7469 154.406 15.1242Z" fill="#202124"/>
+						<path d="M185.836 35.778C185.588 36.2125 185.811 36.7743 186.324 37.0335C186.842 37.2929 187.463 37.1565 187.721 36.7283C187.981 36.2974 187.767 35.7288 187.238 35.46C186.712 35.1959 186.084 35.3405 185.836 35.778Z" fill="#202124"/>
+						<path d="M182.417 34.1621C182.189 34.61 182.436 35.1647 182.962 35.407C183.484 35.6485 184.099 35.4934 184.338 35.0536C184.583 34.6127 184.343 34.0516 183.804 33.8035C183.266 33.5504 182.644 33.7162 182.417 34.1621Z" fill="#202124"/>
+						<path d="M178.943 32.6634C178.736 33.1162 179.003 33.6643 179.534 33.8917C180.069 34.1159 180.675 33.9367 180.897 33.4906C181.116 33.0383 180.852 32.4825 180.305 32.2498C179.756 32.0164 179.147 32.2055 178.943 32.6634Z" fill="#202124"/>
+						<path d="M175.41 31.2748C175.224 31.7408 175.514 32.2764 176.055 32.4858C176.597 32.6936 177.195 32.4959 177.392 32.0351C177.595 31.5791 177.306 31.0312 176.751 30.8182C176.195 30.6032 175.594 30.81 175.41 31.2748Z" fill="#202124"/>
+						<path d="M171.831 30.007C171.666 30.4761 171.979 31.0076 172.528 31.1981C173.077 31.3861 173.667 31.1704 173.841 30.7014C174.018 30.2357 173.712 29.694 173.15 29.4989C172.587 29.3059 171.997 29.5331 171.831 30.007Z" fill="#202124"/>
+						<path d="M168.21 28.854C168.067 29.3329 168.401 29.8539 168.956 30.0259C169.513 30.1973 170.087 29.9571 170.244 29.4844C170.401 29.0126 170.067 28.481 169.502 28.3044C168.929 28.1235 168.353 28.3755 168.21 28.854Z" fill="#202124"/>
+						<path d="M164.552 27.821C164.433 28.308 164.786 28.8174 165.346 28.9707C165.91 29.1262 166.469 28.8646 166.606 28.3853C166.741 27.9054 166.388 27.3849 165.813 27.2273C165.239 27.0693 164.673 27.3409 164.552 27.821Z" fill="#202124"/>
+						<path d="M160.862 26.9114C160.762 27.403 161.138 27.9009 161.703 28.0364C162.268 28.1685 162.821 27.8942 162.931 27.4068C163.046 26.9224 162.674 26.4103 162.092 26.2729C161.513 26.1341 160.963 26.4251 160.862 26.9114Z" fill="#202124"/>
+						<path d="M157.15 26.1296C157.071 26.6218 157.469 27.1103 158.035 27.2223C158.604 27.3446 159.139 27.0439 159.233 26.5524C159.327 26.0597 158.929 25.5631 158.347 25.4449C157.765 25.3264 157.232 25.6359 157.15 26.1296Z" fill="#202124"/>
+						<path d="M153.418 25.4667C153.359 25.9639 153.777 26.4422 154.347 26.5379C154.92 26.635 155.439 26.3174 155.508 25.8215C155.582 25.3269 155.166 24.8398 154.58 24.7426C153.996 24.6418 153.474 24.9705 153.418 25.4667Z" fill="#202124"/>
+						<path d="M149.674 24.9368C149.634 25.434 150.07 25.8972 150.644 25.9729C151.216 26.0518 151.722 25.7174 151.772 25.2188C151.82 24.7208 151.387 24.2493 150.797 24.1685C150.212 24.0851 149.704 24.4308 149.674 24.9368Z" fill="#202124"/>
+						<path d="M145.922 24.5273C145.907 25.0285 146.36 25.4782 146.932 25.5363C147.506 25.5931 147.992 25.2389 148.022 24.738C148.048 24.2371 147.595 23.7788 147.008 23.7191C146.419 23.658 145.932 24.0232 145.922 24.5273Z" fill="#202124"/>
+						<path d="M117.506 200.941C117.506 200.941 116.845 203.144 117.939 203.461C119.031 203.78 119.656 201.57 119.656 201.57L137.82 148.274C139.194 143.567 136.931 143.066 135.674 142.696C134.416 142.333 132.24 141.539 130.869 146.244L117.506 200.941Z" fill="#202124"/>
+						<path d="M112.392 177.829C112.392 177.829 112.278 178.099 112.063 178.607C111.843 179.115 111.577 179.877 111.219 180.842C110.887 181.815 110.464 182.995 110.075 184.373C109.66 185.746 109.241 187.308 108.829 189.024C108.406 190.738 108.028 192.612 107.648 194.599C107.309 196.591 106.93 198.693 106.704 200.888C106.589 201.985 106.473 203.1 106.356 204.229C106.283 205.362 106.209 206.508 106.135 207.663C105.957 209.972 105.951 212.325 105.871 214.673C105.816 215.847 105.849 217.022 105.856 218.192C105.866 219.362 105.876 220.526 105.887 221.682C105.943 223.992 106.1 226.263 106.198 228.46C106.23 229.56 106.379 230.634 106.463 231.689C106.565 232.743 106.663 233.774 106.759 234.777C106.917 236.787 107.258 238.665 107.492 240.407C107.618 241.276 107.739 242.109 107.854 242.903C107.911 243.299 107.967 243.685 108.021 244.06C108.093 244.432 108.162 244.794 108.229 245.145C108.501 246.546 108.738 247.768 108.933 248.774C109.323 250.785 109.546 251.933 109.546 251.933L109.723 251.898C109.723 251.898 109.545 250.743 109.233 248.72C109.077 247.71 108.888 246.483 108.671 245.076C108.618 244.724 108.562 244.361 108.506 243.988C108.466 243.612 108.425 243.225 108.384 242.828C108.299 242.034 108.211 241.2 108.12 240.329C107.954 238.586 107.686 236.707 107.606 234.701C107.506 232.698 107.308 230.592 107.243 228.408C107.209 226.222 107.119 223.964 107.129 221.671C107.152 220.525 107.175 219.369 107.198 218.209C107.226 217.049 107.224 215.884 107.313 214.722C107.476 212.399 107.544 210.071 107.821 207.795C107.933 206.655 108.045 205.525 108.156 204.408C108.296 203.296 108.434 202.196 108.57 201.114C108.789 198.945 109.132 196.867 109.37 194.881C109.496 193.89 109.672 192.934 109.813 192.004C109.954 191.074 110.077 190.172 110.242 189.316C110.391 188.455 110.534 187.631 110.671 186.847C110.822 186.065 110.964 185.323 111.099 184.627C111.225 183.927 111.355 183.275 111.49 182.676C111.613 182.073 111.726 181.519 111.828 181.018C112.274 179.025 112.562 177.889 112.562 177.889L112.392 177.829Z" fill="#202124"/>
+					</svg>
 						
+				</figure> -->
+									</div>
+
+									<!-- Content -->
+									<div class="col-lg-6 ms-auto">
+										<!-- Title and content -->
+										<h2 class="mb-lg-4 EVL">EV Learning & Innovation Hub </h2>
+
+										<style>
+											@media (max-width: 480px) {
+												.EVL {
+													font-size: calc(13px + 1.8vw);
+													text-align: justify;
+												}
+											}
+										</style>
+
+
+										<p class="mb-lg-4" style="font-size: 16px !important;">EVRobotics Skill Coach
+											proudly partners with MIT-WPU, Kothrud to establish a cutting-edge Centre of
+											Excellence & Skill Development Hub. This initiative is built to empower
+											youth with industry-ready skills in Electric Vehicles (EVs), Robotics,
+											Industrial Automation, and AI & Machine Learning</p>
+										<!-- <a href="portfolio-list.html" class="btn btn-dark mb-0">Explore our projects</a> -->
+										<hr class="my-4 my-lg-5"> <!-- Divider -->
+
+										<!-- List -->
+										<div class="row">
+											<div class="col-sm-6">
+												<ul class="list-group list-group-borderless">
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Industry
+														Collaboration</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Future-Ready
+														Training</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>100%
+														Practical Approach</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Scalability
+													</li>
+												</ul>
+											</div>
+
+											<div class="col-sm-6">
+												<ul class="list-group list-group-borderless">
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Skill
+														Empowerment for Youth</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Career
+														Launchpad</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Focus on
+														Smart Mobility</li>
+													<li class="list-group-item heading-color fw-normal d-flex mb-0"><i
+															class="bi bi-patch-check text-primary me-2"></i>Built for
+														Innovation & Growth
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="vimal-story-grid">
+							<div class="vimal-story-card">
+
+								<h3 class="vimal-story-title">Vision & Leadership</h3>
+								<p class="vimal-story-text">Believing that Bharat will lead the world by creating
+									trends, not following them. Transforming young talent into skilled, self-reliant,
+									and spiritually grounded global tech leaders.</p>
+							</div>
+							<div class="vimal-story-card">
+								<!-- <div class="vimal-story-icon">🚀</div> -->
+								<h3 class="vimal-story-title">Industry Excellence</h3>
+								<p class="vimal-story-text">Decade-long experience working with giants like Tata,
+									Mahindra, Toyota, and mentoring 25+ startups in Electric Vehicles, Robotics, and
+									Automation.</p>
+							</div>
+							<div class="vimal-story-card">
+								<!-- <div class="vimal-story-icon">🛠️</div> -->
+								<h3 class="vimal-story-title">Practical Innovation</h3>
+								<p class="vimal-story-text">Every learner deserves the power to build, not just observe.
+									Our labs provide hands-on experience with real EVs, battery packs, MATLAB
+									simulations, and AI integration.</p>
+							</div>
+							<div class="vimal-story-card">
+								<!-- <div class="vimal-story-icon">🌟</div> -->
+								<h3 class="vimal-story-title">Movement & Philosophy</h3>
+								<p class="vimal-story-text">EVRobotics is a movement towards a smarter, sustainable, and
+									self-sufficient India. Training to make for India and the world, not just talking
+									about "Make in India."</p>
+							</div>
+						</div>
+
+						<!-- Enhanced COE Section -->
+						<!-- <div class="vimal-coe-banner">
+						<h3 class="vimal-coe-title">Centre of Excellence & Skill Development Hub</h3>
+						<p class="vimal-coe-location">EVRobotics Skill Coach – MIT-WPU Kothrude, Pune</p>
+						<p class="vimal-coe-partnership">(In association with Department of Polytechnic)</p>
+					</div> -->
+					</div>
+				</div>
+			</div>
+
+
+			<!-- ------------------ founder note end ------------------ -->
+
+
+
+			<section class="ev-training-section">
+				<div class="main-container">
+					<!-- Hero Header -->
+					<div class="course-hero-header">
+						<h1 class="primary-course-title"><i class="fas fa-bolt animated-bolt-icon"></i>Launch Your
+							Career in Electric Vehicles</h1>
+						<p class="course-subtitle-text" >Electric Vehicle Course at MIT-WPU Pune | EV Certification
+							Course with Practical Training <br>
+							<span class="course-highlight-text">Skill Coach Centre of Excellence (COE) – MIT-World Peace
+								University (MIT-WPU),
+								Pune
+							</span>
+						</p>
+
+
+						<p class="course-hero-description" >
+							Looking to build a career in the booming Electric Vehicle (EV) industry? MIT-WPU Pune
+							offers India's premier <strong class="course-highlight-text"> EV Certification
+								Course</strong> designed to produce industry-ready
+							professionals through hands-on practical learning. <br>
+
+
+							Our<strong class="course-highlight-text"> Centre of Excellence (COE),</strong> in collaboration with the Department of Polytechnic, is a
+							specialized industrial training hub focused on <strong class="course-highlight-text">Electric Vehicle Courses</strong> like battery pack
+							design, BMS systems, motor control, robotics, automation, and AI/ML for smart mobility.</em>
+						</p>
+					</div>
+
+					<!-- Why Choose Section -->
+					<div class="course-benefits-section">
+						<h2 class="benefits-section-title" style="color: #000;"><i
+								class="fas fa-fire fire-animation-icon"></i>Why Choose This Course?</h2>
+						<div class="benefits-grid-container">
+							<div class="individual-benefit-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text"><strong>Real EV Hardware</strong> – Work on actual
+									two-wheeler & four-wheeler electric vehicles</span>
+							</div>
+							<div class="individual-benefit-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text"><strong>Hands-On Training</strong> – Motors, Battery
+									Packs, Controllers, EV Chargers – you name it!</span>
+							</div>
+							<div class="individual-benefit-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text"><strong>Top Tech Tools</strong> – MATLAB, Simulink,
+									Python, AutoCAD, SCADA, Fusion 360</span>
+							</div>
+							<div class="individual-benefit-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text"><strong>Industry-Centric Curriculum</strong> –
+									Designed for job-readiness from Day 1</span>
+							</div>
+							<div class="individual-benefit-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text"><strong>Globally Recognized
+										Certification</strong></span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Learning Modes -->
+					<div class="flexible-learning-section">
+						<div class="learning-modes-inner-content">
+							<h2 class="benefits-section-title"><i class="fas fa-graduation-cap"></i>Flexible Learning
+								Modes</h2>
+							<div class="learning-options-grid">
+								<div class="learning-mode-card">
+									<i class="fas fa-laptop learning-mode-icon"></i>
+									<div class="learning-mode-title">Online</div>
+									<div class="learning-mode-description">100% remote access to theory, software &
+										simulations</div>
+								</div>
+								<div class="learning-mode-card">
+									<i class="fas fa-building learning-mode-icon"></i>
+									<div class="learning-mode-title">Offline</div>
+									<div class="learning-mode-description">Full-time, campus-based practical training in
+										Pune</div>
+								</div>
+								<div class="learning-mode-card">
+									<i class="fas fa-exchange-alt learning-mode-icon"></i>
+									<div class="learning-mode-title">Hybrid</div>
+									<div class="learning-mode-description">4 Months Online + 2 Months Hands-On Lab Work
+										at MIT-WPU</div>
+								</div>
+							</div>
+							<p style="margin-top: 20px; font-size: 1.1rem; text-align: center; opacity: 0.9;">
+								<i class="fas fa-lightbulb"></i> <em>Perfect for students, professionals & entrepreneurs
+									across India</em>
+							</p>
+						</div>
+					</div>
+
+					<!-- Specializations -->
+					<div class="course-specializations-section">
+						<h2 class="benefits-section-title"><i class="fas fa-briefcase"></i>Specializations That Set You
+							Apart</h2>
+						<div class="specializations-grid-layout">
+							<div class="specialization-card">
+								<i class="fas fa-tools specialization-icon"></i>
+								<div class="specialization-title">EV Design & Prototyping</div>
+								<div class="specialization-description">From CAD to Chassis</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-battery-full specialization-icon"></i>
+								<div class="specialization-title">Battery Pack Design</div>
+								<div class="specialization-description">Lithium-ion tech, BMS, thermal safety</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-charging-station specialization-icon"></i>
+								<div class="specialization-title">Charging Systems</div>
+								<div class="specialization-description">Learn CCS, CHAdeMO, EVSE deployment</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-car specialization-icon"></i>
+								<div class="specialization-title">Motor Control & Programming</div>
+								<div class="specialization-description">BLDC, PMSM, FOC tuning</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-chart-line specialization-icon"></i>
+								<div class="specialization-title">Simulation with MATLAB</div>
+								<div class="specialization-description">Drive cycles, SOC, efficiency</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-search specialization-icon"></i>
+								<div class="specialization-title">Diagnostics & Maintenance</div>
+								<div class="specialization-description">CAN, controller fault detection</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-robot specialization-icon"></i>
+								<div class="specialization-title">Industrial Automation</div>
+								<div class="specialization-description">PLC, SCADA, Pneumatics</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-microchip specialization-icon"></i>
+								<div class="specialization-title">Robotics & IoT</div>
+								<div class="specialization-description">Sensor & Arduino/RPi integration</div>
+							</div>
+							<div class="specialization-card">
+								<i class="fas fa-brain specialization-icon"></i>
+								<div class="specialization-title">AI/ML in EV</div>
+								<div class="specialization-description">Smart battery & predictive analytics with Python
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Target Audience -->
+					<div class="target-students-section">
+						<h2 class="benefits-section-title" style="color: black;"><i class="fas fa-users"></i>Who Should
+							Enroll?</h2>
+						<div class="students-grid-layout">
+							<div class="student-category-item">
+								<i class="fas fa-user-graduate student-category-icon"></i>
+								<span class="student-category-text">Diploma/Degree Engineering Students</span>
+							</div>
+							<div class="student-category-item">
+								<i class="fas fa-user-tie student-category-icon"></i>
+								<span class="student-category-text">Working Professionals in Automotive/Tech</span>
+							</div>
+							<div class="student-category-item">
+								<i class="fas fa-wrench student-category-icon"></i>
+								<span class="student-category-text">Mechanics & Technicians wanting to upskill</span>
+							</div>
+							<div class="student-category-item">
+								<i class="fas fa-rocket student-category-icon"></i>
+								<span class="student-category-text">EV Start-Up Founders & Dreamers</span>
+							</div>
+							<div class="student-category-item">
+								<i class="fas fa-heart student-category-icon"></i>
+								<span class="student-category-text">Passionate Individuals who believe in a sustainable
+									future</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Career Opportunities -->
+					<div class="career-paths-section">
+						<h2 class="benefits-section-title"><i class="fas fa-star"></i>Career Opportunities</h2>
+						<div class="career-opportunities-grid">
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">EV Design Engineer</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">Battery Pack & BMS Developer</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">Motor Controller Programmer</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">Charging Infrastructure Expert</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">EV Maintenance Technician</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">Simulation & Testing Engineer</span>
+							</div>
+							<div class="career-opportunity-item">
+								<i class="fas fa-check-circle benefit-checkmark-icon"></i>
+								<span class="benefit-feature-text">Automation & IoT Specialist</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA Section -->
+					<div class="enrollment-cta-section">
+						<div class="cta-inner-content">
+							<div class="cta-badges-container">
+								<span class="cta-info-badge"><i class="fas fa-bullseye"></i> Limited Seats</span>
+								<span class="cta-info-badge">Certification Included</span>
+								<span class="cta-info-badge">Industry-Endorsed</span>
+							</div>
+							<p class="cta-main-text">
+								<i class="fas fa-hand-point-right"></i> Don't just study EVs — <strong>Experience, Build
+									& Master them!</strong><br>
+								Join India's most advanced EV Practical Course and turn your passion into a high-powered
+								profession.
+							</p>
+							<button class="enrollment-action-button"><a href="./contact.html" style="color: inherit;"><i
+										class="fas fa-phone"></i> Enroll Now & Drive Your Future Forward!</a></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+
+	<!-- =======================
+Footer START -->
+	<footer class="">
+		<div class="container position-relative mt-sm-5">
+
+
+
+			<!-- Divider -->
+			<hr class="my-5">
+
+			<!-- Footer Widgets -->
+			<div class="row g-4 justify-content-between">
+				<!-- Widget 2 START -->
+				<div class="col-lg-3">
+
+					<div class="row g-2 mb-4 mb-sm-5">
+
+						<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+							<a href="#"> <img src="assets/images/logo/soho-logo.png" alt=""> </a>
+						</div>
+
+					</div>
+
+					<!-- Social buttons -->
+					<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+					<ul class="list-inline mb-0 mt-3">
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/whatsapp.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img
+									src="assets/images/insta.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/facebook.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/linkedin.png" height="30px" /></a> </li>
+
+					</ul>
+				</div>
+				<!-- Widget 2 END -->
+				<!-- Widget 1 START -->
+				<div class="col-lg-9 col-xl-9">
+					<div class="row g-4">
+						<!-- Link block -->
+						<div class="col-4 col-md-2">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Links</h6>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="./home.html">Home </a></li>
+								<li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Courses </a></li>
+
+								<li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+								<li class="nav-item"><a class="nav-link" href="./gallery.html">Contact us</a></li>
+
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-8 col-md-4">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Our Services</h6>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link pt-0" href="./course.html">Electric Vehicles
+										(EV)</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Industrial Automation</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Robotics</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Design & Manufacturing
+										Tools</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Artificial Intelligence &
+										Machine
+										Learning</a></li>
+
+
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-md-3">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Mumbai Address</h6>
+							<ul class="list-group list-group-borderless">
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-geo-alt" style=" color: #ff0000e0"></i>
+									&nbsp;Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank,
+									Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204 <br>
+								</li>
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-telephone" style=" color: #ff0000e3"></i>
+									&nbsp;- 9990634057<br>
+								</li>
+
+
+
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Pune Address</h6>
+							<ul class="list-group list-group-borderless">
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-geo-alt" style=" color: #ff0000e3"></i>
+									&nbsp; MIT ,WPU Department of Polytechnic
+									Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038 <br>
+								</li>
+
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-telephone" style=" color: #ff0000e3"></i>
+									&nbsp;- 9137419684<br>
+								</li>
+
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- Widget 1 END -->
+
+
+			</div>
+
+			<!-- Divider -->
+			<hr class="mt-4 mb-3">
+
+			<!-- Bottom footer -->
+			<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+				<!-- Copyright link-->
+				<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by
+					<a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business
+						Solutions Pvt Ltd</a>.
+				</div>
+				<!-- Copyright link-->
+			</div>
+		</div>
+	</footer>
+	<!-- =======================
+Footer END -->
+
+	<!-- Back to top -->
+	<div class="back-top"></div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!--Vendors-->
+	<script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+	<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/imagesLoaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Theme Functions -->
+	<script src="assets/js/functions.js"></script>
+
+</body>
 
-								  <span style="font-size:18px;"><i class="fa fa-phone"></i> <a href="#">+91 8308096700 </a></span><br>
-
-									 <span style="font-size:18px;"><i class="fa fa-envelope"></i> <a href="#">info@yantrikengineers.com</a></span>
-
-                              <p></p>
-
-               </div>
-
-            </div>
-
-         </div>
-
-      </div>
-	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.387998863745!2d73.96218621489194!3d18.46607618744075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzU3LjkiTiA3M8KwNTcnNTEuOCJF!5e0!3m2!1sen!2sin!4v1553947577962!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-      <!-- Modal -->
-
-     <div class="modal fade" id="search_bar" role="dialog">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
-               </div>
-               <div class="modal-body">
-                  <div class="row">
-                     <div class="col-lg-8 col-md-8 col-sm-8 offset-lg-2 offset-md-2 offset-sm-2 col-xs-10 col-xs-offset-1">
-                        <div class="navbar-search">
-                           <form action="#" method="get" id="search-global-form" class="search-global">
-                              <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
-                              <button class="search-global__btn"><i class="fa fa-search"></i></button>
-                              <div class="search-global__note">Begin typing your search above and press return to search.</div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- End Model search bar -->
-      <!-- footer -->
-      <footer class="footer_style_2 footer_blog">
-         <div class="container">
-            <div class="row">
-			
-			  <div class="col-md-4">
-                        <div class="main-heading left_text">
-                           <h2>Yantrik Engineers</h2>
-                        </div>
-                        <p>Yantrik Group was formed in the Year of 2000 with deep and established core values of integrity, trust, transparency and commitment and has shown considerable growth and capabilities with distinct style of professional services in manufacturing & designing We serve our skilled manpower for Heavy fabrication for steel, </p>
-                        <ul class="social_icons">
-                           <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="row">
-                           <div class="col-md-4">
-                              <div class="main-heading left_text">
-                                 <h2>Additional links</h2>
-                              </div>
-                              <ul class="footer-menu">
-                                 <li><a href="../index.html"><i class="fa fa-angle-right"></i> Home</a></li>
-                                 <li><a href="../aboutus.html"><i class="fa fa-angle-right"></i> About us</a></li>
-                                 <li><a href="../qualitypolicy.html"><i class="fa fa-angle-right"></i> Our Expertise</a></li>
-                                 <li><a href="../clients.html"><i class="fa fa-angle-right"></i> Clients</a></li>
-                                 <li><a href="../contact.html"><i class="fa fa-angle-right"></i> Contact us</a></li>
-                              </ul>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="main-heading left_text">
-                                 <h2>Our specialties</h2>
-                              </div>
-                              <ul class="footer-menu">
-                                 <li><a href="#"><i class="fa fa-angle-right"></i> Lighting</a></li>
-                                  <li><a href="#"><i class="fa fa-angle-right"></i> Heat exchanger</a></li>
-									 <li><a href="#"><i class="fa fa-angle-right"></i> Pressure vessel & Reactors</a></li>
-									 <li><a href="#"><i class="fa fa-angle-right"></i> IBR & Non IBR Piping</a></li>
-									 <li><a href="#"><i class="fa fa-angle-right"></i> Storage tank</a></li>
-									 
-                              </ul>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="main-heading left_text">
-                                 <h2>Contact us</h2>
-                              </div>
-                              <p> 
-                              <i class="fa fa-map" style="color: #0fc3d7;"></i> Gat No-319/320, Palkhi Visava, Pune-Saswad Road, Village-Zendewadi,
-                              Tal- Purandar, Dist- Pune, Maharashtra, 412 301. 
-                              <br>
-                              <span style="font-size:18px;">
-                                                                  <a href=""><i class="fa fa-phone" style="color: #0fc3d7;"></i> +91 7709170121 <br>  +91 9823645135</a>
-                              </span><br>
-                              <span style="font-size:18px;">
-                                                                 <a href="mailto:project@yantrikengineers.com"><i class="fa fa-envelope-o" style="color: #0fc3d7;"></i>  yantrikengineers3@gmail.com <br> yantrikrtd@gmail.com</a>
-
-                              </span>
-                            </p>
-                           </div>
-                        </div>
-                     </div>
-			
-               <div class="cprt">
-                  <p>Copyright © yantrikengineers.com All rights reserved.</p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
 
-      <!-- js section -->
-
-      
-<script src="../assets/frontend/js/jquery.min.js"></script>
-<script src="../assets/frontend/js/owl.carousel.min.js"></script>
-
-
-      <script src="../assets/frontend/js/bootstrap.min.js"></script>
-
-      <!-- menu js -->
-
-      <script src="../assets/frontend/js/menumaker.js"></script>
-
-      <!-- wow animation -->
-
-      <script src="../assets/frontend/js/wow.js"></script>
-
-      <!-- custom js -->
-
-      <script src="../assets/frontend/js/custom.js"></script>
-
-      <!-- revolution js files -->
-
-      <script src="../assets/frontend/revolution/js/jquery.themepunch.tools.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-
-      <script src="../assets/frontend/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-      <!-- map js -->
-
-<script>
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                items: 6,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-				  autoplaySpeed: 2000,
-                autoplayTimeout: 1000,
-				fluidSpeed: true,
-				smartSpeed: 2000,
-                autoplayHoverPause: true
-              });
-              $('.play').on('click', function() {
-                owl.trigger('play.owl.autoplay', [1000])
-              })
-              $('.stop').on('click', function() {
-                owl.trigger('stop.owl.autoplay')
-              })
-            })
-          </script>
-
-      <script>
-
-         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-
-         // Australia.
-
-         function initMap() {
-
-           var map = new google.maps.Map(document.getElementById('map'), {
-
-             zoom: 11,
-
-             center: {lat: 40.645037, lng: -73.880224},
-
-         styles: [
-
-                  {
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#fefefe'}]
-
-                  },
-
-                  {
-
-                    elementType: 'labels.icon',
-
-                    stylers: [{visibility: 'off'}]
-
-                  },
-
-                  {
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#616161'}]
-
-                  },
-
-                  {
-
-                    elementType: 'labels.text.stroke',
-
-                    stylers: [{color: '#f5f5f5'}]
-
-                  },
-
-                  {
-
-                    featureType: 'administrative.land_parcel',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#bdbdbd'}]
-
-                  },
-
-                  {
-
-                    featureType: 'poi',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#eeeeee'}]
-
-                  },
-
-                  {
-
-                    featureType: 'poi',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#757575'}]
-
-                  },
-
-                  {
-
-                    featureType: 'poi.park',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#e5e5e5'}]
-
-                  },
-
-                  {
-
-                    featureType: 'poi.park',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#9e9e9e'}]
-
-                  },
-
-                  {
-
-                    featureType: 'road',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#eee'}]
-
-                  },
-
-                  {
-
-                    featureType: 'road.arterial',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#3d3523'}]
-
-                  },
-
-                  {
-
-                    featureType: 'road.highway',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#eee'}]
-
-                  },
-
-                  {
-
-                    featureType: 'road.highway',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#616161'}]
-
-                  },
-
-                  {
-
-                    featureType: 'road.local',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#9e9e9e'}]
-
-                  },
-
-                  {
-
-                    featureType: 'transit.line',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#e5e5e5'}]
-
-                  },
-
-                  {
-
-                    featureType: 'transit.station',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#000'}]
-
-                  },
-
-                  {
-
-                    featureType: 'water',
-
-                    elementType: 'geometry',
-
-                    stylers: [{color: '#c8d7d4'}]
-
-                  },
-
-                  {
-
-                    featureType: 'water',
-
-                    elementType: 'labels.text.fill',
-
-                    stylers: [{color: '#b1a481'}]
-
-                  }
-
-                ]
-
-         });
-
-         
-
-           var image = 'images/layout_img/location_icon_map_cont.html';
-
-           var beachMarker = new google.maps.Marker({
-
-             position: {lat: 40.645037, lng: -73.880224},
-
-             map: map,
-
-             icon: image
-
-           });
-
-         }
-
-      </script>
-
-      <!-- google map js -->
-
-      <script src="../assets/frontend/https_/maps.googleapis.com/maps/api/jsd340.html?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&amp;callback=initMap"></script>
-   </body>
-
-
-<!-- Mirrored from www.yantrikengineers.com/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Mar 2023 07:27:15 GMT -->
 </html>
