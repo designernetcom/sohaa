@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>EVRobotics Skill Coach (India) Pvt. Ltd </title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="EVRobotics Skill Coach (India) Pvt. Ltd">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
+	
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Header START -->
+<header class="header-sticky header-absolute">
+	<!-- Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link  active" href="index.html" data-bs-auto-close="outside"  aria-haspopup="true" aria-expanded="false">Home</a>
+						
+					</li>
+
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">About</a>
+						<ul class="dropdown-menu">
+							<!-- Dropdown submenu -->
+	
+							<li> <a class="dropdown-item" href="about.html">About </a></li>
+							<li> <a class="dropdown-item" href="founder-messege.html">Founder’s Message</a></li>
+							
+		
+
+			
+
+
+	
+
+
+						
+						</ul>
+					</li>
+
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link dropdown-toggle" href="course.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+						<div class="dropdown-menu py-0">
+							<div class="row p-2 p-sm-4">
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-4 col-xxl-3">
+									<div class="d-md-flex gap-4 h-100">
+										<!-- Links -->
+										<ul class="list-unstyled w-100">
+											<li class="dropdown-header h6 mb-2">Useful links</li>
+											<li> <a class="dropdown-item" href="index.html"><i class="bi bi-file-text fa-fw me-2"></i>Home</a> </li>
+											<li> <a class="dropdown-item" href="course.html"><i class="bi bi-chat-left fa-fw me-2"></i>Courses</a> </li>
+											<li> <a class="dropdown-item" href="course.html"><i class="bi bi-calendar3-week fa-fw me-2"></i>Training</a> </li>
+											<li> <a class="dropdown-item" href="course.html"><i class="bi bi-blockquote-right fa-fw me-2"></i>workshops</a> </li>
+											<li> <a class="dropdown-item" href="course.html"><i class="bi bi-blockquote-right fa-fw me-2"></i>FAQ</a> </li>
+								
+										</ul>
+										<!-- Divider line -->
+										<div class="vr ms-2 ms-auto d-none d-md-block"></div>
+									</div>
+								</div>
+
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-4 col-xxl-5 h-100">
+									<span class="dropdown-header h6 mb-2">Core Domain</span>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi-file-earmark-text heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<a class="stretched-link heading-color fw-bold mb-0" href="course.html"> Electric Vehicles (EV) </a> 
+									
+											</div>
+										</div>
+										<!-- Button -->
+									
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-stickies heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<a class="stretched-link heading-color fw-bold mb-0" href="course.html">Industrial Automation </a>
+										
+											</div>
+										</div>
+								
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-bullseye heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<a class="stretched-link heading-color fw-bold mb-0" href="course.html">  Robotics </a>
+											
+											</div>
+										</div>
+								
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<a class="stretched-link heading-color fw-bold mb-0" href="course.html"> Design & Manufacturing Tools:</a>
+									
+											</div>
+										</div>
+								
+									</div>
+													<!-- Dropdown item -->
+													<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+														<div class="d-flex me-3">
+															<!-- Icon -->
+															<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
+															<!-- Content -->
+															<div class="mx-2">
+																<a class="stretched-link heading-color fw-bold mb-0" href="course.html"> Artificial Intelligence & Machine Learning</a>
+													 
+															</div>
+														</div>
+												
+													</div>
+								</div>
+
+								<!-- Feature resources card -->
+								<div class="col-lg-4">
+									<span class="dropdown-header h6 mb-2">Courses</span>
+
+									<!-- Feature card -->
+									<div class="card bg-transparent px-3">
+										<!-- Image -->
+										<img src="assets/images/bg/AI-machine-learning.jpeg" class="rounded mb-3" alt="feature-img">
+								
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+		
+
+					<!-- Nav item -->
+					<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+       			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+	
+	
+				<!-- Dark mode option END -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
+	
+
+		</div>
+	</nav>
+	<!-- Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Main Banner START -->
+<section class="" style="padding-top: 150px;">
+	<div class="container">
+		<div class="row g-4 align-items-center">
+			<h4 class="mb-4 text-center">Founder’s Note – Vimal Ojha</h4>
+			<!-- Image -->
+			<div class="col-lg-6 position-relative">
+				<!-- SVG decoration -->
+			
+				<!-- Image -->
+				<img src="assets/images/bg/crousal-second-image.jpeg" class="rounded" alt="about-img">
+			</div>
+			<!-- Content -->
+			<div class="col-lg-6 ps-md-5">
+				<p class="mb-2">"I don’t just teach machines — I train minds to build the future."</p>
+				<p class="mb-2">I am Vimal Ojha, a passionate engineer, mentor, entrepreneur, and life coach who believes that Bharat will lead the world not by following trends, but by creating them. Over the past decade, I’ve personally trained around half million students and professionals, worked with giants like Tata, Mahindra, Toyota, and mentored 25+ startups in Electric Vehicles, Robotics, and Automation.</p>
+
+				
+				<p class="mb-2">The idea behind EVRobotics Skill Coach (India) Pvt. Ltd. was born out of a simple but powerful thought —
+                    "Why should Indian students only learn theory, when the world needs real skills & innovators?"
+                    </p>
+				<p>
+					With this belief, I built India’s first full-scale EV and Automation Lab, where students work on real Two-Wheeler & Four-Wheeler Electric Vehicles, assemble battery packs, run MATLAB simulations, and integrate AI into machines all under one roof.
+				</p>
+
+
+				<!-- List -->
+
+
+			</div>
+		</div> <!-- Row END -->
+
+		<!-- Value START -->
+		<div class="row g-4 mt-5">
+			<!-- Item -->
+			<div class="col-sm-12 col-lg-12">
+				<div class="card card-body bg-transparent p-0">
+                    <p>
+                        My mission is clear:<br>
+    To transform India’s young talent into global tech leaders—skilled, self-reliant, and spiritually grounded.<br>
+    Whether it’s a diploma student from a small town or an engineering topper from IIT, every learner deserves the power to build, not just observe. EVRobotics is not just a training company—it is a movement towards a smarter, sustainable, and self-sufficient India.<br>
+    Let’s not just talk about “Make in India.”
+    Let’s train to make for India. And for the world.
+    
+                    </p>
+					
+				</div>
+			</div>
+
+
+		</div>
+		<!-- Value END -->
+	</div>
+</section>
+
+<!-- =======================
+Main Banner END -->
+
+<!-- =======================
+Content and value START -->
+
+<!-- =======================
+Content and value END -->
+
+<!-- =======================
+
+
+
+Faqs START -->
+
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="pt-6">
+	<div class="container position-relative mt-sm-5">
+
+
+
+		<!-- Divider -->
+		<hr class="my-5">
+
+		<!-- Footer Widgets -->
+		<div class="row g-4 justify-content-between">
+            		<!-- Widget 2 START -->
+			<div class="col-lg-3">
+				<h6 class="mb-2 mb-md-4"></h6>
+				<div class="row g-2 mb-4 mb-sm-5">
+				
+					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+						<a href="#"> <img src="assets/images/logo/soha-logo.jpeg" alt=""> </a>
+					</div>
+				
+				</div>
+
+				<!-- Social buttons -->
+				<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+				<ul class="list-inline mb-0 mt-3">
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img src="assets/images/whatsapp.png"  height="30px"/></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img src="assets/images/insta.png"  height="30px"/></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img src="assets/images/facebook.png"  height="30px"/></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img src="assets/images/linkedin.png"  height="30px"/></a> </li>
+				
+				</ul>
+			</div>
+			<!-- Widget 2 END -->
+			<!-- Widget 1 START -->
+			<div class="col-lg-9 col-xl-9">
+				<div class="row g-4">
+					<!-- Link block -->
+					<div class="col-4 col-md-2">
+						<h6 class="mb-2 mb-md-4">Quick links</h6>
+						<ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">Home </a></li>
+							<li class="nav-item"><a class="nav-link pt-0" href="">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Courses </a></li>							
+							<li class="nav-item"><a class="nav-link" href="">Blog </a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Contact us</a></li>
+						
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-8 col-md-6">
+						<h6 class="mb-2 mb-md-4">Our Services</h6>
+						<ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link pt-0" href="technology-transformation.html" >Electric Vehicles (EV)</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="unlocking-the-power-of-data.html" >Industrial Automation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="risk-and-finance-technology.html" >Robotics</a></li>
+                        <li class="nav-item"><a  class="nav-link"href="public-cloud-adoption-expertise.html" >Design & Manufacturing Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="technology-capability-development.html" >Artificial Intelligence & Machine Learning</a></li>
+         
+						
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-md-4">
+						<h6 class="mb-2 mb-md-4">Contact details</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style=" color: #00924a"></i>Centre of Excellence & Skill Development Hub <br>
+								 </li>
+						
+							
+							<li class="d-flex mb-3"><i class="me-2  bi bi-envelope" style=" color: #00924a"></i> info@soho.com</li>
+					
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Widget 1 END -->
+
+	
+		</div>
+
+		<!-- Divider -->
+		<hr class="mt-4 mb-3">
+
+		<!-- Bottom footer -->
+		<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+			<!-- Copyright link-->
+			<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by <a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business Solutions Pvt Ltd</a>. </div>
+			<!-- Copyright link-->
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Vendors-->
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Theme Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>

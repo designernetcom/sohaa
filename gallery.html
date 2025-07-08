@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title></title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="Technology and Corporate Template">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Header START -->
+<header class="header-sticky header-absolute" style="background-color:#fff;">
+	<!-- Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link  active" href="index.html"   >Home</a>
+						
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link " href="about.html"  >About Us</a>
+						
+					</li>
+
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link " href="course.html" >Courses</a>
+					
+					</li>
+							<!-- Nav item -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link " href="#" >Training</a>
+							
+							</li>
+								<!-- Nav item -->
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="#" >Workshop</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="faq.html"   >FAQ</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="gallery.html"   >Gallery</a>
+								
+								</li>
+
+		
+
+					<!-- Nav item -->
+					<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+       			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+	
+	
+				<!-- Dark mode option END -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
+	
+
+		</div>
+	</nav>
+	<!-- Nav END -->
+</header>	<!-- Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link  " href="index.html" data-bs-auto-close="outside"  aria-haspopup="true" aria-expanded="false">Home</a>
+						
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link " href="about.html" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">About Us</a>
+						
+					</li>
+
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link " href="course.html" >Courses</a>
+					
+					</li>
+							<!-- Nav item -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link " href="#" >Training</a>
+							
+							</li>
+								<!-- Nav item -->
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="#" >Workshop</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="faq.html"   >FAQ</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link active " href="gallery.html"   >Gallery</a>
+								
+								</li>
+
+		
+
+					<!-- Nav item -->
+					<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+       			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+	
+	
+				<!-- Dark mode option END -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
+	
+
+		</div>
+	</nav>
+	<!-- Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<section class="pt-3">
+	<div class="container">
+		<!-- Breadcrumb & title -->
+		<div class="bg-dark rounded-4 text-center position-relative overflow-hidden py-5">
+
+			<!-- Svg decoration -->
+			<figure class="position-absolute top-0 start-0 ms-n8">
+				<svg width="424" height="405" viewBox="0 0 424 405" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<ellipse cx="212" cy="202.5" rx="212" ry="202.5" fill="url(#paint0_linear_153_3831)"/>
+					<defs>
+					<linearGradient id="paint0_linear_153_3831" x1="212" y1="0" x2="212" y2="405" gradientUnits="userSpaceOnUse">
+					<stop offset="0.0569271" stop-color="#D9D9D9" stop-opacity="0"/>
+					<stop offset="0.998202" stop-color="#D9D9D9" stop-opacity="0.5"/>
+					</linearGradient>
+					</defs>
+				</svg>
+			</figure>
+
+			<!-- SVG decoration -->
+			<figure class="position-absolute top-0 end-0 me-n8 mt-5">
+				<svg class="opacity-3" width="371" height="354" viewBox="0 0 371 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<ellipse cx="172.5" cy="176.5" rx="131.5" ry="125.5" fill="url(#paint0_linear_195_2)"/>
+					<ellipse cx="185.5" cy="177" rx="185.5" ry="177" fill="url(#paint1_linear_195_2)"/>
+					<defs>
+					<linearGradient id="paint0_linear_195_2" x1="172.5" y1="51" x2="172.5" y2="302" gradientUnits="userSpaceOnUse">
+					<stop offset="0.0569271" stop-color="#D9D9D9" stop-opacity="0.5"/>
+					<stop offset="0.998202" stop-color="#D9D9D9" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint1_linear_195_2" x1="185.5" y1="0" x2="185.5" y2="354" gradientUnits="userSpaceOnUse">
+					<stop offset="0.0569271" stop-color="#D9D9D9" stop-opacity="0.2"/>
+					<stop offset="0.998202" stop-color="#D9D9D9" stop-opacity="0"/>
+					</linearGradient>
+					</defs>
+				</svg>
+			</figure>
+
+			<!-- Breadcrumb -->
+			<div class="d-flex justify-content-center position-relative z-index-9">
+				<!-- <nav aria-label="breadcrumb">
+					<ol class="breadcrumb breadcrumb-dots breadcrumb-dark mb-1">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Portfolio Masonry</li>
+					</ol>
+				</nav> -->
+			</div>
+			<!-- Title -->
+			<h1 class="h2 text-white">Gallery</h1>
+		</div>
+<!-- =======================
+Main hero START -->
+<section class="">
+	<div class="container">
+		<!-- Breadcrumb & title -->
+	
+
+		<!-- Tabs -->
+		<!-- <div class="d-lg-flex align-items-center justify-content-center mt-6">
+			<h6 class="mb-lg-0 me-3">Browse by:</h6>
+			<div class="grid-menu" data-target=".filter-container">
+				<ul class="nav nav-pills nav-pills-primary-soft gap-2">
+					<li class="nav-item">
+						<a class="nav-link active" data-filter="*">All work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-filter=".marketing">Marketing</a>          
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-filter=".design">Web design</a>        
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" data-filter=".business">Development</a>        
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-filter=".brand">Brand design</a>        
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-filter=".ui">UI/UX design</a>        
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<!-- Portfolio item START -->
+		<div class="row g-4 filter-container mt-3" data-isotope='{"layoutMode": "masonry"}'>
+		
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item ui">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (3).jpeg" alt="portfolio-img"> 
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<h6 class="mb-0"><a  class="text-white stretched-link"></a></h6>
+							<small class="text-white">Hands on workshop at zeal polytechnic</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item design marketing">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (12).jpeg" alt="portfolio-img">
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a  class="text-white stretched-link">Sustainability Initiative</a></h6> -->
+							<small class="text-white">MOU Dept. of polytechnic Mit Wpu.</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item business design brand">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (9).jpeg" alt="portfolio-img">  	
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a  class="text-white stretched-link">User-Centric Redesign</a></h6> -->
+							<small class="text-white">Electric vehicle tranning test bench</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item business design brand">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (8).jpeg" alt="portfolio-img">  	
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a class="text-white stretched-link">Website Optimization for TechWave</a></h6> -->
+							<small class="text-white">Battary Management system pratical</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item business design">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (14).jpeg" alt="portfolio-img"> 
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a  class="text-white stretched-link">E-commerce Expansion</a></h6> -->
+							<small class="text-white">Battery Pack design pratical</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item business design">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (6).jpeg" alt="portfolio-img"> 
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a  class="text-white stretched-link">A Triumph of Software</a></h6> -->
+							<small class="text-white">Two wheeler technician tranning program</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="col-sm-6 col-lg-4 grid-item ui">
+				<div class="card card-element-hover card-metro-hover">
+					<!-- Card Image -->              
+					<img src="./assets/images/GALLERY/G (4).jpeg" alt="portfolio-img"> 
+					
+					<!-- Card elements -->
+					<div class="card-img-overlay hover-element d-flex"> 
+						<!-- Info -->
+						<div class="card-text mt-auto">
+							<!-- <h6 class="mb-0"><a  class="text-white stretched-link">Social Media Engagement</a></h6> -->
+							<small class="text-white">EV test bench</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio item END -->
+
+		<!-- button -->
+		<!-- <div class="text-center mt-7">
+			<button class="btn btn-lg btn-outline-light mb-0"><i class="fa-solid fa-spinner fa-lg me-2"></i>Load more work</button>
+		</div>	 -->
+
+	</div>	
+</section>
+<!-- =======================
+Main hero END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="">
+	<div class="container position-relative mt-sm-5">
+
+
+
+		<!-- Divider -->
+		<hr class="my-5">
+
+		<!-- Footer Widgets -->
+		<div class="row g-4 justify-content-between">
+			<!-- Widget 2 START -->
+			<div class="col-lg-3">
+
+				<div class="row g-2 mb-4 mb-sm-5">
+
+					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+						<a href="#"> <img src="assets/images/logo/soho-logo.png" alt=""> </a>
+					</div>
+
+				</div>
+
+				<!-- Social buttons -->
+				<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+				<ul class="list-inline mb-0 mt-3">
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/whatsapp.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img
+								src="assets/images/insta.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/facebook.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/linkedin.png" height="30px" /></a> </li>
+
+				</ul>
+			</div>
+			<!-- Widget 2 END -->
+			<!-- Widget 1 START -->
+			<div class="col-lg-9 col-xl-9">
+				<div class="row g-4">
+					<!-- Link block -->
+					<div class="col-4 col-md-2">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Links</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link" href="./home.html">Home </a></li>
+							<li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Courses </a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Contact us</a></li>
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-8 col-md-4">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Our Services</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link pt-0" href="./course.html">Electric Vehicles
+									(EV)</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Industrial Automation</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Robotics</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Design & Manufacturing
+									Tools</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Artificial Intelligence &
+									Machine
+									Learning</a></li>
+
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Mumbai Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e0"></i>
+									&nbsp;Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank,
+								Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204 <br>
+							</li>
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9990634057<br>
+						</li>
+
+
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Pune Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e3"></i>
+									&nbsp; MIT ,WPU Department of Polytechnic
+								Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038 <br>
+							</li>
+
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9137419684<br>
+						</li>
+							
+						</ul>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- Widget 1 END -->
+
+
+		</div>
+
+		<!-- Divider -->
+		<hr class="mt-4 mb-3">
+
+		<!-- Bottom footer -->
+		<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+			<!-- Copyright link-->
+			<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by
+				<a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business
+					Solutions Pvt Ltd</a>.
+			</div>
+			<!-- Copyright link-->
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Vendors-->
+<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/imagesLoaded/imagesloaded.pkgd.min.js"></script>
+
+<!-- Theme Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>

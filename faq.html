@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title></title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="Technology and Corporate Template">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+			var el = document.querySelector('.theme-icon-active');
+			if (el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+					const activeThemeIcon = document.querySelector('.theme-icon-active use')
+					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+						element.classList.remove('active')
+					})
+
+					btnToActive.classList.add('active')
+					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+				}
+
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+					if (storedTheme !== 'light' || storedTheme !== 'dark') {
+						setTheme(getPreferredTheme())
+					}
+				})
+
+				showActiveTheme(getPreferredTheme())
+
+				document.querySelectorAll('[data-bs-theme-value]')
+					.forEach(toggle => {
+						toggle.addEventListener('click', () => {
+							const theme = toggle.getAttribute('data-bs-theme-value')
+							localStorage.setItem('theme', theme)
+							setTheme(theme)
+							showActiveTheme(theme)
+						})
+					})
+
+			}
+		})
+
+	</script>
+
+	<!-- Favicon -->
+
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Header START -->
+	<header class="header-sticky header-absolute" style="background-color:#fff;">
+		<!-- Nav START -->
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<!-- Logo START -->
+				<a class="navbar-brand me-0" href="index.html">
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				</a>
+				<!-- Logo END -->
+
+				<!-- Main navbar START -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  " href="index.html">Home</a>
+
+						</li>
+
+						<li class="nav-item ">
+							<a class="nav-link " href="about.html">About Us</a>
+
+						</li>
+
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="course.html">Courses</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Training</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Workshop</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link active " href="faq.html">FAQ</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="gallery.html">Gallery</a>
+
+						</li>
+
+
+
+						<!-- Nav item -->
+						<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+					</ul>
+				</div>
+				<!-- Main navbar END -->
+				<!-- Buttons -->
+				<ul class="nav align-items-center dropdown-hover ms-sm-2">
+
+
+					<!-- Dark mode option END -->
+					<li class="nav-item">
+						<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-animation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</li>
+				</ul>
+
+
+			</div>
+		</nav>
+		<!-- Nav END -->
+	</header>
+	<!-- Header END -->
+
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
+
+		<!-- =======================
+Main Banner START -->
+		<section class="pt-lg-8">
+			<div class="container pt-4 pt-lg-0">
+				<div class="row g-4 g-xl-6 align-items-center">
+					<!-- Right content -->
+					<div class="col-md-6">
+						<h1 class="mb-4">Frequently Asked Questions</h1>
+						<p class="mb-0">Need a help with something? Here are our most frequently asked questions.</p>
+
+						<!-- <div class="col-10 mt-4">
+					<form class="position-relative">
+						<input class="form-control form-control-lg bg-light ps-6" type="search" placeholder="Enter your keyword..." aria-label="Search">
+						<button class="btn bg-transparent px-3 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit"><i class="bi bi-search fs-6"> </i></button>
+					</form>
+				</div> -->
+					</div>
+
+					<!-- Left svg -->
+					<div class="col-md-6">
+						<img src="https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5245.jpg" alt="">
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- =======================
+Main Banner END -->
+
+		<!-- =======================
+Faq START -->
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>1. Basic General Questions</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-1">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true"
+										aria-controls="collapse-1">
+										Q1. What is an Electric Vehicle (EV) course?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-1" class="accordion-collapse collapse show"
+									aria-labelledby="heading-1" data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3 pb-0">
+										An EV course teaches the design, working, and technology behind electric
+										vehicles –
+										including battery packs, motors, controllers, charging systems, and more. It's
+										ideal for
+										those looking to enter the EV sector.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-2">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+										aria-controls="collapse-2">
+										Q2. What is the scope of an EV course in India?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										India aims for 30% EV adoption by 2030. There’s massive demand for skilled EV
+										professionals in companies like Tata, Mahindra, Ola Electric, Ather, Ashok
+										Leyland, and
+										more.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-3">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+										aria-controls="collapse-3">
+										Q3. What is the duration of an EV course?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										EV courses range from 1-day workshops to 6-month certification and internship
+										programs. The most popular are 3 to 6 months long, offering deep technical and
+										practical knowledge.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-4">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
+										aria-controls="collapse-4">
+										Q4. What is the future of electric vehicles in India?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										The future is bright! With growing government support, policies like FAME-II,
+										and
+										investment in charging infrastructure, the EV industry in India is booming.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-5">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
+										aria-controls="collapse-5">
+										Q5. Will I get a job after doing an EV course?
+								</div>
+								<!-- Body -->
+								<div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes – if you choose the right course with hands-on projects and industrial
+										exposure,
+										you can get jobs in R&D, design, manufacturing, battery testing, BMS, and even
+										EV
+										sales.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>2. Eligibility & Admission Questions</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-6">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false"
+										aria-controls="collapse-6">
+										Q1. What is the eligibility for an EV course?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Typically, diploma/degree holders in Electrical, Mechanical, ECE, or
+										Mechatronics are
+										eligible. Some institutes also accept ITI or 10th
+										,12th-pass students for foundation-level
+										and ev technician courses.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-7">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false"
+										aria-controls="collapse-7">
+										Q2. Can I do an EV course after 12th?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes. Many institutes offer beginner-level courses for 12th-pass students who
+										want to
+										start learning about EVs early
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-8">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false"
+										aria-controls="collapse-8">
+										Q3. Are polytechnic students eligible for EV courses?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Absolutely! Polytechnic diploma holders in technical fields can greatly benefit
+										from EV
+										training to boost job prospects.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-9">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false"
+										aria-controls="collapse-9">
+										Q4. Which are the best institutes for EV courses in India?
+								</div>
+								<!-- Body -->
+								<div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										IIT-Madras (NPTEL), ASDC, ARAI, and private institutes like EVRobotics Skill
+										Coach
+										India offer top-rated hands-on training.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-10">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false"
+										aria-controls="collapse-10">
+										Q5. Are there good online EV courses available?
+								</div>
+								<!-- Body -->
+								<div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes – platforms like Coursera, Udemy, and EVRobotics offer online EV courses
+										with
+										certifications and live projects.
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>3. Jobs & Career After EV Course</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-11">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false"
+										aria-controls="collapse-11">
+										Q1. What kind of jobs are available after an EV course?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										You can work as:
+										<br>1. EV Design Engineer <br>2. Battery Management System (BMS) Engineer <br>3.
+										EV Service Technician <br>4. Controller Programmer <br>5. Charging Station
+										Planner <br>6. EV Sales & Marketing Expert
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-12">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false"
+										aria-controls="collapse-12">
+										Q2. What is the salary after an EV course in India?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Fresher salaries range from ₹15,000 to ₹35,000/month. Experienced professionals
+										and
+										certified EV engineers can earn ₹6–12 LPA depending on skills and role.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-13">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false"
+										aria-controls="collapse-13">
+										Q3. Do companies like Tata, Mahindra, Ola hire EV-certified candidates?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes. These companies regularly recruit trained professionals in EV R&D, design,
+										BMS
+										testing, software, and manufacturing.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-14">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false"
+										aria-controls="collapse-14">
+										Q4. Can I get an internship after the EV course?
+								</div>
+								<!-- Body -->
+								<div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes – good institutes (like EVRobotics Skill Coach India) offer internship +
+										project
+										certification, which boosts your chances of employment.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-15">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false"
+										aria-controls="collapse-15">
+										Q5. Will this help me start my own EV startup?
+								</div>
+								<!-- Body -->
+								<div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Definitely! If you’re trained in EV design, battery packs, retrofitting, or
+										vehicle integration
+										– you can launch your own garage, EV retrofit shop, or product startup.
+
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>4. EV Course Content Questions</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-16">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-16" aria-expanded="false"
+										aria-controls="collapse-16">
+										Q1. What topics are covered in an EV course?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-16" class="accordion-collapse collapse" aria-labelledby="heading-16"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Common topics include:
+										<br>1. Common topics include: <br>2. EV Architecture <br>3.
+										Battery Pack Design <br>4. BMS (Battery Management System) <br>5. Electric
+										Motors & Controllers <br>6. Charging Systems <br>7. CAN Protocol <br>8. Thermal
+										Management <br>9. EV Safety & Standards
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-17">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-17" aria-expanded="false"
+										aria-controls="collapse-17">
+										Q2. What is a Battery Management System (BMS)?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-17" class="accordion-collapse collapse" aria-labelledby="heading-17"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										BMS monitors and manages the battery health, voltage, current, temperature, and
+										safety. It's a critical part of any electric vehicle.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-20">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-20" aria-expanded="false"
+										aria-controls="collapse-20">
+										Q3. How do motor controllers and inverters work in EVs?
+								</div>
+								<!-- Body -->
+								<div id="collapse-20" class="accordion-collapse collapse" aria-labelledby="heading-20"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Motor controllers convert battery DC into AC (or variable DC), controlling motor
+										speed
+										and torque based on driver input. Inverters are part of this process in AC motor
+										systems
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-18">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-18" aria-expanded="false"
+										aria-controls="collapse-18">
+										Q4. What is CAN protocol?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-18" class="accordion-collapse collapse" aria-labelledby="heading-18"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Controller Area Network (CAN) is a communication system used in EVs to allow all
+										electronic control units (ECUs) to talk to each other efficiently
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-19">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-19" aria-expanded="false"
+										aria-controls="collapse-19">
+										Q5. How does regenerative braking work in EVs?
+								</div>
+								<!-- Body -->
+								<div id="collapse-19" class="accordion-collapse collapse" aria-labelledby="heading-19"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										When you apply brakes in an EV, the motor acts as a generator and sends power
+										back
+										to the battery, increasing efficiency and range.
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>5. Software & Tools Used in EV Courses</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-21">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-21" aria-expanded="false"
+										aria-controls="collapse-21">
+										Q1. Which software is useful for EV designing?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-21" class="accordion-collapse collapse" aria-labelledby="heading-21"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Common tools include:
+										<br>1. SolidWorks, AutoCAD – for mechanical design <br>2. MATLAB/Simulink – for
+										simulation <br>3.
+										ANSYS, CATIA – for analysis and modeling <br>4. Fusion360, Inventor – for 3D
+										modeling <br>5. LTspice – for electronic circuit design
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-22">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-22" aria-expanded="false"
+										aria-controls="collapse-22">
+										Q2. What is the use of MATLAB/Simulink in EVs?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-22" class="accordion-collapse collapse" aria-labelledby="heading-22"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										It’s used for simulating electric motor dynamics, control systems, battery
+										performance,
+										and vehicle modeling.
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-23">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-23" aria-expanded="false"
+										aria-controls="collapse-23">
+										Q3. How useful is AutoCAD or SolidWorks in EV?
+								</div>
+								<!-- Body -->
+								<div id="collapse-23" class="accordion-collapse collapse" aria-labelledby="heading-23"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Very useful. For mechanical design of battery enclosures, chassis, motor mounts,
+										etc.,
+										CAD software is essential.
+
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-24">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-24" aria-expanded="false"
+										aria-controls="collapse-24">
+										Q4. How is battery simulation done?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-24" class="accordion-collapse collapse" aria-labelledby="heading-24"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Battery simulation involves modeling charge/discharge cycles, thermal effects,
+										cell
+										balancing, and degradation using MATLAB, Simulink, or specialized BMS software.
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-25">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-25" aria-expanded="false"
+										aria-controls="collapse-25">
+										Q5. Is FEA/CFD required in EV design?
+								</div>
+								<!-- Body -->
+								<div id="collapse-25" class="accordion-collapse collapse" aria-labelledby="heading-25"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Yes – for advanced roles. FEA helps test structural strength (like battery
+										casing), while
+										CFD helps design thermal cooling for batteries and motors.
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>6. Online Course & Certification Queries</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-26">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-26" aria-expanded="false"
+										aria-controls="collapse-26">
+										Q1. Where can I find free EV courses online?
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-26" class="accordion-collapse collapse" aria-labelledby="heading-26"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										You can try:
+										<br>1. NPTEL (IIT-Madras)
+										<br>2. YouTube (like @VimalOjha-skillcoachIndia) <br>3.
+										edX/Coursera basic modules <br>4. EVRobotics’ free introductory webinars
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-27">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-27" aria-expanded="false"
+										aria-controls="collapse-27">
+										Q2. What are the best online EV courses in India?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-27" class="accordion-collapse collapse" aria-labelledby="heading-27"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										EVRobotics, Skill-Lync, and ASDC offer India-focused, placement-ready EV
+										courses.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-28">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-28" aria-expanded="false"
+										aria-controls="collapse-28">
+										Q3. Which course has certification and projects?
+								</div>
+								<!-- Body -->
+								<div id="collapse-28" class="accordion-collapse collapse" aria-labelledby="heading-28"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Choose programs that include:
+										<br>1. Hands-on projects
+
+										<br>2. Live sessions <br>3.
+										Certificate from authorized body (e.g., MSME, ASDC)
+										<br>4. Internship opportunity
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-29">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-29" aria-expanded="false"
+										aria-controls="collapse-29">
+										Q4. Which EV course guarantees placement?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-29" class="accordion-collapse collapse" aria-labelledby="heading-29"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Some private programs offer placement assistance, but genuine job outcomes
+										depend
+										on your skill level and project performance.
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Accordion START -->
+						<h3><b>7. Location-Based Queries</b></h3>
+						<br>
+
+						<div class="accordion accordion-icon accordion-border" id="accordionFaq">
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-30">
+									<button class="accordion-button fw-semibold rounded collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-30" aria-expanded="false"
+										aria-controls="collapse-30">
+										Q1. Where can I find an EV course in Pune, Bangalore, Delhi, or Mumbai?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-30" class="accordion-collapse collapse" aria-labelledby="heading-30"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+
+										Most major cities have EV training hubs. EVRobotics offers programs across India
+										including Pune, Delhi, Bhopal, and even online modes.
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-31">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-31" aria-expanded="false"
+										aria-controls="collapse-31">
+										Q2. How to find nearby EV training centers?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-31" class="accordion-collapse collapse" aria-labelledby="heading-31"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										You can search Google Maps with keywords like “EV course near me” or visit
+										websites
+										like skillcoach.co.in for center details.
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-32">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-32" aria-expanded="false"
+										aria-controls="collapse-32">
+										Q3. Which is the best EV institute in India?
+								</div>
+								<!-- Body -->
+								<div id="collapse-32" class="accordion-collapse collapse" aria-labelledby="heading-32"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										EVRobotics Skill Coach India is among the best with 10+ years of EV training
+										legacy,
+										hands-on project support, and 500k+ students trained.
+
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Item -->
+							<div class="accordion-item mb-3">
+								<div class="accordion-header font-base" id="heading-33">
+									<button class="accordion-button fw-semibold collapsed rounded" type="button"
+										data-bs-toggle="collapse" data-bs-target="#collapse-33" aria-expanded="false"
+										aria-controls="collapse-33">
+										Q4. Which EV course guarantees placement?
+
+									</button>
+								</div>
+								<!-- Body -->
+								<div id="collapse-33" class="accordion-collapse collapse" aria-labelledby="heading-33"
+									data-bs-parent="#accordionFaq">
+									<div class="accordion-body mt-3">
+										Some private programs offer placement assistance, but genuine job outcomes
+										depend
+										on your skill level and project performance.
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Accordion END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================
+Faq END -->
+
+		<!-- =======================
+Action box START -->
+		<section class="pt-0">
+			<div class="container">
+				<div class="bg-primary bg-opacity-10 rounded p-4 p-sm-5">
+
+					<div class="row">
+						<!-- Title and inputs -->
+						<div class="col-lg-7 text-center mx-auto">
+							<!-- Avatar group -->
+							<ul class="avatar-group mb-4 justify-content-center">
+								<li class="avatar avatar-xs">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar avatar">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar avatar-lg z-index-2">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar avatar z-index-1">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar avatar-xs">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+										alt="avatar">
+								</li>
+							</ul>
+
+							<!-- Title -->
+							<h4>Still have a question?</h4>
+							<p class="mb-4">We'd be happy to help you with any questions you have! Please let us know
+								what you're looking for, and we'll do our best to assist you.</p>
+
+							<!-- Button -->
+							<a href="contact.html" class="btn btn-lg btn-dark mb-0">Contact us</a>
+						</div>
+					</div> <!-- Row END -->
+				</div>
+			</div>
+		</section>
+		<!-- =======================
+Action box END -->
+
+
+
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+
+	<!-- =======================
+Footer START -->
+<footer class="">
+	<div class="container position-relative mt-sm-5">
+
+
+
+		<!-- Divider -->
+		<hr class="my-5">
+
+		<!-- Footer Widgets -->
+		<div class="row g-4 justify-content-between">
+			<!-- Widget 2 START -->
+			<div class="col-lg-3">
+
+				<div class="row g-2 mb-4 mb-sm-5">
+
+					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+						<a href="#"> <img src="assets/images/logo/soho-logo.png" alt=""> </a>
+					</div>
+
+				</div>
+
+				<!-- Social buttons -->
+				<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+				<ul class="list-inline mb-0 mt-3">
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/whatsapp.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img
+								src="assets/images/insta.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/facebook.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/linkedin.png" height="30px" /></a> </li>
+
+				</ul>
+			</div>
+			<!-- Widget 2 END -->
+			<!-- Widget 1 START -->
+			<div class="col-lg-9 col-xl-9">
+				<div class="row g-4">
+					<!-- Link block -->
+					<div class="col-4 col-md-2">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Links</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link" href="./home.html">Home </a></li>
+							<li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Courses </a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Contact us</a></li>
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-8 col-md-4">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Our Services</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link pt-0" href="./course.html">Electric Vehicles
+									(EV)</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Industrial Automation</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Robotics</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Design & Manufacturing
+									Tools</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Artificial Intelligence &
+									Machine
+									Learning</a></li>
+
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Mumbai Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e0"></i>
+									&nbsp;Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank,
+								Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204 <br>
+							</li>
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9990634057<br>
+						</li>
+
+
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Pune Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e3"></i>
+									&nbsp; MIT ,WPU Department of Polytechnic
+								Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038 <br>
+							</li>
+
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9137419684<br>
+						</li>
+							
+						</ul>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- Widget 1 END -->
+
+
+		</div>
+
+		<!-- Divider -->
+		<hr class="mt-4 mb-3">
+
+		<!-- Bottom footer -->
+		<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+			<!-- Copyright link-->
+			<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by
+				<a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business
+					Solutions Pvt Ltd</a>.
+			</div>
+			<!-- Copyright link-->
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+	<!-- Back to top -->
+	<div class="back-top"></div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Theme Functions -->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+
+<!-- Mirrored from stackbros.in/mizzle/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 05:37:11 GMT -->
+
+</html>

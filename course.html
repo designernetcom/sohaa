@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>EVRobotics Skill Coach (India) Pvt. Ltd </title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="EVRobotics Skill Coach (India) Pvt. Ltd">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+			var el = document.querySelector('.theme-icon-active');
+			if (el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+					const activeThemeIcon = document.querySelector('.theme-icon-active use')
+					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+						element.classList.remove('active')
+					})
+
+					btnToActive.classList.add('active')
+					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+				}
+
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+					if (storedTheme !== 'light' || storedTheme !== 'dark') {
+						setTheme(getPreferredTheme())
+					}
+				})
+
+				showActiveTheme(getPreferredTheme())
+
+				document.querySelectorAll('[data-bs-theme-value]')
+					.forEach(toggle => {
+						toggle.addEventListener('click', () => {
+							const theme = toggle.getAttribute('data-bs-theme-value')
+							localStorage.setItem('theme', theme)
+							setTheme(theme)
+							showActiveTheme(theme)
+						})
+					})
+
+			}
+		})
+
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Header START -->
+	<header class="header-sticky header-absolute" style="background-color:#fff;">
+		<!-- Nav START -->
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<!-- Logo START -->
+				<a class="navbar-brand me-0" href="index.html">
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				</a>
+				<!-- Logo END -->
+
+				<!-- Main navbar START -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown">
+							<a class="nav-link " href="index.html">Home</a>
+
+						</li>
+
+						<li class="nav-item ">
+							<a class="nav-link " href="about.html">About Us</a>
+
+						</li>
+
+
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link active " href="course.html">Courses</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Training</a>
+
+						</li>
+						<!-- Nav item -->
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="#">Workshop</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="faq.html">FAQ</a>
+
+						</li>
+						<li class="nav-item dropdown dropdown-fullwidth">
+							<a class="nav-link " href="gallery.html">Gallery</a>
+
+						</li>
+
+
+
+						<!-- Nav item -->
+						<li class="nav-item"> <a class="nav-link" href="contact.html">Contact us</a> </li>
+					</ul>
+				</div>
+				<!-- Main navbar END -->
+				<!-- Buttons -->
+				<ul class="nav align-items-center dropdown-hover ms-sm-2">
+
+
+					<!-- Dark mode option END -->
+					<li class="nav-item">
+						<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-animation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</li>
+				</ul>
+
+
+			</div>
+		</nav>
+		<!-- Nav END -->
+	</header>
+	<!-- Header END -->
+
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
+
+		<!-- =======================
+Main hero START -->
+		<section class="pt-lg-8">
+			<div class="container pt-4 pt-lg-0">
+				<!-- Breadcrumb & title -->
+				<div class="row align-items-center mb-7">
+					<div class="col-xl-12">
+
+						<h4 class="text-center">Training Programs & Course Overview</h4>
+					</div>
+
+				</div>
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<div class="col-lg-6">
+							<!-- Card Image -->
+							<div class="card-img-scale-wrapper rounded-2 h-100">
+								<img src="./assets/Electric vehicle design and development.jpeg" class="img-scale"
+									alt="portfolio-img">
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-lg-6">
+							<!-- Card body -->
+							<div class="card-body h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title" style="margin-bottom: 10px;">Electric Vehicle Design &
+									Development</h4>
+								<p class="card-text mb-3 mb-lg-4 " style="text-align: justify;">Step into the future of
+									mobility by mastering the end-to-end process of electric vehicle (EV) prototyping.
+									This comprehensive course will guide you through the complete workflow from
+									conceptualizing and designing in CAD software, selecting the right components, and
+									defining the vehicle architecture, to hands-on fabrication of the actual chassis.
+									Learn how to bring an EV from idea to reality using real-world tools, techniques,
+									and industry practices. Whether you're an aspiring automotive engineer, a maker, or
+									an enthusiast, this program will equip you with the skills to build and innovate in
+									the booming EV industry.
+
+								</p>
+								<!-- List -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<!-- Content -->
+						<div class="col-lg-6 order-2">
+							<!-- Card body -->
+							<div class="card-body text-lg-end h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">EV Battery Pack Design & Battery Management System</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Unlock the core of
+									electric vehicles by diving deep into advanced battery technology. This hands-on
+									program teaches you the critical skills needed to design efficient, safe, and
+									high-performance EV battery packs. Learn the art of lithium-ion cell selection,
+									voltage and current balancing strategies, and the essentials of thermal management
+									to prevent overheating and extend battery life. You'll also explore BMS (Battery
+									Management System) integration and get real-world experience with battery pack
+									assembly, wiring, and testing. From theory to practical builds, become an EV battery
+									expert ready to power the next generation of mobility.
+
+								</p>
+								<!-- List -->
+
+							</div>
+						</div>
+
+						<div class="col-lg-6 order-1 order-lg-2">
+							<div class="card-img-scale-wrapper rounded-2 overflow-hidden h-100">
+								<!-- Card Image -->
+								<img src="./assets/Battery Pack Design and Battery Management System (BMS).jpeg
+						" class="img-scale" alt="portfolio-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<div class="col-lg-6">
+							<!-- Card Image -->
+							<div class="card-img-scale-wrapper rounded-2 h-100">
+								<img src="assets/images/bg/EV charging infrastructure.jpg" class="img-scale"
+									alt="portfolio-img">
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-lg-6">
+							<!-- Card body -->
+							<div class="card-body h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">EV Charging Infrastructure</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Build a solid foundation
+									in the systems that keep electric vehicles powered and ready to go. This module
+									dives into the complete ecosystem of EV charging — covering AC and DC charging
+									protocols, CCS and CHAdeMO standards, and the setup of fast-charging stations. Learn
+									how to design and integrate safe, efficient charging solutions with a focus on EVSE
+									(Electric Vehicle Supply Equipment), grid connectivity, power distribution, and
+									real-world implementation. Whether it's residential, commercial, or public
+									infrastructure, gain the skills to drive the future of clean energy and smart
+									mobility.</p>
+								<!-- List -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<!-- Content -->
+						<div class="col-lg-6 order-2">
+							<!-- Card body -->
+							<div class="card-body text-lg-end h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">EV Power Electronics and Control System Tranning</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Get hands-on with the
+									brain and muscle of electric vehicles — the motor and powertrain system. In this
+									advanced module, you'll dive into the control and programming of BLDC (Brushless DC)
+									and PMSM (Permanent Magnet Synchronous Motors). Learn how to fine-tune throttle
+									response, set up regenerative braking for energy recovery, and implement
+									Field-Oriented Control (FOC) for smooth and efficient motor performance. From basic
+									setup to advanced tuning, gain practical skills to optimize power delivery,
+									efficiency, and ride dynamics in real EV applications.
+
+								</p>
+								<!-- List -->
+
+							</div>
+						</div>
+
+						<div class="col-lg-6 order-1 order-lg-2">
+							<div class="card-img-scale-wrapper rounded-2 overflow-hidden h-100">
+								<!-- Card Image -->
+								<img src="assets/images/bg/EVPowerElectronics.jpg" class="img-scale"
+									alt="portfolio-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<div class="col-lg-6">
+							<!-- Card Image -->
+							<div class="card-img-scale-wrapper rounded-2 h-100">
+								<img src="assets/images/services/ElectricalVehicleDesignsimulation.jpg"
+									class="img-scale" alt="portfolio-img">
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-lg-6">
+							<!-- Card body -->
+							<div class="card-body h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">EV Simulation using MATLAB & Simulink</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Step into the world of
+									virtual prototyping and system-level analysis with industry-standard tools. This
+									module equips you with the skills to simulate and optimize electric vehicle
+									performance using MATLAB & Simulink. Learn to model EV drive cycles, analyze
+									state-of-charge (SOC) dynamics, evaluate battery efficiency, and simulate the full
+									powertrain behavior under various real-world conditions. With hands-on projects and
+									real data sets, you'll master predictive modeling and performance testing — a
+									must-have skillset for modern EV engineers</p>
+								<!-- List -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<!-- Content -->
+						<div class="col-lg-6 order-2">
+							<!-- Card body -->
+							<div class="card-body text-lg-end h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">EV Diagnostics & Maintenance (Technician Course)</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Become the go-to expert
+									for keeping electric vehicles running at peak performance. This technician-focused
+									module trains you in real-world EV fault detection and live diagnostics using CAN
+									communication protocols. Learn how to troubleshoot key components, perform
+									controller tuning, and carry out system-level repairs on actual EV platforms. From
+									sensor checks to software-level diagnostics, gain the practical experience and
+									technical know-how to service, maintain, and future-proof the EVs of tomorrow.
+
+								</p>
+								<!-- List -->
+
+							</div>
+						</div>
+
+						<div class="col-lg-6 order-1 order-lg-2">
+							<div class="card-img-scale-wrapper rounded-2 overflow-hidden h-100">
+								<!-- Card Image -->
+								<img src="assets/images/bg/Electric Vehicle Technician course.jpg" class="img-scale"
+									alt="portfolio-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<div class="col-lg-6">
+							<!-- Card Image -->
+							<div class="card-img-scale-wrapper rounded-2 h-100">
+								<img src="assets/images/bg/Industrial automation and plc scada tranning.jpg"
+									class="img-scale" alt="portfolio-img">
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-lg-6">
+							<!-- Card body -->
+							<div class="card-body h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">Industrial Automation and PLC SCADA Training</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Step into the future of
+									smart manufacturing with in-demand skills tailored for modern EV assembly lines.
+									This hands-on module covers everything from PLC (Programmable Logic Controllers)
+									programming, SCADA system integration, and HMI (Human-Machine Interface) design to
+									electrical panel wiring, pneumatics, and hydraulics. Learn to automate complex
+									industrial processes, ensure precision control, and optimize production efficiency.
+									Whether you're working in EV manufacturing or broader automation industries, this
+									training makes you job-ready for Industry 4.0 environments</p>
+								<!-- List -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<!-- Content -->
+						<div class="col-lg-6 order-2">
+							<!-- Card body -->
+							<div class="card-body text-lg-end h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">Robotics and IOT Training</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Dive into the world of
+									smart machines and connected systems. This module teaches you how to build and
+									program robotic systems using Arduino and Raspberry Pi platforms. Learn to integrate
+									real-time sensors, actuators, and control mechanisms, while harnessing the power of
+									IoT modules for remote monitoring and automation. From basic robotics to
+									intelligent, network-connected systems, you'll gain hands-on experience in creating
+									next-gen solutions for industries, smart homes, and future tech</p>
+								<!-- List -->
+
+							</div>
+						</div>
+
+						<div class="col-lg-6 order-1 order-lg-2">
+							<div class="card-img-scale-wrapper rounded-2 overflow-hidden h-100">
+								<!-- Card Image -->
+								<img src="assets/images/bg/Roboticss and iot tranning.jpg" class="img-scale"
+									alt="portfolio-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+				<!-- Portfolio item START -->
+				<div class="card card-img-scale bg-transparent overflow-hidden  mb-xl-8">
+					<div class="row g-xl-6 align-items-center">
+						<div class="col-lg-6">
+							<!-- Card Image -->
+							<div class="card-img-scale-wrapper rounded-2 h-100">
+								<img src="assets/images/services/AI-and-Machine-Learning-in-EV-Software-Driving-Smart-Decisions.jpg"
+									class="img-scale" alt="portfolio-img">
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-lg-6">
+							<!-- Card body -->
+							<div class="card-body h-100 px-0 p-xl-5">
+								<!-- Client -->
+
+								<!-- Title -->
+								<h4 class="card-title">AI & Machine Learning in EV Systems</h4>
+								<p class="card-text mb-3 mb-lg-4" style="text-align: justify;">Explore how artificial
+									intelligence is revolutionizing electric mobility. This cutting-edge module blends
+									Python programming with real-world machine learning applications in EVs. Learn to
+									build predictive diagnostics for early fault detection, design smart battery
+									management systems that adapt to usage patterns, and lay the groundwork for
+									autonomous EV behavior. With hands-on projects and AI models, you'll gain the skills
+									to make electric vehicles smarter, safer, and more efficient — right from the code
+									to the road</p>
+								<!-- List -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio item END -->
+
+			</div>
+		</section>
+		<!-- =======================
+Main hero END -->
+
+
+
+
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+
+	<!-- =======================
+Footer START -->
+	<footer class="">
+		<div class="container position-relative mt-sm-5">
+
+
+
+			<!-- Divider -->
+			<hr class="my-5">
+
+			<!-- Footer Widgets -->
+			<div class="row g-4 justify-content-between">
+				<!-- Widget 2 START -->
+				<div class="col-lg-3">
+
+					<div class="row g-2 mb-4 mb-sm-5">
+
+						<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+							<a href="#"> <img src="assets/images/logo/soho-logo.png" alt=""> </a>
+						</div>
+
+					</div>
+
+					<!-- Social buttons -->
+					<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+					<ul class="list-inline mb-0 mt-3">
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/whatsapp.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img
+									src="assets/images/insta.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/facebook.png" height="30px" /></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+									src="assets/images/linkedin.png" height="30px" /></a> </li>
+
+					</ul>
+				</div>
+				<!-- Widget 2 END -->
+				<!-- Widget 1 START -->
+				<div class="col-lg-9 col-xl-9">
+					<div class="row g-4">
+						<!-- Link block -->
+						<div class="col-4 col-md-2">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Links</h6>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="./home.html">Home </a></li>
+								<li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Courses </a></li>
+
+								<li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+								<li class="nav-item"><a class="nav-link" href="./gallery.html">Contact us</a></li>
+
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-8 col-md-4">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Our Services</h6>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link pt-0" href="./course.html">Electric Vehicles
+										(EV)</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Industrial Automation</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Robotics</a></li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Design & Manufacturing
+										Tools</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="./course.html">Artificial Intelligence &
+										Machine
+										Learning</a></li>
+
+
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-md-3">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Mumbai Address</h6>
+							<ul class="list-group list-group-borderless">
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-geo-alt" style=" color: #ff0000e0"></i>
+									&nbsp;Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank,
+									Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204 <br>
+								</li>
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-telephone" style=" color: #ff0000e3"></i>
+									&nbsp;- 9990634057<br>
+								</li>
+
+
+
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Pune Address</h6>
+							<ul class="list-group list-group-borderless">
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-geo-alt" style=" color: #ff0000e3"></i>
+									&nbsp; MIT ,WPU Department of Polytechnic
+									Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038 <br>
+								</li>
+
+								<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i
+										class="bi bi-telephone" style=" color: #ff0000e3"></i>
+									&nbsp;- 9137419684<br>
+								</li>
+
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+				<!-- Widget 1 END -->
+
+
+			</div>
+
+			<!-- Divider -->
+			<hr class="mt-4 mb-3">
+
+			<!-- Bottom footer -->
+			<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+				<!-- Copyright link-->
+				<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by
+					<a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business
+						Solutions Pvt Ltd</a>.
+				</div>
+				<!-- Copyright link-->
+			</div>
+		</div>
+	</footer>
+	<!-- =======================
+Footer END -->
+
+	<!-- Back to top -->
+	<div class="back-top"></div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Theme Functions -->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>

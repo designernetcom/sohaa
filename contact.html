@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>EVRobotics Skill Coach (India) Pvt. Ltd </title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="StackBros">
+	<meta name="description" content="EVRobotics Skill Coach (India) Pvt. Ltd">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css">
+	
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Header START -->
+<header class="header-sticky header-absolute" style="background-color:#fff;">
+	<!-- Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo/soho-logo.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link  " href="index.html"   >Home</a>
+						
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link " href="about.html"  >About Us</a>
+						
+					</li>
+
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link " href="course.html" >Courses</a>
+					
+					</li>
+							<!-- Nav item -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link " href="#" >Training</a>
+							
+							</li>
+								<!-- Nav item -->
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="#" >Workshop</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="faq.html"   >FAQ</a>
+								
+								</li>
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link " href="gallery.html"   >Gallery</a>
+								
+								</li>
+
+		
+
+					<!-- Nav item -->
+					<li class="nav-item "> <a class="nav-link active" href="contact.html">Contact us</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+       			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+	
+	
+				<!-- Dark mode option END -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>	
+			</ul>
+	
+
+		</div>
+	</nav>
+	<!-- Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+ 
+<!-- =======================
+=======================
+Main hero START -->
+<section class="pt-7 pt-md-8">
+	<div class="container pt-4 pt-md-0">
+		<div class="row justify-content-between">
+
+			<div class="col-lg-6 mb-6 mb-lg-0">
+				<div class="d-flex flex-column h-100">
+					<!-- Title -->
+					<h1 class="mb-3">Ready to Upskill? Let’s Chat!</h1>
+					<!-- <p class="mb-0">You can reach us anytime via <a href="#">example@gmail.com</a></p> -->
+					<img src="https://media.istockphoto.com/id/1290300704/vector/man-in-call-center-support-customer-support-answering-questions.jpg?s=612x612&w=0&k=20&c=ybVXSP9FUI8j4coZGtUbO363vWf4eqn9PwmjHT6uu4w=" alt="">
+					<!-- Social button -->
+					<!-- <div class="d-sm-flex gap-3 align-items-center my-5">
+						<h6 class="mb-3 mb-sm-0">Follow us on:</h6>
+						<ul class="list-inline flex-wrap mb-0">
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-icon btn-light text-facebook rounded-circle"><i class="bi bi-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-icon btn-light text-instagram rounded-circle"><i class="bi bi-instagram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-icon btn-light text-dribbble rounded-circle"><i class="bi bi-dribbble"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-icon btn-light text-twitter rounded-circle"><i class="bi bi-twitter"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn btn-icon btn-light text-youtube rounded-circle"><i class="bi bi-youtube"></i></a>
+							</li>
+						</ul>
+					</div> -->
+
+				</div>	
+			</div>
+
+			<div class="col-lg-6 col-xl-5">
+				<div class="card card-body shadow border p-sm-5">
+					<!-- SVG decoration -->
+		
+
+					<form class="row g-4">
+						<div class="col-md-6">
+							<label class="form-label heading-color">Name </label>
+							<input type="text" class="form-control form-control-lg" placeholder="">
+						</div>
+
+						<div class="col-md-6">
+							<label class="form-label heading-color">Email</label>
+							<input type="email" class="form-control form-control-lg" id="floatingInput" placeholder="">
+						</div>
+
+						<div class="col-md-6">
+							<label class="form-label heading-color">Phone number </label>
+							<input type="text" class="form-control form-control-lg" placeholder="">
+						</div>
+
+						<div class="col-md-6">
+							<label class="form-label heading-color">Company </label>
+							<input type="text" class="form-control form-control-lg" placeholder="">
+						</div>
+
+						<div class="col-12">
+							<label class="form-label heading-color">Message</label>
+							<textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 150px"></textarea>
+						</div>
+						<!-- Button -->
+						<button class="btn btn-lg  mb-0" style="background-color: #EC3E37;color:#fff;">Send a message</button>
+					</form>
+				</div>	
+			</div>
+
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Main hero END -->
+
+
+
+<!-- =======================
+Contact info & Map START -->
+<Section class="py-0">
+	<div class="container">
+		<div class="row row-cols-1 row-cols-lg-3 g-4">
+			<!-- Address info -->
+			<div class="col">
+				<div class="card card-body bg-light border p-sm-5">
+					<!-- Icon -->
+					<div class="mb-4"><i class="bi bi-geo-alt fa-xl text-primary"></i></div>
+					<!-- Title -->
+					<h6 class="mb-4">Office Address</h6>
+					<!-- Office item -->
+					<div class="d-flex align-items-center mb-2">
+			
+						<span class="heading-color fw-semibold mb-0">Mumbai office:</span>
+					</div>
+					<address class="mb-0">Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank, Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204</address>
+				</div>
+			</div>
+
+			<!-- Email info -->
+			<div class="col">
+				<div class="card card-body bg-light border p-sm-5">
+					<!-- Icon -->
+					<div class="mb-4"><i class="bi bi-envelope fa-xl text-primary"></i></div>
+					<!-- Title -->
+					<h6 class="mb-3">Contact Us </h6>
+					<div >
+						<i class="bi bi-envelope fa-xl text-primary">
+
+					</i><a href="#" class="heading-color text-primary-hover  mb-0">enquiry@skillcoach.co.in </a>
+					
+					</div>
+					<br>
+					<div >
+						<i class="bi bi-telephone fa-xl text-primary"></i><a href="#" class="heading-color text-primary-hover  mb-0"> 9990634057</a>
+					</div>
+					
+					<br>
+					<div >
+						<i class="bi bi-telephone fa-xl text-primary"></i><a href="#" class="heading-color text-primary-hover  mb-0"> 9137419684</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact info -->
+			<!-- Address info -->
+			<div class="col">
+				<div class="card card-body bg-light border p-sm-5">
+					<!-- Icon -->
+					<div class="mb-4"><i class="bi bi-geo-alt fa-xl text-primary"></i></div>
+					<!-- Title -->
+					<h6 class="mb-4">Office Address</h6>
+					<!-- Office item -->
+					<div class="d-flex align-items-center mb-2">
+			
+						<span class="heading-color fw-semibold mb-0">Pune office:</span>
+					</div>
+					<address class="mb-0">MIT WPU 
+						Department of Polytechnic 
+						
+						Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038</address>
+				</div>
+			</div>
+
+		</div> <!-- Row END -->
+	</div>
+
+
+
+</Section>
+<!-- =======================
+Contact info & Map END -->
+
+
+<!-- =======================
+
+
+
+
+</main>
+
+
+Footer START -->
+<footer class="">
+	<div class="container position-relative mt-sm-5">
+
+
+
+		<!-- Divider -->
+		<hr class="my-5">
+
+		<!-- Footer Widgets -->
+		<div class="row g-4 justify-content-between">
+			<!-- Widget 2 START -->
+			<div class="col-lg-3">
+
+				<div class="row g-2 mb-4 mb-sm-5">
+
+					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
+						<a href="#"> <img src="assets/images/logo/soho-logo.png" alt=""> </a>
+					</div>
+
+				</div>
+
+				<!-- Social buttons -->
+				<h6 class="mb-2 mb-md-4">Follow on</h6>
+
+				<ul class="list-inline mb-0 mt-3">
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/whatsapp.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon" href="#"><img
+								src="assets/images/insta.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/facebook.png" height="30px" /></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-xs btn-icon " href="#"><img
+								src="assets/images/linkedin.png" height="30px" /></a> </li>
+
+				</ul>
+			</div>
+			<!-- Widget 2 END -->
+			<!-- Widget 1 START -->
+			<div class="col-lg-9 col-xl-9">
+				<div class="row g-4">
+					<!-- Link block -->
+					<div class="col-4 col-md-2">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Links</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link" href="./home.html">Home </a></li>
+							<li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Courses </a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+
+							<li class="nav-item"><a class="nav-link" href="./gallery.html">Contact us</a></li>
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-8 col-md-4">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Our Services</h6>
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link pt-0" href="./course.html">Electric Vehicles
+									(EV)</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Industrial Automation</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Robotics</a></li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Design & Manufacturing
+									Tools</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="./course.html">Artificial Intelligence &
+									Machine
+									Learning</a></li>
+
+
+						</ul>
+					</div>
+
+					<!-- Link block -->
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Mumbai Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e0"></i>
+									&nbsp;Shop No.116, Lodha shopping center, Lodha Casa Rio Gold Rd, above Unity Bank,
+								Maduban Society, Dombivli East, Nilje Gaon, Maharashtra 421204 <br>
+							</li>
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9990634057<br>
+						</li>
+
+
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h6 class="mb-2 mb-md-4" style="font-size: 17px;">Pune Address</h6>
+						<ul class="list-group list-group-borderless">
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-geo-alt"
+									style=" color: #ff0000e3"></i>
+									&nbsp; MIT ,WPU Department of Polytechnic
+								Vishwashanti Marg, Rambaug Colony, Kothrud, Pune, Maharashtra 411038 <br>
+							</li>
+
+							<li class="d-flex mb-3" style="font-size: 16px; text-align: justify;"><i class="bi bi-telephone"
+								style=" color: #ff0000e3"></i>
+								&nbsp;- 9137419684<br>
+						</li>
+							
+						</ul>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- Widget 1 END -->
+
+
+		</div>
+
+		<!-- Divider -->
+		<hr class="mt-4 mb-3">
+
+		<!-- Bottom footer -->
+		<div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-3">
+
+
+			<!-- Copyright link-->
+			<div class="text-body mt-3 mt-md-0"> Copyrights ©2025 EVRobotics Skill Coach (India) Pvt. Ltd. Design by
+				<a href="https://www.netcom-india.com/" class="text-body text-primary-hover">Netcom Business
+					Solutions Pvt Ltd</a>.
+			</div>
+			<!-- Copyright link-->
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Vendors-->
+<script src="assets/vendor/jarallax/jarallax.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Theme Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
